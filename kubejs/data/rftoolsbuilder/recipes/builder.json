@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BoB",
+    "PFC",
+    "BDB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bricks"
+    },
+    "D": {
+      "item": "create:mechanical_drill"
+    },
+    "C": {
+      "item": "create:schematicannon"
+    },
+    "P": {
+      "item": "create:mechanical_pump"
+    },
+    "F": {
+      "item": "industrialforegoing:machine_frame_pity"
+    },
+    "o": {
+      "tag": "forge:ender_pearls"
+    }
+  },
+  "result": {
+    "item": "rftoolsbuilder:builder"
+  }
+}

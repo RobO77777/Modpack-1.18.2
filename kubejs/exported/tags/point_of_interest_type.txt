@@ -1,0 +1,4 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jun 22, 2023, 7:24:40 PM
+
+#minecraft:acquirable_job_site
+- dungeonsweaponry:weaponry_table_poi

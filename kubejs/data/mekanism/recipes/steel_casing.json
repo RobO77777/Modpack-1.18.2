@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","result":{"item":"mekanism:steel_casing"},"pattern":["SGS","GOG","SGS"],"key":{"G":{"item":"kubejs:steel_sheet"},"O":{"item":"industrialforegoing:machine_frame_pity"},"S":{"tag":"forge:ingots/steel"}}}

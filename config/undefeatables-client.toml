@@ -1,0 +1,8 @@
+
+[client]
+	#Particle thickness for undefeatables.
+	#Range: 1 ~ 20
+	particleThickness = 10
+	#Toggles particle effects for undefeatables.
+	particleToggle = true
+

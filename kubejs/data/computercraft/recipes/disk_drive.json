@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#P#",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:stone"
+    },
+    "P": {
+      "item": "kubejs:processor"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "computercraft:disk_drive"
+  }
+}
