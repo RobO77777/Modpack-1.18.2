@@ -48,8 +48,7 @@ onEvent('jei.hide.items', event => {
 		'rftoolsbase:machine_base',
 		'industrialforegoing:machine_frame_simple',
 		'industrialforegoing:machine_frame_advanced',
-		'industrialforegoing:machine_frame_supreme',
-		'ars_nouveau:worn_notebook'
+		'industrialforegoing:machine_frame_supreme'
 
 	])
 

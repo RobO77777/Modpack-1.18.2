@@ -143,7 +143,7 @@ onEvent('recipes', event => {
 			  "tag": "forge:ingots/silicium"
 			},
 			"result": {
-			  "fluid": "mod_modpack:moltensilicium",
+			  "fluid": "kubejs:molten_silicium",
 			  "amount": 144
 			},
 			"temperature": 950,
@@ -166,7 +166,7 @@ onEvent('recipes', event => {
 			  "tag": "forge:dusts/silicium"
 			},
 			"result": {
-			  "fluid": "mod_modpack:moltensilicium",
+			  "fluid": "kubejs:molten_silicium",
 			  "amount": 144
 			},
 			"temperature": 950,
@@ -190,7 +190,7 @@ onEvent('recipes', event => {
 			  "tag": "forge:plates/silicium"
 			},
 			"result": {
-			  "fluid": "mod_modpack:moltensilicium",
+			  "fluid": "kubejs:molten_silicium",
 			  "amount": 144
 			},
 			"temperature": 950,
@@ -342,7 +342,7 @@ onEvent('recipes', event => {
 		  "tag": "forge:ingots/draconium"
 		},
 		"result": {
-		  "fluid": "mod_modpack:moltendraconium",
+		  "fluid": "kubejs:molten_draconium",
 		  "amount": 90
 		},
 		"temperature": 950,
