@@ -1,0 +1,12 @@
+{
+	id: "2F2C1E70E979FAF2"
+	group: "3517914DD1CDB9FC"
+	order_index: 5
+	filename: "computer_craft"
+	title: "Computer Craft"
+	icon: "computercraft:computer_normal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

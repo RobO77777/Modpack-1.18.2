@@ -1,0 +1,12 @@
+{
+	id: "706AB59416DBB710"
+	group: "3517914DD1CDB9FC"
+	order_index: 4
+	filename: "industrial_foregoing"
+	title: "Industrial Foregoing"
+	icon: "industrialforegoing:plastic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

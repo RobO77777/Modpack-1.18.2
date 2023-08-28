@@ -1,0 +1,12 @@
+{
+	id: "30A5F77934A806C6"
+	group: ""
+	order_index: 2
+	filename: "tinker_construct"
+	title: "Tinker Construct"
+	icon: "tconstruct:encyclopedia"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

@@ -1,0 +1,12 @@
+{
+	id: "4514E32DC2D8014E"
+	group: "3517914DD1CDB9FC"
+	order_index: 1
+	filename: "create"
+	title: "Create"
+	icon: "create:goggles"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

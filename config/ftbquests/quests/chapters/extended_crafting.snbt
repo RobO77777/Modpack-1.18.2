@@ -1,0 +1,12 @@
+{
+	id: "4D21580D6588482E"
+	group: "3517914DD1CDB9FC"
+	order_index: 0
+	filename: "extended_crafting"
+	title: "Extended Crafting"
+	icon: "extendedcrafting:basic_auto_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

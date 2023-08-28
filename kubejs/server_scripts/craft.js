@@ -1341,30 +1341,317 @@ onEvent("recipes", (event) => {
   //rftools
   event.remove({ id: "rftoolsbase:machine_frame" });
 
-  //wizard staff
-  event.remove({id: "wizardstaff:wizard_staff"})
-  event.custom({
-    "type": "create:filling",
-    "ingredients": [
-      {
-        "item": "minecraft:stick"
-      },
-      {
-        "fluid": "kubejs:magical_primary_energy",
-        "amount": 250
-      }
-    ],
-    "results": [
-      {
-        "item": "wizardstaff:wizard_staff"
-      }
-    ]
-  })
-});
+  //dungeons gear
 
-onEvent("item.tags", (event) => {
-  // Get the #forge:cobblestone tag collection and add Diamond Ore to it
-  // event.get('forge:cobblestone').add('minecraft:diamond_ore')
-  // Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
-  // event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
+  event.shaped("dungeons_gear:dagger", 
+  ["   "
+  ,"  I",
+   " S "], {
+    S: "minecraft:stick",
+    I: "minecraft:iron_ingot",
+  })
+  event.shaped('dungeons_gear:cutlass', 
+  ["  I"
+  ," I ",
+   " S "], {
+    S: "minecraft:stick",
+    I: "minecraft:iron_ingot",
+  })
+  event.shaped('dungeons_gear:sickle', 
+  ["III"
+  ,"I  ",
+   " S "], {
+    S: "minecraft:stick",
+    I: "minecraft:iron_ingot",
+  })
+  event.shaped('dungeons_gear:soul_scythe', 
+  ["III"
+  ,"  I",
+   " S "], {
+    S: "iceandfire:witherbone",
+    I: "minecraft:iron_ingot",
+  })
+  event.shaped('dungeons_gear:rapier', 
+  ["  I"
+  ," I ",
+   "S  "], {
+    S: "minecraft:stick",
+    I: "createaddition:iron_rod",
+  })
+  event.shaped('dungeons_gear:gauntlet', 
+  ["III"
+  ,"SSS",
+   "S S"], {
+    S: "minecraft:leather",
+    I: "minecraft:iron_ingot",
+  })
+  event.shaped('dungeons_gear:whip', 
+  [" W "
+  ," I ",
+   " S "], {
+    I: "minecraft:string",
+    S: "minecraft:stick",
+    W: "createaddition:iron_wire",
+  })
+  event.shaped('dungeons_gear:tempest_knife', 
+  [" I "
+  ," I ",
+   " S "], {
+    I: "create:iron_sheet",
+    S: "minecraft:stick",
+
+  })
+  event.shaped('dungeons_gear:boneclub', 
+  ["BBB"
+  ,"BBB",
+   " S "], {
+    B: "minecraft:bone",
+    S: "minecraft:stick",
+
+  })
+  event.shaped('dungeons_gear:anchor', 
+  ["III"
+  ," II",
+   "I I"], {
+    I: 'createaddition:iron_rod',
+
+  })
+  event.shaped('dungeons_gear:glaive', 
+  ["  I"
+  ," R ",
+   "S  "], {
+    I: 'minecraft:iron_ingot',
+    R: 'kubejs:steel_rod',
+    S: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:spear', 
+  ["  I"
+  ," S ",
+   "S  "], {
+    I: 'minecraft:iron_ingot',
+    S: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:claymore', 
+  ["  I"
+  ,"II ",
+   "SI "], {
+    I: 'minecraft:iron_ingot',
+    S: 'kubejs:steel_rod',
+  })
+  event.shaped('dungeons_gear:soul_knife', 
+  [" BB"
+  ," IB",
+   "S  "], {
+    I: 'minecraft:iron_ingot',
+    S: 'minecraft:stick',
+    B: 'quark:soul_bead',
+  })
+  event.shaped('dungeons_gear:katana', 
+  ["  I"
+  ," R ",
+   "G  "], {
+    R: 'createaddition:iron_rod',
+    G: 'createaddition:gold_rod',
+    I: 'create:iron_sheet',
+  })
+  event.shaped('dungeons_gear:great_hammer', 
+  [" I "
+  ," S ",
+   " S "], {
+    I: 'minecraft:iron_block',
+    S: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:mace', 
+  [" N "
+  ,"NIN",
+   "SN "], {
+    I: 'minecraft:iron_ingot',
+    N: 'minecraft:iron_nugget',
+    S: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:double_axe', 
+  ["III"
+  ,"ISI",
+   " S "], {
+    I: 'minecraft:iron_ingot',
+    S: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:battlestaff', 
+  ["  S"
+  ," S ",
+   "S  "], {
+
+    S: 'minecraft:stick',
+  })
+
+
+
+  event.shapeless('dungeons_gear:dual_crossbow', '2x minecraft:crossbow')
+  event.shaped('dungeons_gear:burst_crossbow', 
+  ["SIS"
+  ,"GTG",
+   " S "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    G: 'minecraft:string',
+    S: 'botania:livingwood_twig',
+  })
+  event.shaped('dungeons_gear:heavy_crossbow', 
+  ["SIS"
+  ,"GTG",
+   " S "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    G: 'minecraft:string',
+    S: 'createaddition:iron_rod',
+  })
+  event.shaped('dungeons_gear:exploding_crossbow', 
+  ["SIS"
+  ,"GTG",
+   " S "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    G: 'quark:gunpowder_sack',
+    S: 'minecraft:stick',
+  })
+  event.shaped('dungeons_gear:scatter_crossbow', 
+  ["SIS"
+  ,"GGG",
+   " S "], {
+
+    I: 'botania:livingwood_twig',
+    G: 'minecraft:string',
+    S: 'minecraft:stick',
+  })
+  event.shaped('dungeons_gear:soul_crossbow', 
+  ["SIS"
+  ,"GTG",
+   "BSB"], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    G: 'minecraft:string',
+    S: 'minecraft:stick',
+    B: 'quark:soul_bead'
+  })
+  
+  event.shaped('dungeons_gear:slayer_crossbow', 
+  ["RIR"
+  ,"WTW",
+   " R "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    R: 'createaddition:iron_rod',
+    W: 'createaddition:iron_wire',
+  })
+  event.shaped('dungeons_gear:rapid_crossbow', 
+  ["RIR"
+  ,"WTW",
+   " R "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    R: 'createaddition:iron_rod',
+    W: 'minecraft:feather',
+  })
+  event.shaped('dungeons_gear:harpoon_crossbow', 
+  ["RIR"
+  ,"WTW",
+   " R "], {
+
+    T: 'minecraft:tripwire_hook',
+    I: 'minecraft:iron_ingot',
+    R: 'createaddition:iron_rod',
+    W: 'minecraft:string',
+  })
+
+  event.shaped('dungeons_gear:soul_bow', 
+  [" SG"
+  ,"S G",
+   " SG"], {
+
+    S: 'minecraft:stick',
+    G: 'quark:soul_bead',
+  })
+  event.shaped('dungeons_gear:power_bow', 
+  [" SG"
+  ,"R G",
+   " SG"], {
+
+    S: 'minecraft:stick',
+    G: 'minecraft:string',
+    R: 'kubejs:steel_rod',
+  })
+  event.shaped('dungeons_gear:longbow', 
+  [" SG"
+  ,"B G",
+   " SG"], {
+
+    S: 'minecraft:stick',
+    G: 'minecraft:string',
+    B: 'minecraft:bow',
+  })
+  event.shaped('dungeons_gear:hunting_bow', 
+  [" SG"
+  ,"S G",
+   " SG"], {
+
+    S: 'botania:livingwood_twig',
+    G: 'minecraft:string',
+
+  })
+  event.shaped('dungeons_gear:shortbow', 
+  ["   "
+  ," S ",
+   "SG "], {
+
+    S: 'minecraft:stick',
+    G: 'minecraft:string',
+
+  })
+  event.shaped('dungeons_gear:trickbow', 
+  [" GS"
+  ,"G S",
+   " GS"], {
+
+    S: 'botania:mana_string',
+    G: 'minecraft:stick',
+
+  })
+  event.shaped('dungeons_gear:snow_bow', 
+  [" SG"
+  ,"H G",
+   " SG"], {
+
+    S: 'minecraft:stick',
+    G: 'minecraft:string',
+    H: 'alexsmobs:froststalker_horn'
+
+  })
+  event.shaped('dungeons_gear:wind_bow', 
+  [" SF"
+  ,"S G",
+   " SF"], {
+
+    S: 'minecraft:stick',
+    G: 'minecraft:string',
+    F: 'minecraft:feather'
+
+  })
+
+  //immersive armors
+  event.remove({id: 'immersive_armors:wither_helmet'})
+  event.remove({id: 'immersive_armors:chesplate'})
+  event.remove({id: 'immersive_armors:leggings'})
+  event.remove({id: 'immersive_armors:boots'})
+
 });

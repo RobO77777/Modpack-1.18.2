@@ -19,7 +19,7 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:haste",
+      "name": "minecraft:luck",
       "value": 1.0,
       "interactionType": "self",
       "interactionDuration": 300,

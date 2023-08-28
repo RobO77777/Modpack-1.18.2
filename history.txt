@@ -1,0 +1,15 @@
+File: C:/Users/frgau/OneDrive/Bureau/idées.txt
+Replaced '' with ''
+
+File: C:/Users/frgau/OneDrive/Bureau/idées.txt
+Replaced 'oui' with 'non'
+
+File: C:/Users/frgau/OneDrive/Bureau/idées.txt
+Replaced 'cc' with 'aa'
+
+File: C:/Users/frgau/OneDrive/Bureau/idées.txt
+Replaced 'cc' with 'aa'
+
+File: C:/Users/frgau/OneDrive/Bureau/renom/test.txt, Old Word: cc, New Word: oui
+File: C:/Users/frgau/OneDrive/Bureau/renom/test.txt, Old Word: oui, New Word: non
+File: C:/Users/frgau/OneDrive/Bureau/renom/test.txt, Old Word: oui, New Word: non

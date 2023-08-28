@@ -1,0 +1,12 @@
+{
+	id: "24F4682F5ABB5313"
+	group: "20D0AD2C6A00BA0E"
+	order_index: 1
+	filename: "project_e"
+	title: "Project E"
+	icon: "projecte:dark_matter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

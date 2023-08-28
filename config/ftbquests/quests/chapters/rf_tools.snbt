@@ -1,0 +1,12 @@
+{
+	id: "154351832A8EA6E0"
+	group: "3517914DD1CDB9FC"
+	order_index: 3
+	filename: "rf_tools"
+	title: "RF Tools"
+	icon: "rftoolsbuilder:builder"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

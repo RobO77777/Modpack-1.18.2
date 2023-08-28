@@ -1,0 +1,19 @@
+{
+	id: "5F48A26F86FD6DCB"
+	group: "20D0AD2C6A00BA0E"
+	order_index: 2
+	filename: "botania"
+	title: "Botania"
+	icon: {
+		id: "botania:twig_wand"
+		Count: 1b
+		tag: {
+			color1: 0
+			color2: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

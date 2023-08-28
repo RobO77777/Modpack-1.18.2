@@ -26,7 +26,8 @@ onEvent('jei.hide.items', event => {
 		/tconstruct:crafting_station/,
 		/tconstruct:tinker_station/,
 		/tconstruct:part_builder/,
-		/tconstruct:modifier_worktable/
+		/tconstruct:modifier_worktable/,
+		/minecraft:enchanted_book/
 	])
 
 
@@ -48,7 +49,12 @@ onEvent('jei.hide.items', event => {
 		'rftoolsbase:machine_base',
 		'industrialforegoing:machine_frame_simple',
 		'industrialforegoing:machine_frame_advanced',
-		'industrialforegoing:machine_frame_supreme'
+		'industrialforegoing:machine_frame_supreme',
+		['dungeons_gear:diamond_sword','dungeons_gear:sword','dungeons_gear:stone_sword','dungeons_gear:gold_sword'],
+		['dungeons_gear:gold_axe', 'dungeons_gear:axe', 'dungeons_gear:pickaxe', 'dungeons_gear:diamond_pickaxe'],
+		['immersive_armors:wither_helmet', 'immersive_armors:wither_chestplate','immersive_armors:wither_leggings', 'immersive_armors:wither_boots'],
+		'mowziesmobs:mob_remover',
+
 
 	])
 

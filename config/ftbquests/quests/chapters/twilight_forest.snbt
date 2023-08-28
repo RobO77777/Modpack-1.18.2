@@ -1,0 +1,12 @@
+{
+	id: "61D25E02CE6B0E8D"
+	group: "212CB624B87E661B"
+	order_index: 1
+	filename: "twilight_forest"
+	title: "Twilight Forest"
+	icon: "twilightforest:firefly"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

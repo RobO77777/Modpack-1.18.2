@@ -1,0 +1,12 @@
+{
+	id: "7E8FBF5FEAF07A7B"
+	group: "3517914DD1CDB9FC"
+	order_index: 2
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: "mekanism:pellet_polonium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}
