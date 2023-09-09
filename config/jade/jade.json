@@ -10,10 +10,10 @@
     "ttsMode": "PRESS",
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
-    "fluidMode": "NONE",
+    "fluidMode": "ANY",
     "reachDistance": 0.0,
     "debug": false,
-    "hintOverlayToggle": true
+    "hintOverlayToggle": false
   },
   "overlay": {
     "overlayPosX": 0.5,

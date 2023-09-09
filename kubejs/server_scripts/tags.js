@@ -24,7 +24,8 @@ onEvent('block.tags', event => {
 onEvent('fluid.tags', event => {
 
     event.add('forge:molten_draconium', 'kubejs:molten_draconium')
-    event.add('forge:molten_silicium', 'kubejs:molten_silicium')
+    event.add('forge:molten_silicon', 'kubejs:molten_silicon')
+    event.add('forge:molten_diamond', 'tconstruct:molten_diamond')
     event.add("minecraft:water", "kubejs:magical_primary_energy");
     event.add("minecraft:water", "kubejs:flowing_magical_primary_energy");
 

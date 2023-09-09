@@ -1,0 +1,12 @@
+{
+	id: "22C6AE66D3562503"
+	group: "212CB624B87E661B"
+	order_index: 3
+	filename: "aetheria"
+	title: "Aetheria"
+	icon: "cataclysm:void_stone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

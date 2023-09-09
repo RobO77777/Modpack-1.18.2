@@ -19,15 +19,16 @@ onEvent('jei.hide.items', event => {
 		/itemfilters/,
 		/ftbquests/,
 		/ftblibrary/,
-		/quark:marble/,
-		/quark:polished_marble/,
 		/extendedcrafting/,
 		/titanium/,
 		/tconstruct:crafting_station/,
 		/tconstruct:tinker_station/,
 		/tconstruct:part_builder/,
 		/tconstruct:modifier_worktable/,
-		/minecraft:enchanted_book/
+		/minecraft:enchanted_book/,
+		/guide/,
+		/patchouli/,
+		/chancecubes/
 	])
 
 
@@ -54,14 +55,12 @@ onEvent('jei.hide.items', event => {
 		['dungeons_gear:gold_axe', 'dungeons_gear:axe', 'dungeons_gear:pickaxe', 'dungeons_gear:diamond_pickaxe'],
 		['immersive_armors:wither_helmet', 'immersive_armors:wither_chestplate','immersive_armors:wither_leggings', 'immersive_armors:wither_boots'],
 		'mowziesmobs:mob_remover',
-
-
+		Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'),
+		'iceandfire:copper_ore',
+		'iceandfire:copper_ingot',
+		'iceandfire:copper_nugget',
+		'iceandfire:copper_block',
 	])
-
-
-
-
-
 })
 
 //ajouter des items a jei
@@ -89,7 +88,12 @@ onEvent('jei.add.items', event => {
 		Item.of('tconstruct:crafting_station', '{texture:"minecraft:oak_log"}'),
 		Item.of('tconstruct:tinker_station', '{texture:"minecraft:oak_planks"}'),
 		Item.of('tconstruct:part_builder', '{texture:"minecraft:oak_planks"}'),
-		Item.of('tconstruct:modifier_worktable', '{texture:"minecraft:stone"}')
+		Item.of('tconstruct:modifier_worktable', '{texture:"minecraft:stone"}'),
+		'chancecubes:chance_cube',
+		'tconstruct:gear_cast',
+		'tconstruct:gear_red_sand_cast',
+		'tconstruct:gear_sand_cast',
+
 	])
   })
 
@@ -138,9 +142,6 @@ onEvent('jei.information', event => {
 
 
 	//infos wire
-	//event.add(['immersiveengineering:connector_lv', 'immersiveengineering:connector_lv_relay', 'immersiveengineering:connector_mv', 'immersiveengineering:connector_mv_relay', 'immersiveengineering:connector_hv', 'immersiveengineering:connector_hv_relay'], [
-	//	'Transmits energy over long distances.'
-	//])
 	event.add(['mekanism:basic_universal_cable', 'mekanism:advanced_universal_cable', 'mekanism:elite_universal_cable', 'mekanism:ultimate_universal_cable'], [
 		'Transmits energy over short distances.'
 	])

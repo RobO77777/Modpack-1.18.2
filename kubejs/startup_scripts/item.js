@@ -1,9 +1,9 @@
 // Listen to item registry event
 onEvent('item.registry', event => {
 
-    event.create('silicium_dust').displayName('Silicium Dust')
-    event.create('silicium_ingot').displayName('Silicium Ingot')
-    event.create('silicium_sheet').displayName('Silicium sheet')
+    event.create('silicon_dust').displayName('Silicon Dust')
+    event.create('silicon_ingot').displayName('Silicon Ingot')
+    event.create('silicon_sheet').displayName('Silicon sheet')
     event.create('magnetite').displayName('Magnetite')
 
 
@@ -27,14 +27,20 @@ onEvent('item.registry', event => {
     event.create('processor_ultimate').displayName('Ultimate Processor')
     event.create('transistor_ultimate').displayName('Ultimate Transistor')
 
-    //molten ore
-   
-    event.create('crushed_bronze_ore').displayName('Crushed Bronze Ore')
+    //molten raw ore
+
+    event.create('crushed_raw_cobalt').displayName('Crushed Raw Cobalt')
+    event.create('crushed_raw_elementium').displayName('Crushed Raw Elementium')
 
     //dust
 
-    
     event.create('dust_zinc').displayName('Zinc Dust')
     event.create('dust_silver').displayName('Silver Dust')
+    event.create('dust_elementium').displayName('Elementium Dust')
+    event.create('dust_cobalt').displayName('Cobalt Dust')
+
+    //raw
+
+    event.create('raw_silver').displayName('Raw Silver')
 
   })

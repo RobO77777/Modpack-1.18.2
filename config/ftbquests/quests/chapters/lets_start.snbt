@@ -1,0 +1,511 @@
+{
+	id: "7FDD983BD9DB4646"
+	group: "3517914DD1CDB9FC"
+	order_index: 0
+	filename: "lets_start"
+	title: "Create "
+	icon: "create:andesite_alloy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -14.5d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["7099919007E00EBE"]
+			id: "2EA561B6C70D2FEF"
+			tasks: [{
+				id: "456F5386243FAE8E"
+				type: "item"
+				item: "ceramicbucket:unfired_clay_bucket"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 2.5d
+			shape: "hexagon"
+			description: ["Use gravel, sand and water to craft your first cement !"]
+			dependencies: [
+				"1F0BA7F5CF9B97C6"
+				"0EDA6653CB6A8177"
+				"0FA04BD3FD20018A"
+			]
+			dependency_requirement: "one_started"
+			id: "71FACF532FEA429C"
+			tasks: [{
+				id: "7D62D75E0AD4AAEC"
+				type: "item"
+				item: "kubejs:cement"
+			}]
+		}
+		{
+			x: -14.5d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["Smelt clay buckets to create buckets without iron"]
+			dependencies: ["2EA561B6C70D2FEF"]
+			dependency_requirement: "one_started"
+			id: "43D6A02FB77D0655"
+			tasks: [{
+				id: "7619408A2DB441A2"
+				type: "item"
+				item: "ceramicbucket:ceramic_bucket"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 3.5d
+			shape: "hexagon"
+			dependency_requirement: "all_started"
+			id: "0FA04BD3FD20018A"
+			tasks: [{
+				id: "54B7EF715A5212AF"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 3.5d
+			shape: "hexagon"
+			id: "0EDA6653CB6A8177"
+			tasks: [{
+				id: "75FC0FE0C1A8FA74"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -11.25d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["With andesite, cement and lava you can craft alloys for the create mod"]
+			dependencies: [
+				"3A2D5FE8BA366901"
+				"35BE7AFF998CA9C8"
+				"71FACF532FEA429C"
+			]
+			size: 1.5d
+			id: "0A664F8BDA7CBBF0"
+			tasks: [{
+				id: "20177941F76857A5"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.5d
+			shape: "hexagon"
+			id: "3A2D5FE8BA366901"
+			tasks: [{
+				id: "07759DC59893996D"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["Use alloys to craft a millstone"]
+			dependencies: [
+				"09570AA4A736AB95"
+				"0A664F8BDA7CBBF0"
+			]
+			size: 2.0d
+			id: "409E34C5C5739109"
+			tasks: [{
+				id: "227C2E2279E0C419"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			icon: "minecraft:lava_bucket"
+			x: -13.5d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["Fill buckets with lava. /!\\ The bucket is destroy after lava"]
+			dependencies: ["43D6A02FB77D0655"]
+			dependency_requirement: "one_completed"
+			id: "35BE7AFF998CA9C8"
+			tasks: [{
+				id: "7ECE9FC3DFB92312"
+				type: "item"
+				item: {
+					id: "ceramicbucket:filled_ceramic_bucket"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:lava"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 3.5d
+			shape: "hexagon"
+			description: ["Craft a hand crank for your first rotating energy"]
+			hide_dependency_lines: false
+			id: "09570AA4A736AB95"
+			tasks: [{
+				id: "1D150B9A72049AF6"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			icon: "create:crushed_raw_iron"
+			x: -7.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["409E34C5C5739109"]
+			id: "2B0BC336D5770083"
+			tasks: [{
+				id: "5A172B06D7C60A37"
+				type: "item"
+				item: "create:crushed_iron_ore"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["Burn the powder to get ingot."]
+			dependencies: ["2B0BC336D5770083"]
+			id: "4671BE7A3C3DCFD4"
+			tasks: [{
+				id: "02BE0417C9C6D357"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: [
+				"Automate cement and andesite alloy !"
+				"You can craft a mixer and a bassin to automate andesite alloys"
+			]
+			dependencies: [
+				"7BABD83972661454"
+				"4671BE7A3C3DCFD4"
+			]
+			size: 2.0d
+			id: "22596BF38AA213CD"
+			tasks: [
+				{
+					id: "20E7BBB2A2E88540"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2DCF34C8D7DC1550"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [
+				{
+					id: "4E1EEA844E57E4DF"
+					type: "item"
+					item: "minecraft:sand"
+					count: 64
+				}
+				{
+					id: "5FE167901D07C151"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 64
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			shape: "hexagon"
+			size: 2.0d
+			id: "1F4781D9C2C80DA2"
+			tasks: [{
+				id: "2618DE7A7C7C1043"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			shape: "hexagon"
+			id: "7FAE189C75E9F1C5"
+			tasks: [{
+				id: "6903DB798BB61124"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			shape: "hexagon"
+			id: "28B8BE1C270687CA"
+			tasks: [{
+				id: "50EB08F7682244A1"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["Unlimited cement !!"]
+			size: 2.0d
+			id: "2574DD952C33E429"
+			tasks: [{
+				id: "3022D71D19A52570"
+				type: "item"
+				item: "kubejs:cement"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["Unlimited andesite alloys !!"]
+			size: 2.0d
+			id: "714F641FE589D75F"
+			tasks: [{
+				id: "543C317257A3446F"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			shape: "hexagon"
+			size: 2.0d
+			id: "7A9713A84DC623F0"
+			tasks: [{
+				id: "2159FD89A053D648"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			shape: "hexagon"
+			id: "008836CD2B1C569A"
+			tasks: [{
+				id: "1DFEE0B5B405693F"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependency_requirement: "one_started"
+			id: "1B19402EC4D944D2"
+			tasks: [{
+				id: "40A207F27004BA73"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			shape: "hexagon"
+			description: ["Build a cobblestone generator and automate it to generate cobblestone endlessly."]
+			id: "292419BD866630CC"
+			tasks: [{
+				id: "4F9771FB8DC0EE95"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			shape: "hexagon"
+			description: ["Pump water to automate the water supply to create cement."]
+			dependency_requirement: "all_started"
+			id: "4FA6E88CF188D890"
+			tasks: [{
+				id: "25E438BEB684BE8C"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			shape: "hexagon"
+			description: ["Pump lava to automate the lava supply to create andesite casing."]
+			id: "643878DD9061FC7A"
+			tasks: [{
+				id: "3ED9F760D3CAC3AB"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			shape: "hexagon"
+			id: "1CA383B282925D72"
+			tasks: [{
+				id: "13789CC2CF7A0E1C"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			shape: "hexagon"
+			id: "0CE45FF75B777A83"
+			tasks: [{
+				id: "16D2D96706C66F57"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.5d
+			shape: "hexagon"
+			id: "0E5DFD76DE452CF6"
+			tasks: [{
+				id: "726192268C9F1DE3"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			shape: "hexagon"
+			id: "1352CB24FA23CCF4"
+			tasks: [{
+				id: "68F3C6DBF17C18A2"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			shape: "hexagon"
+			id: "054FABF1DE80A9BB"
+			tasks: [{
+				id: "6A7DED5B27816E50"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			shape: "hexagon"
+			id: "15714C4A631FBB85"
+			tasks: [{
+				id: "3AE392C2739A9618"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			icon: "create:goggles"
+			x: -18.0d
+			y: 2.5d
+			shape: "gear"
+			size: 3.0d
+			id: "7099919007E00EBE"
+			tasks: [{
+				id: "5DB22FD7C69ABE68"
+				type: "checkmark"
+				title: "Welcome !"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.5d
+			shape: "hexagon"
+			description: ["You need a press to craft a mixer"]
+			id: "7BABD83972661454"
+			tasks: [{
+				id: "1CC871376E3B2F60"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			icon: "create:andesite_alloy"
+			x: 6.0d
+			y: 2.0d
+			shape: "hexagon"
+			size: 3.0d
+			id: "1A762477ED8B45F2"
+			tasks: [{
+				id: "699F57B40267881B"
+				type: "checkmark"
+				title: "Unlimited Alloys !"
+			}]
+		}
+		{
+			icon: "minecraft:water_bucket"
+			x: -13.5d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["43D6A02FB77D0655"]
+			id: "1F0BA7F5CF9B97C6"
+			tasks: [{
+				id: "68D455235AAD2F05"
+				type: "item"
+				item: {
+					id: "ceramicbucket:filled_ceramic_bucket"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:water"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			shape: "hexagon"
+			id: "604F0443106EF7BF"
+			tasks: [{
+				id: "3547D3FEA6E3061A"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			shape: "hexagon"
+			hide_dependency_lines: false
+			id: "16041E723ED4C7A5"
+			tasks: [{
+				id: "3E2B413DA131E79D"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

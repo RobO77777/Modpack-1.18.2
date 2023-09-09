@@ -7,6 +7,190 @@
 	icon: "tconstruct:encyclopedia"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			size: 3.0d
+			id: "1D5F3A1DD28CBDFE"
+			tasks: [{
+				id: "3878B4404626861F"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["1D5F3A1DD28CBDFE"]
+			id: "10B9861E316B2CEE"
+			tasks: [{
+				id: "4AD2D5F8C8C9E656"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["10B9861E316B2CEE"]
+			id: "0CD775EE2E74A1F2"
+			tasks: [{
+				id: "10E2CAD07B070A53"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0CD775EE2E74A1F2"]
+			id: "42C9788B0537DB93"
+			tasks: [{
+				id: "36FB1E7F665363A2"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["0CD775EE2E74A1F2"]
+			id: "44FC7184748F20B2"
+			tasks: [{
+				id: "2C38DCBB9D6E4796"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			shape: "hexagon"
+			id: "48E858BF91B43E2E"
+			tasks: [{
+				id: "60A879EC770520B5"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:seared_drain"
+				Count: 1b
+				tag: {
+					texture: "tconstruct:seared_bricks"
+				}
+			}
+			x: 4.0d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: [
+				"42C9788B0537DB93"
+				"48E858BF91B43E2E"
+			]
+			id: "5E0CB53ECF27B597"
+			tasks: [{
+				id: "62E753FE27EE9228"
+				type: "item"
+				item: {
+					id: "tconstruct:seared_drain"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_stone"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: [
+				"42C9788B0537DB93"
+				"44FC7184748F20B2"
+				"2AD997512A25B307"
+				"48E858BF91B43E2E"
+			]
+			id: "7F9E907C1DA6287F"
+			tasks: [{
+				id: "54AE69756A1215F8"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_bricks"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"Smeltery Tinker"
+				"{image:#FFFFFF width:100 height:100 align:1}"
+			]
+			dependencies: [
+				"5E0CB53ECF27B597"
+				"7F9E907C1DA6287F"
+				"69EFE0FE05C4BE4E"
+				"0985FE74D68E7522"
+			]
+			size: 2.0d
+			id: "3D857BA61D7CCB86"
+			tasks: [{
+				id: "02D9FC5AA1A79A52"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_bricks"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0CD775EE2E74A1F2"]
+			id: "2AD997512A25B307"
+			tasks: [{
+				id: "45DCB0000DA409FD"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			id: "69EFE0FE05C4BE4E"
+			tasks: [{
+				id: "7D0D385E585B6D2B"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+			}]
+		}
+		{
+			icon: "tconstruct:seared_fuel_tank"
+			x: 9.0d
+			y: -1.5d
+			id: "0985FE74D68E7522"
+			tasks: [{
+				id: "6301CE7888B2FEE6"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+			}]
+		}
+	]
 	quest_links: [ ]
 }
