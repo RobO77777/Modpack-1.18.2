@@ -9,7 +9,9 @@ onEvent('item.tags', event => {
     event.add('minecraft:planks', 'kubejs:wood_casing')
     event.add('tconstruct:planklike', 'kubejs:wood_casing')
 
-    //draconium
+    //create
+
+    event.add("forge:ingots/andesite", "create:andesite_alloy")
 
 })
 
@@ -26,8 +28,10 @@ onEvent('fluid.tags', event => {
     event.add('forge:molten_draconium', 'kubejs:molten_draconium')
     event.add('forge:molten_silicon', 'kubejs:molten_silicon')
     event.add('forge:molten_diamond', 'tconstruct:molten_diamond')
-    event.add("minecraft:water", "kubejs:magical_primary_energy");
-    event.add("minecraft:water", "kubejs:flowing_magical_primary_energy");
+    event.add("minecraft:water", "kubejs:magical_primary_energy")
+    event.add("minecraft:water", "kubejs:flowing_magical_primary_energy")
+    event.add("forge:seared_stone", "tconstruct:seared_stone")
+
 
 
 

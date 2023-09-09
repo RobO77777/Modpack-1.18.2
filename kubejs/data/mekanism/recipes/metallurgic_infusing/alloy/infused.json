@@ -1,1 +1,1 @@
-{"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"item":"create:andesite_alloy"}},"infusionInput":{"amount":10,"tag":"mekanism:redstone"},"output":{"item":"mekanism:alloy_infused"}}
+{"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"tag":"forge:ingots/andesite"}},"chemicalInput":{"amount":10,"tag":"mekanism:redstone"},"output":{"item":"mekanism:alloy_infused"}}

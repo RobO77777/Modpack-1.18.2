@@ -692,8 +692,8 @@ onEvent("recipes", (event) => {
   });
 
   //create
-
-  event.remove({ id: "quark:building/crafting/rope" });
+  event.remove({id : "tconstruct:compat/create/andesite_alloy_zinc"})
+  event.remove({id : "tconstruct:compat/create/andesite_alloy_iron"})
   event.remove({ id: "create:crafting/kinetics/rope_pulley" });
   event.remove({ id: "create:crafting/materials/andesite_alloy" });
   event.remove({ id: "create:crafting/materials/andesite_alloy_from_zinc" });
@@ -717,6 +717,26 @@ onEvent("recipes", (event) => {
     "minecraft:gravel",
     Fluid.of("minecraft:water", 500),
   ]);
+
+  event.custom({
+    "type": "tconstruct:casting_basin",
+    "conditions": [
+      {
+        "modid": "create",
+        "type": "forge:mod_loaded"
+      }
+    ],
+    "cast": {
+      "item": "minecraft:andesite"
+    },
+    "cast_consumed": true,
+    "fluid": {
+      "tag": "forge:seared_stone",
+      "amount": 250
+    },
+    "result": "create:andesite_alloy",
+    "cooling_time": 16
+  })
 
   event.stonecutting("create:cogwheel", "create:large_cogwheel");
   event.stonecutting("4x create:shaft", "create:andesite_alloy");
@@ -977,6 +997,7 @@ onEvent("recipes", (event) => {
     C: "mekanism:basic_control_circuit",
     A: "mekanism:alloy_infused",
   });
+
   //bio fuel
 
   event.custom({
@@ -1193,7 +1214,7 @@ onEvent("recipes", (event) => {
   event.shapeless("4x minecraft:cobblestone", [
     "minecraft:stone",
     "#forge:dusts/glowstone",
-  ]);
+  ])
   event.smelting("mekanism:dust_charcoal", "#minecraft:planks");
   event.remove({ id: "create:milling/granite" });
   event.custom({
@@ -1388,10 +1409,12 @@ onEvent("recipes", (event) => {
   });
 
   //Items filters
-  event.remove({ id: /itemfilters/ });
+  event.remove({ id: /itemfilters/ })
+
   //draconic evo
-  event.remove({ id: "draconicevolution:components/draconium_ingot" });
-  event.remove({ id: "draconicevolution:draconium_ingot" });
+  event.remove({ id: "draconicevolution:components/draconium_ingot" })
+  event.remove({ id: "draconicevolution:draconium_ingot" })
+
   event.recipes
     .createMixing("2x draconicevolution:draconium_ingot", [
       "2x draconicevolution:draconium_dust",

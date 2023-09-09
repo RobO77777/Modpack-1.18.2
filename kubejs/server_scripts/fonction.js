@@ -34,7 +34,7 @@ onEvent("recipes", (event) => {
       ],
       "results": [
         {
-          "item": ("2x " + modDust + ":dust_" + item)
+          "item": (modDust + ":dust_" + item)
         }
       ]
     })
