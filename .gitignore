@@ -11,6 +11,7 @@ resourcepacks/
 saves/
 schematics/
 shaderpacks/
+screenshots/
 .curseclient
 minecraftinstance.json
 options.txt
@@ -18,3 +19,9 @@ patchouli_data.json
 rhino.local.properties
 usercache.json
 usernamecache.json
+WailaErrorOutput.txt
+historique.txt
+history.log
+history.txt
+servers.dat
+servers.dat_old
