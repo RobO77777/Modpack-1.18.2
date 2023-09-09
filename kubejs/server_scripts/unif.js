@@ -72,6 +72,7 @@ onEvent('recipes', event => {
 	event.remove({id: 'iceandfire:copper_ingot_to_nuggets'})
 	event.remove({id: 'iceandfire:furnace/copper_nugget'})
 	event.remove({id: 'iceandfire:furnace/copper_nugget_blasting'})
+	event.remove({id: 'tconstruct:common/materials/copper_ingot_from_nuggets'})
 	event.remove({id: 'minecraft:copper_ingot_from_smelting_deepslate_copper_ore'})
 	event.remove({id: 'minecraft:copper_ingot_from_blasting_deepslate_copper_ore'})
 	event.remove({id: 'minecraft:copper_ingot_from_smelting_copper_ore'})
