@@ -188,6 +188,7 @@ onEvent("recipes", (event) => {
       "time": 65
       }
   )
+  
   event.custom(
     {
       "type": "tconstruct:melting",
@@ -273,6 +274,7 @@ onEvent("recipes", (event) => {
 
   //project E
   //mixing
+
   event.recipes.createMixing("projecte:dark_matter", [
     "minecraft:glowstone_dust",
     "minecraft:coal",

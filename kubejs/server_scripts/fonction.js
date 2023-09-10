@@ -23,6 +23,7 @@ onEvent("recipes", (event) => {
   removeRawToIngot("mekanism", "tin");
   removeRawToIngot("mekanism", "lead");
   removeRawToIngot("mekanism", "uranium");
+  
   //dupli sand paper
   function sandPaperDupli(modRaw, modDust, item) {
     event.custom({
