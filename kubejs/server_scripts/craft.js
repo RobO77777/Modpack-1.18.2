@@ -729,12 +729,6 @@ onEvent("recipes", (event) => {
     "kubejs:magical_primary_energy_bucket"
   );
 
-  //immersive armors
-  event.remove({ id: "immersive_armors:wither_helmet" });
-  event.remove({ id: "immersive_armors:chesplate" });
-  event.remove({ id: "immersive_armors:leggings" });
-  event.remove({ id: "immersive_armors:boots" });
-
   //Items filters
   event.remove({ id: /itemfilters/ });
 

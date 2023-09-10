@@ -53,7 +53,6 @@ onEvent('jei.hide.items', event => {
 		'industrialforegoing:machine_frame_simple',
 		'industrialforegoing:machine_frame_advanced',
 		'industrialforegoing:machine_frame_supreme',
-		['immersive_armors:wither_helmet', 'immersive_armors:wither_chestplate','immersive_armors:wither_leggings', 'immersive_armors:wither_boots'],
 		'mowziesmobs:mob_remover',
 		Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'),
 		'quark:rope',
