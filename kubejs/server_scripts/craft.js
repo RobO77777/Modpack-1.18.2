@@ -2,8 +2,8 @@ onEvent("recipes", (event) => {
   //mods
 
   //create
-  event.remove({id : "tconstruct:compat/create/andesite_alloy_zinc"})
-  event.remove({id : "tconstruct:compat/create/andesite_alloy_iron"})
+  event.remove({ id: "tconstruct:compat/create/andesite_alloy_zinc" });
+  event.remove({ id: "tconstruct:compat/create/andesite_alloy_iron" });
   event.remove({ id: "create:crafting/kinetics/rope_pulley" });
   event.remove({ id: "create:crafting/materials/andesite_alloy" });
   event.remove({ id: "create:crafting/materials/andesite_alloy_from_zinc" });
@@ -29,24 +29,24 @@ onEvent("recipes", (event) => {
   ]);
 
   event.custom({
-    "type": "tconstruct:casting_basin",
-    "conditions": [
+    type: "tconstruct:casting_basin",
+    conditions: [
       {
-        "modid": "create",
-        "type": "forge:mod_loaded"
-      }
+        modid: "create",
+        type: "forge:mod_loaded",
+      },
     ],
-    "cast": {
-      "item": "minecraft:andesite"
+    cast: {
+      item: "minecraft:andesite",
     },
-    "cast_consumed": true,
-    "fluid": {
-      "tag": "forge:seared_stone",
-      "amount": 250
+    cast_consumed: true,
+    fluid: {
+      tag: "forge:seared_stone",
+      amount: 250,
     },
-    "result": "create:andesite_alloy",
-    "cooling_time": 16
-  })
+    result: "create:andesite_alloy",
+    cooling_time: 16,
+  });
 
   event.stonecutting("create:cogwheel", "create:large_cogwheel");
   event.stonecutting("4x create:shaft", "create:andesite_alloy");
@@ -366,7 +366,7 @@ onEvent("recipes", (event) => {
     A: "mekanism:alloy_infused",
   });
 
-    //bio fuel
+  //bio fuel
 
   event.custom({
     type: "mekanism:crushing",
@@ -388,80 +388,79 @@ onEvent("recipes", (event) => {
   event.remove({
     id: "industrialforegoing:dissolution_chamber/supreme_machine_frame",
   });
-  event.remove({id: 'industrialforegoing:iron_gear'})
-  event.remove({id: 'industrialforegoing:gold_gear'})
-  event.remove({id: 'industrialforegoing:diamond_gear'})
+  event.remove({ id: "industrialforegoing:iron_gear" });
+  event.remove({ id: "industrialforegoing:gold_gear" });
+  event.remove({ id: "industrialforegoing:diamond_gear" });
   event.custom({
-		"type": "tconstruct:casting_table",
-		"conditions": [
-		  {
-			"value": {
-			  "tag": "forge:gears/diamond",
-			  "type": "forge:tag_empty"
-			},
-			"type": "forge:not"
-		  }
-		],
-		"cast": {
-		  "tag": "tconstruct:casts/multi_use/gear"
-		},
-		"fluid": {
-		  "tag": "forge:molten_diamond",
-		  "amount": 360
-		},
-		"result": {
-		  "item": 'industrialforegoing:diamond_gear'
-		},
-		"cooling_time": 43
-	  })
+    type: "tconstruct:casting_table",
+    conditions: [
+      {
+        value: {
+          tag: "forge:gears/diamond",
+          type: "forge:tag_empty",
+        },
+        type: "forge:not",
+      },
+    ],
+    cast: {
+      tag: "tconstruct:casts/multi_use/gear",
+    },
+    fluid: {
+      tag: "forge:molten_diamond",
+      amount: 360,
+    },
+    result: {
+      item: "industrialforegoing:diamond_gear",
+    },
+    cooling_time: 43,
+  });
   event.custom({
-		"type": "tconstruct:casting_table",
-		"conditions": [
-		  {
-			"value": {
-			  "tag": "forge:gears/diamond",
-			  "type": "forge:tag_empty"
-			},
-			"type": "forge:not"
-		  }
-		],
-		"cast": {
-		  "tag": "tconstruct:casts/single_use/gear"
-		},
-		"fluid": {
-		  "tag": "forge:molten_diamond",
-		  "amount": 360
-		},
-		"result": {
-		  "item": 'industrialforegoing:diamond_gear'
-		},
-		"cooling_time": 43
-	  })
+    type: "tconstruct:casting_table",
+    conditions: [
+      {
+        value: {
+          tag: "forge:gears/diamond",
+          type: "forge:tag_empty",
+        },
+        type: "forge:not",
+      },
+    ],
+    cast: {
+      tag: "tconstruct:casts/single_use/gear",
+    },
+    fluid: {
+      tag: "forge:molten_diamond",
+      amount: 360,
+    },
+    result: {
+      item: "industrialforegoing:diamond_gear",
+    },
+    cooling_time: 43,
+  });
   event.custom({
-		"type": "tconstruct:casting_table",
-		"conditions": [
-		  {
-			"value": {
-			  "tag": "forge:gears",
-			  "type": "forge:tag_empty"
-			},
-			"type": "forge:not"
-		  }
-		],
-		"cast": {
-		  "tag": "tconstruct:gears"
-		},
-		"fluid": {
-		  "tag": "forge:molten_gold",
-		  "amount": 90
-		},
-		"result": {
-		  "item": 'industrialforegoing:diamond_gear'
-		},
-		"cooling_time": 43
-	  })
+    type: "tconstruct:casting_table",
+    conditions: [
+      {
+        value: {
+          tag: "forge:gears",
+          type: "forge:tag_empty",
+        },
+        type: "forge:not",
+      },
+    ],
+    cast: {
+      tag: "tconstruct:gears",
+    },
+    fluid: {
+      tag: "forge:molten_gold",
+      amount: 90,
+    },
+    result: {
+      item: "industrialforegoing:diamond_gear",
+    },
+    cooling_time: 43,
+  });
 
-    
   //projectE
   event.shaped("projecte:collector_mk1", ["SGS", "SNS", "SFS"], {
     S: "minecraft:glowstone",
@@ -634,7 +633,7 @@ onEvent("recipes", (event) => {
   event.shapeless("4x minecraft:cobblestone", [
     "minecraft:stone",
     "#forge:dusts/glowstone",
-  ])
+  ]);
   event.smelting("mekanism:dust_charcoal", "#minecraft:planks");
   event.remove({ id: "create:milling/granite" });
   event.custom({
@@ -686,8 +685,8 @@ onEvent("recipes", (event) => {
   });
 
   //draconic evo
-  event.remove({ id: "draconicevolution:components/draconium_ingot" })
-  event.remove({ id: "draconicevolution:draconium_ingot" })
+  event.remove({ id: "draconicevolution:components/draconium_ingot" });
+  event.remove({ id: "draconicevolution:draconium_ingot" });
 
   event.recipes
     .createMixing("2x draconicevolution:draconium_ingot", [
@@ -716,13 +715,13 @@ onEvent("recipes", (event) => {
   });
 
   //tinker
-  event.remove({id: 'tconstruct:gadgets/throwball/efln_ball' })
-  event.shaped('tconstruct:efln_ball', [" F ", "CNC", " C "], {
-    C: 'minecraft:clay_ball',
-    N: 'projecte:nova_catalyst',
-    F: 'minecraft:flint',
+  event.remove({ id: "tconstruct:gadgets/throwball/efln_ball" });
+  event.shaped("tconstruct:efln_ball", [" F ", "CNC", " C "], {
+    C: "minecraft:clay_ball",
+    N: "projecte:nova_catalyst",
+    F: "minecraft:flint",
   });
-  
+
   //botania
 
   event.recipes.create.emptying(
@@ -731,19 +730,19 @@ onEvent("recipes", (event) => {
   );
 
   //immersive armors
-  event.remove({id: 'immersive_armors:wither_helmet'})
-  event.remove({id: 'immersive_armors:chesplate'})
-  event.remove({id: 'immersive_armors:leggings'})
-  event.remove({id: 'immersive_armors:boots'})
+  event.remove({ id: "immersive_armors:wither_helmet" });
+  event.remove({ id: "immersive_armors:chesplate" });
+  event.remove({ id: "immersive_armors:leggings" });
+  event.remove({ id: "immersive_armors:boots" });
 
   //Items filters
-  event.remove({ id: /itemfilters/ })
+  event.remove({ id: /itemfilters/ });
 
   //rftools
   event.remove({ id: "rftoolsbase:machine_frame" });
-  
+
   //chance cube
-  event.remove({id: 'chancecubes:tier_1_pendant_crafting'})
+  event.remove({ id: "chancecubes:tier_1_pendant_crafting" });
 
   //ice and fire
   event.remove({ id: "iceandfire:bestiary" });
@@ -1439,8 +1438,4 @@ onEvent("recipes", (event) => {
       item: "cgm:workbench",
     },
   });
-
-
-
-
 });
