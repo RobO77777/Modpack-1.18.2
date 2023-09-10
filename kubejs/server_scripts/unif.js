@@ -97,9 +97,26 @@ onEvent('recipes', event => {
 
 	event.remove({id: 'iceandfire:furnace/silver_ingot'})
 	event.remove({id: 'iceandfire:furnace/silver_ingot_blasting'})
-	event.recipes.createCrushing('kubejs:dust_silver', ['create:crushed_raw_silver'])
 	event.smelting('iceandfire:silver_ingot', 'kubejs:dust_silver')
 	event.blasting('iceandfire:silver_ingot', 'kubejs:dust_silver')
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "kubejs:raw_silver",
+		  },
+		],
+		results: [
+		  {
+			item: "create:crushed_raw_silver",
+		  },
+		  {
+			item: "create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
 
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"tag":"forge:ores/silver"}},"output":{"item":"kubejs:dust_silver","count":2}})
 	//silver dust -> silver fluid
@@ -125,6 +142,354 @@ onEvent('recipes', event => {
 			"time": 65
 		  }
 	)
+
+	//cobalt
+	blastsmelt("tconstruct:cobalt_ingot", "kubejs:crushed_raw_cobalt")
+	blastsmelt("tconstruct:cobalt_ingot", "kubejs:dust_cobalt")
+	event.custom({"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"item":"tconstruct:raw_cobalt"}},"output":{"item":"kubejs:dust_cobalt","count":4}})
+	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"tconstruct:raw_cobalt_block"}},"output":{"item":"kubejs:dust_cobalt","count":12}})
+	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"tconstruct:cobalt_ore"}},"output":{"item":"kubejs:dust_cobalt","count":2}})
+
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "tconstruct:raw_cobalt",
+		  },
+		],
+		results: [
+		  {
+			item: "kubejs:crushed_raw_cobalt",
+		  },
+		  {
+			item: "create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "tconstruct:raw_cobalt_block",
+		  },
+		],
+		results: [
+		  {
+			item: "9x kubejs:crushed_raw_cobalt",
+		  },
+		  {
+			item: "9x create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "tconstruct:cobalt_ore",
+		  },
+		],
+		results: [
+		  {
+			item: "kubejs:crushed_raw_cobalt",
+		  },
+		  {
+			item: "kubejs:crushed_raw_cobalt",
+			chance: 0.75,
+		  },
+		  {
+			item: "create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+	event.custom({
+		"type": "create:splashing",
+		"ingredients": [
+		  {
+			"item": "kubejs:crushed_raw_cobalt"
+		  }
+		],
+		"results": [
+		  {
+			"item": "tconstruct:cobalt_nugget",
+			"count": 9
+		  }
+		]
+	  })
+	event.custom({
+		type: "mekanism:crushing",
+		input: { ingredient: { tag: "forge:ingots/cobalt" } },
+		output: { item: "kubejs:dust_cobalt", count: 1 },
+	  });
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:dusts/cobalt",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:dusts/cobalt"
+		},
+		"result": {
+		  "fluid": "tconstruct:molten_cobalt",
+		  "amount": 90
+		},
+		"temperature": 800,
+		"time": 45
+	  })
+
+	//elementium
+
+	blastsmelt("botania:elementium_ingot", "kubejs:crushed_raw_elementium")
+	blastsmelt("botania:elementium_ingot", "kubejs:dust_elementium")
+	event.custom({"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"item":"mythicbotany:raw_elementium"}},"output":{"item":"kubejs:dust_elementium","count":4}})
+	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"mythicbotany:raw_elementium_block"}},"output":{"item":"kubejs:dust_elementium","count":12}})
+	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"mythicbotany:elementium_ore"}},"output":{"item":"kubejs:dust_elementium","count":2}})
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "mythicbotany:raw_elementium",
+		  },
+		],
+		results: [
+		  {
+			item: "kubejs:crushed_raw_elementium",
+		  },
+		  {
+			item: "create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "mythicbotany:raw_elementium_block",
+		  },
+		],
+		results: [
+		  {
+			item: "9x kubejs:crushed_raw_elementium",
+		  },
+		  {
+			item: "9x create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+
+	event.custom({
+		type: "create:crushing",
+		ingredients: [
+		  {
+			item: "mythicbotany:elementium_ore",
+		  },
+		],
+		results: [
+		  {
+			item: "kubejs:crushed_raw_elementium",
+		  },
+		  {
+			item: "kubejs:crushed_raw_elementium",
+			chance: 0.75,
+		  },
+		  {
+			item: "create:experience_nugget",
+			chance: 0.75,
+		  },
+		],
+		processingTime: 250,
+	  });
+	  event.custom({
+		"type": "create:splashing",
+		"ingredients": [
+		  {
+			"item": "kubejs:crushed_raw_elementium"
+		  }
+		],
+		"results": [
+		  {
+			"item": "botania:elementium_nugget",
+			"count": 9
+		  }
+		]
+	  })
+	  event.custom({
+		type: "mekanism:crushing",
+		input: { ingredient: { tag: "forge:ingots/elementium" } },
+		output: { item: "kubejs:dust_elementium", count: 1 },
+	  });
+
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:dusts/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:dusts/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 90
+		},
+		"temperature": 800,
+		"time": 45
+	  })
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:ingots/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:ingots/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 90
+		},
+		"temperature": 800,
+		"time": 60
+	  })
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:raw_materials/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:raw_materials/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 120
+		},
+		"temperature": 800,
+		"time": 90
+	  })
+
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:ores/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:ores/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 240
+		},
+		"temperature": 800,
+		"time": 150
+	  })
+
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:storage_blocks/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:storage_blocks/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 810
+		},
+		"temperature": 800,
+		"time": 180
+	  })
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:storage_blocks/raw_elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:storage_blocks/raw_elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 1080
+		},
+		"temperature": 800,
+		"time": 360
+	  })
+	  event.custom({
+		"type": "tconstruct:melting",
+		"conditions": [
+		  {
+			"value": {
+			  "tag": "forge:nuggets/elementium",
+			  "type": "forge:tag_empty"
+			},
+			"type": "forge:not"
+		  }
+		],
+		"ingredient": {
+		  "tag": "forge:nuggets/elementium"
+		},
+		"result": {
+		  "fluid": "kubejs:molten_elementium",
+		  "amount": 10
+		},
+		"temperature": 800,
+		"time": 20
+	  })
+	  
+
+
 //----------------alliages----------------
 	//silicon
 
@@ -148,10 +513,10 @@ onEvent('recipes', event => {
 			},
 			"result": {
 			  "fluid": "kubejs:molten_silicon",
-			  "amount": 144
+			  "amount": 90
 			},
 			"temperature": 950,
-			"time": 65
+			"time": 60
 		  }
 	)
 	event.custom(
@@ -171,10 +536,10 @@ onEvent('recipes', event => {
 			},
 			"result": {
 			  "fluid": "kubejs:molten_silicon",
-			  "amount": 144
+			  "amount": 90
 			},
 			"temperature": 950,
-			"time": 65
+			"time": 45
 		  }
 	)
 
@@ -195,14 +560,12 @@ onEvent('recipes', event => {
 			},
 			"result": {
 			  "fluid": "kubejs:molten_silicon",
-			  "amount": 144
+			  "amount": 90
 			},
 			"temperature": 950,
-			"time": 65
+			"time": 60
 		  }
-	)
-	
-	
+	)	
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"conditions": [
@@ -219,7 +582,7 @@ onEvent('recipes', event => {
 		},
 		"fluid": {
 		  "tag": "forge:molten_silicon",
-		  "amount": 144
+		  "amount": 90
 		},
 		"result": {
 		  "item": "kubejs:silicon_ingot"
@@ -243,7 +606,7 @@ onEvent('recipes', event => {
 		},
 		"fluid": {
 		  "tag": "forge:molten_silicon",
-		  "amount": 144
+		  "amount": 90
 		},
 		"result": {
 		  "item": "kubejs:silicon_sheet"
@@ -279,7 +642,7 @@ onEvent('recipes', event => {
 		  "amount": 90
 		},
 		"temperature": 950,
-		"time": 65
+		"time": 60
 	  }
 )
 		// draco fluid -> draco ingot

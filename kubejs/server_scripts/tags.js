@@ -8,6 +8,14 @@ onEvent('item.tags', event => {
 
     event.add('minecraft:planks', 'kubejs:wood_casing')
     event.add('tconstruct:planklike', 'kubejs:wood_casing')
+    event.add('forge:dusts', 'kubejs:dust_elementium')
+    event.add('forge:dusts', 'kubejs:dust_cobalt')
+    event.add('forge:dusts/elementium', 'kubejs:dust_elementium')
+    event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
+    event.add('forge:ores/elementium', 'mythicbotany:elementium_ore')
+    event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')
+    event.add('forge:storage_blocks/elementium', 'botania:elementium_block')
+    event.add('forge:dusts/cobalt', 'kubejs:dust_cobalt')
 
     //create
 
