@@ -52,6 +52,51 @@ onEvent("recipes", (event) => {
   sandPaperDupli("tconstruct", "kubejs", "cobalt")
   sandPaperDupli("kubejs", "kubejs", "silver")
 
+  function sandPaperIngot(modIngot, modDust, item) {
+    if (modIngot == "mekanism") {
+      event.custom({
+        "type": "create:sandpaper_polishing",
+        "ingredients": [
+          {
+            "item": (modIngot + ":ingot_" + item)
+          }
+        ],
+        "results": [
+          {
+            "item": (modDust + ":dust_" + item)
+          }
+        ]
+      })
+    }
+    else {
+      event.custom({
+        "type": "create:sandpaper_polishing",
+        "ingredients": [
+          {
+            "item": (modIngot + ":" + item + "_ingot")
+          }
+        ],
+        "results": [
+          {
+            "item": (modDust + ":dust_" + item)
+          }
+        ]
+      })
+    }
+    }
+
+  sandPaperIngot("minecraft", "mekanism", "iron")
+  sandPaperIngot("minecraft", "mekanism", "gold")
+  sandPaperIngot("minecraft", "mekanism", "copper")
+  sandPaperIngot("mekanism", "mekanism", "lead")
+  sandPaperIngot("mekanism", "mekanism", "uranium")
+  sandPaperIngot("mekanism", "mekanism", "tin")
+  sandPaperIngot("mekanism", "mekanism", "osmium")
+  sandPaperIngot("create", "kubejs", "zinc")
+  sandPaperIngot("botania", "kubejs", "elementium")
+  sandPaperIngot("tconstruct", "kubejs", "cobalt")
+  sandPaperIngot("iceandfire", "kubejs", "silver")
+
   function millingDupli(modRaw, modDust, item) {
     event.custom({
       "type": "create:milling",

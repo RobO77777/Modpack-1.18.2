@@ -1,0 +1,90 @@
+{
+	id: "7B871DE57CE1B4A2"
+	group: ""
+	order_index: 3
+	filename: "mineral_processing"
+	title: "Mineral processing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			size: 2.0d
+			id: "27165BDB8CA7BE04"
+			tasks: [{
+				id: "5A947A83BEB006A7"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.5d
+			dependencies: ["27165BDB8CA7BE04"]
+			id: "796F115F47F84E18"
+			tasks: [{
+				id: "2D1EBE0998A3C082"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["27165BDB8CA7BE04"]
+			id: "4A50F57211CC4F86"
+			tasks: [{
+				id: "022F4159B5B1F13D"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_bricks"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["27165BDB8CA7BE04"]
+			id: "65EAE8E6C525FEE2"
+			tasks: [{
+				id: "25B566AABC77EC25"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["27165BDB8CA7BE04"]
+			id: "661DD0FD8BD2E856"
+			tasks: [{
+				id: "23D9E494A4BA14CD"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["27165BDB8CA7BE04"]
+			id: "19DCB5A0C778BA3E"
+			tasks: [{
+				id: "68CCEDE16EBA2D59"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

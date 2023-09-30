@@ -41,6 +41,27 @@ onEvent('item.tags', event => {
 
     event.add('forge:dusts/zinc', 'kubejs:dust_zinc') 
     event.add('forge:dusts', 'kubejs:dust_zinc')
+
+	//elementium
+    event.add('forge:dusts', 'kubejs:dust_elementium')
+    event.add('forge:dusts/elementium', 'kubejs:dust_elementium')
+    event.add('forge:ores/elementium', 'mythicbotany:elementium_ore')
+    event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
+    event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')
+    event.add('forge:storage_blocks/elementium', 'botania:elementium_block')
+    event.add('forge:crushed_raw_materials/elementium', 'kubejs:crushed_raw_elementium')
+
+	//silver
+    event.add('forge:dusts', 'kubejs:dust_silver')
+    event.add('forge:dusts/silver', 'kubejs:dust_silver')
+    event.add('forge:raw_materials/silver', 'kubejs:raw_silver')
+
+	//cobalt
+
+    event.add('forge:dusts', 'kubejs:dust_cobalt')
+    event.add('forge:dusts/cobalt', 'kubejs:dust_cobalt')
+    event.add('forge:crushed_raw_materials/cobalt', 'kubejs:crushed_raw_cobalt')
+
 })
 
 onEvent('block.tags', event => {

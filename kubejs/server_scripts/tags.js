@@ -3,20 +3,15 @@ onEvent('item.tags', event => {
     //TK
     event.add('forge:wires', ['minecraft:string', 'kubejs:steel_wire'])
     event.add('forge:wither_bones', 'iceandfire:witherbone')
+    event.add('forge:gears', ['industrialforegoing:iron_gear', 'industrialforegoing:gold_gear', 'industrialforegoing:diamond_gear'])
+    event.add('forge:gears/iron', 'industrialforegoing:iron_gear')
+    event.add('forge:gears/gold', 'industrialforegoing:gold_gear')
+    event.add('forge:gears/diamond', 'industrialforegoing:diamond_gear')
 
     //kubejs
 
     event.add('minecraft:planks', 'kubejs:wood_casing')
     event.add('tconstruct:planklike', 'kubejs:wood_casing')
-    event.add('forge:dusts', 'kubejs:dust_elementium')
-    event.add('forge:dusts', 'kubejs:dust_cobalt')
-    event.add('forge:dusts/elementium', 'kubejs:dust_elementium')
-    event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
-    event.add('forge:ores/elementium', 'mythicbotany:elementium_ore')
-    event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')
-    event.add('forge:storage_blocks/elementium', 'botania:elementium_block')
-    event.add('forge:dusts/cobalt', 'kubejs:dust_cobalt')
-
     //create
 
     event.add("forge:ingots/andesite", "create:andesite_alloy")

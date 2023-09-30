@@ -85,7 +85,7 @@ onEvent("recipes", (event) => {
     R: "createaddition:copper_spool",
     I: "create:iron_sheet",
   });
-  event.shaped("create:andesite_casing", ["PPP", "ALA", "PPP"], {
+  event.shaped("2x create:andesite_casing", ["PPP", "ALA", "PPP"], {
     P: "#minecraft:planks",
     L: "#minecraft:logs",
     A: "create:andesite_alloy",
@@ -100,6 +100,12 @@ onEvent("recipes", (event) => {
       item: "kubejs:steel_wire",
       count: 2,
     },
+  });
+  event.remove({id: "create:item_application/brass_casing_from_wood"})
+  event.remove({id: "create:item_application/copper_casing_from_wood"})
+  event.shaped("4x create:copper_casing", [" C ", "CAC", " C "], {
+    C: "create:copper_sheet",
+    A: "create:andesite_casing",
   });
   //Extended crafting
 
@@ -407,58 +413,12 @@ onEvent("recipes", (event) => {
     },
     fluid: {
       tag: "forge:molten_diamond",
-      amount: 360,
+      amount: 400,
     },
     result: {
       item: "industrialforegoing:diamond_gear",
     },
-    cooling_time: 43,
-  });
-  event.custom({
-    type: "tconstruct:casting_table",
-    conditions: [
-      {
-        value: {
-          tag: "forge:gears/diamond",
-          type: "forge:tag_empty",
-        },
-        type: "forge:not",
-      },
-    ],
-    cast: {
-      tag: "tconstruct:casts/single_use/gear",
-    },
-    fluid: {
-      tag: "forge:molten_diamond",
-      amount: 360,
-    },
-    result: {
-      item: "industrialforegoing:diamond_gear",
-    },
-    cooling_time: 43,
-  });
-  event.custom({
-    type: "tconstruct:casting_table",
-    conditions: [
-      {
-        value: {
-          tag: "forge:gears",
-          type: "forge:tag_empty",
-        },
-        type: "forge:not",
-      },
-    ],
-    cast: {
-      tag: "tconstruct:gears",
-    },
-    fluid: {
-      tag: "forge:molten_gold",
-      amount: 90,
-    },
-    result: {
-      item: "industrialforegoing:diamond_gear",
-    },
-    cooling_time: 43,
+    cooling_time: 120,
   });
 
   //projectE
@@ -657,15 +617,6 @@ onEvent("recipes", (event) => {
       },
     ],
     processingTime: 250,
-  });
-  event.shaped("minecraft:chest", ["PPP", "P P", "PPP"], {
-    P: "biomesoplenty:mahogany_planks",
-  });
-  event.shaped("minecraft:chest", ["PPP", "P P", "PPP"], {
-    P: "biomesoplenty:willow_planks",
-  });
-  event.shaped("minecraft:chest", ["PPP", "P P", "PPP"], {
-    P: "kubejs:wood_casing",
   });
   event.shaped("kubejs:wood_casing", ["PPP", "P P", "PPP"], {
     P: "minecraft:stick",
