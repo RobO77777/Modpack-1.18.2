@@ -1,7 +1,7 @@
 {
 	id: "0000000000000794"
 	group: "3517914DD1CDB9FC"
-	order_index: 5
+	order_index: 6
 	filename: "industrial_foregoing"
 	title: "Industrial Foregoing"
 	icon: "industrialforegoing:mob_imprisonment_tool"
@@ -1325,30 +1325,6 @@
 			}]
 			rewards: [{
 				id: "769FE3E84CBCE50E"
-				type: "item"
-				item: "mob_grinding_utils:solid_xp_baby"
-			}]
-		}
-		{
-			title: "Cheap Plastic ?"
-			icon: "create:brass_hand"
-			x: 4.5d
-			y: 1.5d
-			shape: "circle"
-			description: [
-				"You don't want to wait latex to get your first piece of plastic ?"
-				"Well, you can get a lot of plastic, fast and for pretty no cost."
-				"You can obtain plastic by melting, in a furnace, plastic waste from Rats. "
-				"To get Plastic Waste you need to destroy Garbage Pile, obtainable with a Trash Can from Rats."
-				"Garbage Pile work like Gravel, so, if you have a fortune 3 you get 100% Garbage Waste."
-			]
-			id: "6B7978EB717407F3"
-			tasks: [{
-				id: "197D580E4239F0FB"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "3A65C2D524DB785F"
 				type: "item"
 				item: "mob_grinding_utils:solid_xp_baby"
 			}]

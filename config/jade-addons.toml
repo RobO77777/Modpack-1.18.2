@@ -11,5 +11,5 @@
 
 [customContainerName]
 	onlyShowVanilla = false
-	blacklist = ["thermal"]
+	blacklist = []
 

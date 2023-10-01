@@ -1,44 +1,38 @@
 {
 	id: "7B871DE57CE1B4A2"
 	group: ""
-	order_index: 3
+	order_index: 2
 	filename: "mineral_processing"
 	title: "Mineral processing"
+	icon: "minecraft:furnace"
+	subtitle: ["Different types of mineral processing"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 1.0d
-			size: 2.0d
-			id: "27165BDB8CA7BE04"
-			tasks: [{
-				id: "5A947A83BEB006A7"
-				type: "item"
-				item: "minecraft:furnace"
-			}]
-		}
-		{
+			title: "Sand Paper"
 			x: -5.0d
 			y: -1.5d
-			dependencies: ["27165BDB8CA7BE04"]
+			dependencies: ["29AF8D5D346CE123"]
 			id: "796F115F47F84E18"
 			tasks: [{
 				id: "2D1EBE0998A3C082"
 				type: "item"
+				title: "Any #create:sandpaper"
 				item: {
-					id: "create:sand_paper"
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						Damage: 0
+						value: "create:sandpaper"
 					}
 				}
 			}]
 		}
 		{
+			title: "Smeltery"
 			x: -2.5d
 			y: -1.5d
-			dependencies: ["27165BDB8CA7BE04"]
+			dependencies: ["29AF8D5D346CE123"]
 			id: "4A50F57211CC4F86"
 			tasks: [{
 				id: "022F4159B5B1F13D"
@@ -53,9 +47,10 @@
 			}]
 		}
 		{
+			title: "Milling"
 			x: 0.0d
 			y: -1.5d
-			dependencies: ["27165BDB8CA7BE04"]
+			dependencies: ["29AF8D5D346CE123"]
 			id: "65EAE8E6C525FEE2"
 			tasks: [{
 				id: "25B566AABC77EC25"
@@ -64,9 +59,10 @@
 			}]
 		}
 		{
+			title: "Crushing"
 			x: 2.5d
 			y: -1.5d
-			dependencies: ["27165BDB8CA7BE04"]
+			dependencies: ["29AF8D5D346CE123"]
 			id: "661DD0FD8BD2E856"
 			tasks: [{
 				id: "23D9E494A4BA14CD"
@@ -75,15 +71,477 @@
 			}]
 		}
 		{
+			title: "Enriching"
 			x: 5.0d
 			y: -1.5d
-			dependencies: ["27165BDB8CA7BE04"]
+			dependencies: ["29AF8D5D346CE123"]
 			id: "19DCB5A0C778BA3E"
 			tasks: [{
 				id: "68CCEDE16EBA2D59"
 				type: "item"
 				item: "mekanism:enrichment_chamber"
 			}]
+		}
+		{
+			icon: "minecraft:furnace"
+			x: 0.0d
+			y: 0.5d
+			size: 2.0d
+			id: "29AF8D5D346CE123"
+			tasks: [{
+				id: "40D4C9527BB63D8C"
+				type: "checkmark"
+				title: "Mineral Processing"
+			}]
+		}
+		{
+			title: "Dust"
+			x: -5.0d
+			y: -4.5d
+			dependencies: ["796F115F47F84E18"]
+			id: "10FBC2D662A11145"
+			tasks: [
+				{
+					id: "6E58C836000D5061"
+					type: "item"
+					item: "mekanism:dust_iron"
+				}
+				{
+					id: "7721AA10DF20D652"
+					type: "item"
+					item: "mekanism:dust_gold"
+				}
+				{
+					id: "747190D42454A4E3"
+					type: "item"
+					item: "mekanism:dust_copper"
+				}
+				{
+					id: "3F8B65B67607AD3C"
+					type: "item"
+					item: "mekanism:dust_osmium"
+				}
+				{
+					id: "27281068F1CA516A"
+					type: "item"
+					item: "mekanism:dust_tin"
+				}
+				{
+					id: "28C6C8BAD1CB2F9A"
+					type: "item"
+					item: "mekanism:dust_lead"
+				}
+				{
+					id: "43257518B5AA2076"
+					type: "item"
+					item: "mekanism:dust_uranium"
+				}
+				{
+					id: "524CB67DD993B965"
+					type: "item"
+					item: "kubejs:dust_zinc"
+				}
+				{
+					id: "075A824C6122C8A1"
+					type: "item"
+					item: "kubejs:dust_silver"
+				}
+				{
+					id: "4A303C48DA73CD27"
+					type: "item"
+					item: "kubejs:dust_elementium"
+				}
+				{
+					id: "37AA70379944A488"
+					type: "item"
+					item: "kubejs:dust_cobalt"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			id: "3168684DFECD3B0E"
+			tasks: [{
+				id: "3D648B65DA9DE32C"
+				type: "custom"
+				title: "x1"
+				icon: "botania:cosmetic_questgiver_mark"
+			}]
+		}
+		{
+			title: "Molten ore"
+			x: -2.5d
+			y: -4.5d
+			dependencies: ["4A50F57211CC4F86"]
+			id: "3A6A6014F911175F"
+			tasks: [
+				{
+					id: "335C2F828098F984"
+					type: "item"
+					item: "tconstruct:molten_gold_bucket"
+				}
+				{
+					id: "0A61FAE20255DE53"
+					type: "item"
+					item: "tconstruct:molten_copper_bucket"
+				}
+				{
+					id: "59677CBDA1FCE4C4"
+					type: "item"
+					item: "tconstruct:molten_iron_bucket"
+				}
+			]
+		}
+		{
+			title: "Crushed raw"
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["65EAE8E6C525FEE2"]
+			id: "444D0D265B471FA5"
+			tasks: [{
+				id: "1F9943AECEF4C340"
+				type: "item"
+				title: "Any #create:crushed_raw_materials"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:crushed_raw_materials"
+					}
+				}
+			}]
+		}
+		{
+			title: "Dust"
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["444D0D265B471FA5"]
+			id: "1B6726933987A8B5"
+			tasks: [
+				{
+					id: "71E23EFBFBA2DDA4"
+					type: "item"
+					item: "mekanism:dust_iron"
+				}
+				{
+					id: "44C55E0A8D70C054"
+					type: "item"
+					item: "mekanism:dust_gold"
+				}
+				{
+					id: "5162DA800D463074"
+					type: "item"
+					item: "mekanism:dust_copper"
+				}
+				{
+					id: "4CFD3292588B4FC2"
+					type: "item"
+					item: "mekanism:dust_osmium"
+				}
+				{
+					id: "1F4D0BD8866EB041"
+					type: "item"
+					item: "mekanism:dust_tin"
+				}
+				{
+					id: "267D454D5B82922B"
+					type: "item"
+					item: "mekanism:dust_lead"
+				}
+				{
+					id: "35816734189D2388"
+					type: "item"
+					item: "mekanism:dust_uranium"
+				}
+				{
+					id: "2504FD7B3E3AE48F"
+					type: "item"
+					item: "kubejs:dust_zinc"
+				}
+				{
+					id: "399B3127B6912C31"
+					type: "item"
+					item: "kubejs:dust_silver"
+				}
+				{
+					id: "1E1EE9B6FA0047B5"
+					type: "item"
+					item: "kubejs:dust_elementium"
+				}
+				{
+					id: "6355925BB9559EA3"
+					type: "item"
+					item: "kubejs:dust_cobalt"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			id: "4F097178EAC68D60"
+			tasks: [{
+				id: "6013D70EBB7EE1BE"
+				type: "custom"
+				title: "x1.5"
+				icon: "botania:cosmetic_questgiver_mark"
+			}]
+		}
+		{
+			title: "Crushed raw"
+			x: 2.5d
+			y: -2.5d
+			dependencies: ["661DD0FD8BD2E856"]
+			id: "2645651E49DD5B40"
+			tasks: [{
+				id: "7B56A3AFC8983722"
+				type: "item"
+				title: "Any #create:crushed_raw_materials"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:crushed_raw_materials"
+					}
+				}
+			}]
+		}
+		{
+			title: "Dust"
+			x: 2.5d
+			y: -4.5d
+			dependencies: ["2645651E49DD5B40"]
+			id: "6DCC1747CAD845D5"
+			tasks: [
+				{
+					id: "6B9EBD4EE4E25F4F"
+					type: "item"
+					item: "mekanism:dust_iron"
+				}
+				{
+					id: "3AD86B51D635E1F4"
+					type: "item"
+					item: "mekanism:dust_gold"
+				}
+				{
+					id: "34AFB0E4473DF1EA"
+					type: "item"
+					item: "mekanism:dust_copper"
+				}
+				{
+					id: "5940A9E91C15271B"
+					type: "item"
+					item: "mekanism:dust_osmium"
+				}
+				{
+					id: "74DC322FA87B835E"
+					type: "item"
+					item: "mekanism:dust_tin"
+				}
+				{
+					id: "4E8C3C40E95F7C32"
+					type: "item"
+					item: "mekanism:dust_lead"
+				}
+				{
+					id: "4637DE123C2C5A10"
+					type: "item"
+					item: "mekanism:dust_uranium"
+				}
+				{
+					id: "6F298B3F607B50F2"
+					type: "item"
+					item: "kubejs:dust_zinc"
+				}
+				{
+					id: "6F0F42E4BA3B4EBC"
+					type: "item"
+					item: "kubejs:dust_silver"
+				}
+				{
+					id: "442866054D2A83D2"
+					type: "item"
+					item: "kubejs:dust_elementium"
+				}
+				{
+					id: "55D30F9C489BD7FA"
+					type: "item"
+					item: "kubejs:dust_cobalt"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			id: "7F931E7958A4EE18"
+			tasks: [{
+				id: "41FDC5220AAA44E5"
+				type: "custom"
+				title: "x2.5"
+				icon: "botania:cosmetic_questgiver_mark"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -6.0d
+			id: "45600CF32E003237"
+			tasks: [{
+				id: "6D1753D4DA19E3AF"
+				type: "custom"
+				title: "x1"
+				icon: "botania:cosmetic_questgiver_mark"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.0d
+			id: "6CA0C1B0E6874C02"
+			tasks: [{
+				id: "11ED4D93C7876B23"
+				type: "custom"
+				title: "x5/4/3/2"
+				icon: "botania:cosmetic_questgiver_mark"
+			}]
+		}
+		{
+			title: "Crystals"
+			x: 5.0d
+			y: -2.5d
+			dependencies: ["19DCB5A0C778BA3E"]
+			id: "12C008E55BED7A2F"
+			tasks: [{
+				id: "3E5531ECC5AA8E59"
+				type: "item"
+				title: "Any #mekanism:crystals"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mekanism:crystals"
+					}
+				}
+			}]
+		}
+		{
+			title: "Shards"
+			x: 6.0d
+			y: -3.0d
+			dependencies: ["12C008E55BED7A2F"]
+			id: "3FDAEA04187E46BC"
+			tasks: [{
+				id: "3E6F64C631D0436A"
+				type: "item"
+				title: "Any #mekanism:shards"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mekanism:shards"
+					}
+				}
+			}]
+		}
+		{
+			title: "Clumps"
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["3FDAEA04187E46BC"]
+			id: "430287C9CD93579A"
+			tasks: [{
+				id: "58F1BA0C133A0722"
+				type: "item"
+				title: "Any #mekanism:clumps"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mekanism:clumps"
+					}
+				}
+			}]
+		}
+		{
+			title: "Dirty Dust"
+			x: 6.0d
+			y: -4.0d
+			dependencies: ["430287C9CD93579A"]
+			id: "0E0A7DA36FF38B00"
+			tasks: [{
+				id: "24DE59635224CA26"
+				type: "item"
+				title: "Any #mekanism:dirty_dusts"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mekanism:dirty_dusts"
+					}
+				}
+			}]
+		}
+		{
+			title: "Dust"
+			x: 5.0d
+			y: -4.5d
+			dependencies: ["0E0A7DA36FF38B00"]
+			id: "32FD705CBBB08754"
+			tasks: [
+				{
+					id: "5E7DAE25023A55C1"
+					type: "item"
+					item: "mekanism:dust_iron"
+				}
+				{
+					id: "48114EE35B6C109A"
+					type: "item"
+					item: "mekanism:dust_gold"
+				}
+				{
+					id: "24ED25FA188A9302"
+					type: "item"
+					item: "mekanism:dust_copper"
+				}
+				{
+					id: "5DDDAE22160FA957"
+					type: "item"
+					item: "mekanism:dust_osmium"
+				}
+				{
+					id: "5FF7479E5AFBD193"
+					type: "item"
+					item: "mekanism:dust_tin"
+				}
+				{
+					id: "3C2FE5F881BCF265"
+					type: "item"
+					item: "mekanism:dust_lead"
+				}
+				{
+					id: "5B3DE7EC27E71510"
+					type: "item"
+					item: "mekanism:dust_uranium"
+				}
+				{
+					id: "4F1075535C540133"
+					type: "item"
+					item: "kubejs:dust_zinc"
+				}
+				{
+					id: "0FE57ADFB6601F79"
+					type: "item"
+					item: "kubejs:dust_silver"
+				}
+				{
+					id: "3F2AAEFBDAC02A9A"
+					type: "item"
+					item: "kubejs:dust_elementium"
+				}
+				{
+					id: "385914AB348339A4"
+					type: "item"
+					item: "kubejs:dust_cobalt"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

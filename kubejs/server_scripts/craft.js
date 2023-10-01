@@ -42,11 +42,33 @@ onEvent("recipes", (event) => {
     cast_consumed: true,
     fluid: {
       tag: "forge:seared_stone",
-      amount: 250,
+      amount: 500,
     },
     result: "create:andesite_alloy",
     cooling_time: 16,
   });
+  event.custom(
+		{
+			"type": "tconstruct:melting",
+			"conditions": [
+			  {
+				"value": {
+				  "type": "forge:tag_empty"
+				},
+				"type": "forge:not"
+			  }
+			],
+			"ingredient": {
+			  "item": "kubejs:cement"
+			},
+			"result": {
+			  "fluid": "tconstruct:seared_stone",
+			  "amount": 250
+			},
+			"temperature": 600,
+			"time": 55
+		  }
+	)
 
   event.stonecutting("create:cogwheel", "create:large_cogwheel");
   event.stonecutting("4x create:shaft", "create:andesite_alloy");
