@@ -1,12 +1,12 @@
 
 #General Settings
 [general]
-	#Forge Energy conversion rate (in FE/t at 256 RPM, value is the FE/t generated and consumed is at 256rpm).
+	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_at_max_rpm = 480
+	fe_conversion = 240
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
-	#Range: > 0
-	max_stress = 16384
+	#Range: 0 ~ 16383
+	baseline_stress = 8192
 
 #Electric Motor
 [electric_motor]
@@ -79,15 +79,6 @@
 	#Range: 1 ~ 8
 	accumulator_max_width = 3
 
-#Portable Energy Interface
-[portable_energy_interface]
-	#PEI max input in FE/t (Energy transfer).
-	#Range: > 0
-	pei_max_input = 4096
-	#PEI max output in FE/t (Energy transfer).
-	#Range: > 0
-	pei_max_output = 4096
-
 #Tesla Coil
 [tesla_coil]
 	#Tesla Coil max input in FE/t (Energy transfer).
@@ -129,7 +120,4 @@
 	#Diamond Grit Sandpaper durability (number of uses).
 	#Range: > 3
 	diamond_grit_sandpaper_uses = 1024
-	#Barbed Wire Damage.
-	#Range: 0.0 ~ 3.4028234663852886E38
-	barbed_wire_damage = 2.0
 

@@ -102,7 +102,7 @@ onEvent("recipes", (event) => {
       "type": "create:milling",
       "ingredients": [
         {
-          "item": (modRaw + ":crushed_raw_" + item)
+          "item": (modRaw + ":crushed_" + item + "_ore")
         }
       ],
       "results": [
@@ -134,7 +134,7 @@ onEvent("recipes", (event) => {
       "type": "create:crushing",
       "ingredients": [
         {
-          "item": (modRaw + ":crushed_raw_" + item)
+          "item": (modRaw + ":crushed_" + item + "_ore")
         }
       ],
       "results": [

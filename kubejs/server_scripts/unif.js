@@ -49,7 +49,7 @@ onEvent('item.tags', event => {
     event.add('forge:raw_materials/elementium', 'mythicbotany:raw_elementium')
     event.add('forge:storage_blocks/raw_elementium', 'mythicbotany:raw_elementium_block')
     event.add('forge:storage_blocks/elementium', 'botania:elementium_block')
-    event.add('forge:crushed_raw_materials/elementium', 'kubejs:crushed_raw_elementium')
+    event.add('forge:crushed_ores/elementium', 'kubejs:crushed_elementium_ore')
 
 	//silver
     event.add('forge:dusts', 'kubejs:dust_silver')
@@ -60,7 +60,7 @@ onEvent('item.tags', event => {
 
     event.add('forge:dusts', 'kubejs:dust_cobalt')
     event.add('forge:dusts/cobalt', 'kubejs:dust_cobalt')
-    event.add('forge:crushed_raw_materials/cobalt', 'kubejs:crushed_raw_cobalt')
+    event.add('forge:crushed_ores/cobalt', 'kubejs:crushed_cobalt_ore')
 
 })
 
@@ -104,10 +104,10 @@ onEvent('recipes', event => {
 	//osmium
 
 	//tin
-	event.recipes.createCrushing('mekanism:dust_tin', ['create:crushed_raw_tin'])
+	event.recipes.createCrushing('mekanism:dust_tin', ['create:crushed_tin_ore'])
 
 	//lead
-	event.recipes.createCrushing('mekanism:dust_lead', ['create:crushed_raw_lead'])
+	event.recipes.createCrushing('mekanism:dust_lead', ['create:crushed_lead_ore'])
 
 	//zinc
 	event.smelting('create:zinc_ingot', 'kubejs:dust_zinc')
@@ -129,7 +129,7 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "create:crushed_raw_silver",
+			item: "create:crushed_silver_ore",
 		  },
 		  {
 			item: "create:experience_nugget",
@@ -165,7 +165,7 @@ onEvent('recipes', event => {
 	)
 
 	//cobalt
-	blastsmelt("tconstruct:cobalt_ingot", "kubejs:crushed_raw_cobalt")
+	blastsmelt("tconstruct:cobalt_ingot", "kubejs:crushed_cobalt_ore")
 	blastsmelt("tconstruct:cobalt_ingot", "kubejs:dust_cobalt")
 	event.custom({"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"item":"tconstruct:raw_cobalt"}},"output":{"item":"kubejs:dust_cobalt","count":4}})
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"tconstruct:raw_cobalt_block"}},"output":{"item":"kubejs:dust_cobalt","count":12}})
@@ -180,7 +180,7 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "kubejs:crushed_raw_cobalt",
+			item: "kubejs:crushed_cobalt_ore",
 		  },
 		  {
 			item: "create:experience_nugget",
@@ -199,7 +199,7 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "9x kubejs:crushed_raw_cobalt",
+			item: "9x kubejs:crushed_cobalt_ore",
 		  },
 		  {
 			item: "9x create:experience_nugget",
@@ -218,10 +218,10 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "kubejs:crushed_raw_cobalt",
+			item: "kubejs:crushed_cobalt_ore",
 		  },
 		  {
-			item: "kubejs:crushed_raw_cobalt",
+			item: "kubejs:crushed_cobalt_ore",
 			chance: 0.75,
 		  },
 		  {
@@ -235,7 +235,7 @@ onEvent('recipes', event => {
 		"type": "create:splashing",
 		"ingredients": [
 		  {
-			"item": "kubejs:crushed_raw_cobalt"
+			"item": "kubejs:crushed_cobalt_ore"
 		  }
 		],
 		"results": [
@@ -274,7 +274,7 @@ onEvent('recipes', event => {
 
 	//elementium
 
-	blastsmelt("botania:elementium_ingot", "kubejs:crushed_raw_elementium")
+	blastsmelt("botania:elementium_ingot", "kubejs:crushed_elementium_ore")
 	blastsmelt("botania:elementium_ingot", "kubejs:dust_elementium")
 	event.custom({"type":"mekanism:enriching","input":{"amount":3,"ingredient":{"item":"mythicbotany:raw_elementium"}},"output":{"item":"kubejs:dust_elementium","count":4}})
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"mythicbotany:raw_elementium_block"}},"output":{"item":"kubejs:dust_elementium","count":12}})
@@ -288,7 +288,7 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "kubejs:crushed_raw_elementium",
+			item: "kubejs:crushed_elementium_ore",
 		  },
 		  {
 			item: "create:experience_nugget",
@@ -307,7 +307,7 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "9x kubejs:crushed_raw_elementium",
+			item: "9x kubejs:crushed_elementium_ore",
 		  },
 		  {
 			item: "9x create:experience_nugget",
@@ -326,10 +326,10 @@ onEvent('recipes', event => {
 		],
 		results: [
 		  {
-			item: "kubejs:crushed_raw_elementium",
+			item: "kubejs:crushed_elementium_ore",
 		  },
 		  {
-			item: "kubejs:crushed_raw_elementium",
+			item: "kubejs:crushed_elementium_ore",
 			chance: 0.75,
 		  },
 		  {
@@ -343,7 +343,7 @@ onEvent('recipes', event => {
 		"type": "create:splashing",
 		"ingredients": [
 		  {
-			"item": "kubejs:crushed_raw_elementium"
+			"item": "kubejs:crushed_elementium_ore"
 		  }
 		],
 		"results": [

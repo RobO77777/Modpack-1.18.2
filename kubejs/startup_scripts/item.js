@@ -4,8 +4,6 @@ onEvent('item.registry', event => {
     event.create('silicon_dust').displayName('Silicon Dust')
     event.create('silicon_ingot').displayName('Silicon Ingot')
     event.create('silicon_sheet').displayName('Silicon sheet')
-    event.create('magnetite').displayName('Magnetite')
-
 
     event.create('steel_sheet').displayName('Steel sheet')
     event.create('steel_wire').displayName('Steel wire')
@@ -29,8 +27,8 @@ onEvent('item.registry', event => {
 
     //molten raw ore
 
-    event.create('crushed_raw_cobalt').displayName('Crushed Raw Cobalt')
-    event.create('crushed_raw_elementium').displayName('Crushed Raw Elementium')
+    event.create('crushed_cobalt_ore').displayName('Crushed Cobalt Ore')
+    event.create('crushed_elementium_ore').displayName('Crushed Elementium Ore')
 
     //dust
 

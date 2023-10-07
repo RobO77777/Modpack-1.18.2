@@ -17,5 +17,5 @@
 	creativeButtonYOffset = 0
 	#The corner for the Curios GUI button
 	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
-	buttonCorner = "TOP_LEFT"
+	buttonCorner = "BOTTOM_LEFT"
 

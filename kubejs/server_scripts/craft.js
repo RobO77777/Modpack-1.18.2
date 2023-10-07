@@ -489,22 +489,6 @@ onEvent("recipes", (event) => {
   });
   //Kubejs
 
-  //craft magnet
-  event.shaped("twilightforest:ore_magnet", ["M M", "I I", "IRI"], {
-    I: "minecraft:iron_ingot",
-    M: "kubejs:magnetite",
-    R: "minecraft:redstone",
-  });
-
-  //craft magnetite
-
-  event.recipes
-    .createMixing("kubejs:magnetite", [
-      "mekanism:dust_iron",
-      "create:zinc_nugget",
-    ])
-    .superheated();
-
   //crafts transistors
   event.shaped("kubejs:transistor", [" S ", " A ", " C "], {
     A: "create:andesite_alloy",
