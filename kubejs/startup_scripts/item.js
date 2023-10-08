@@ -14,16 +14,16 @@ onEvent('item.registry', event => {
 
     //items ordi
     event.create('processor').displayName('Basic Processor')
-    event.create('transistor').displayName('Basic Transistor')
+    //event.create('transistor').displayName('Basic Transistor')
 
     event.create('processor_advanced').displayName('Advanced Processor')
-    event.create('transistor_advanced').displayName('Advanced Transistor')
+    //event.create('transistor_advanced').displayName('Advanced Transistor')
 
     event.create('processor_elite').displayName('Elite Processor')
-    event.create('transistor_elite').displayName('Elite Transistor')
+    //event.create('transistor_elite').displayName('Elite Transistor')
 
     event.create('processor_ultimate').displayName('Ultimate Processor')
-    event.create('transistor_ultimate').displayName('Ultimate Transistor')
+    //event.create('transistor_ultimate').displayName('Ultimate Transistor')
 
     //molten raw ore
 

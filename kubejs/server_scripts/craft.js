@@ -47,28 +47,26 @@ onEvent("recipes", (event) => {
     result: "create:andesite_alloy",
     cooling_time: 16,
   });
-  event.custom(
-		{
-			"type": "tconstruct:melting",
-			"conditions": [
-			  {
-				"value": {
-				  "type": "forge:tag_empty"
-				},
-				"type": "forge:not"
-			  }
-			],
-			"ingredient": {
-			  "item": "kubejs:cement"
-			},
-			"result": {
-			  "fluid": "tconstruct:seared_stone",
-			  "amount": 250
-			},
-			"temperature": 600,
-			"time": 55
-		  }
-	)
+  event.custom({
+    type: "tconstruct:melting",
+    conditions: [
+      {
+        value: {
+          type: "forge:tag_empty",
+        },
+        type: "forge:not",
+      },
+    ],
+    ingredient: {
+      item: "kubejs:cement",
+    },
+    result: {
+      fluid: "tconstruct:seared_stone",
+      amount: 250,
+    },
+    temperature: 600,
+    time: 55,
+  });
 
   event.stonecutting("create:cogwheel", "create:large_cogwheel");
   event.stonecutting("4x create:shaft", "create:andesite_alloy");
@@ -123,8 +121,8 @@ onEvent("recipes", (event) => {
       count: 2,
     },
   });
-  event.remove({id: "create:item_application/brass_casing_from_wood"})
-  event.remove({id: "create:item_application/copper_casing_from_wood"})
+  event.remove({ id: "create:item_application/brass_casing_from_wood" });
+  event.remove({ id: "create:item_application/copper_casing_from_wood" });
   event.shaped("4x create:copper_casing", [" C ", "CAC", " C "], {
     C: "create:copper_sheet",
     A: "create:andesite_casing",
@@ -443,6 +441,176 @@ onEvent("recipes", (event) => {
     cooling_time: 120,
   });
 
+  event.remove({
+    output: [
+      "industrialforegoing:dissolution_chamber",
+      "industrialforegoing:dark_glass",
+      "industrialforegoing:conveyor",
+      "industrialforegoing:black_hole_controller",
+      "industrialforegoing:pitiful_generator",
+      "industrialforegoing:bioreactor",
+      "industrialforegoing:biofuel_generator",
+      "industrialforegoing:mycelial_reactor",
+      "industrialforegoing:mycelial_furnace",
+      "industrialforegoing:mycelial_slimey",
+      "industrialforegoing:mycelial_culinary",
+      "industrialforegoing:mycelial_potion",
+      "industrialforegoing:mycelial_disenchantment",
+      "industrialforegoing:mycelial_ender",
+      "industrialforegoing:mycelial_explosive",
+      "industrialforegoing:mycelial_frosty",
+      "industrialforegoing:mycelial_halitosis",
+      "industrialforegoing:mycelial_magma",
+      "industrialforegoing:mycelial_pink",
+      "industrialforegoing:mycelial_netherstar",
+      "industrialforegoing:mycelial_death",
+      "industrialforegoing:mycelial_rocket",
+      "industrialforegoing:mycelial_crimed",
+      "industrialforegoing:mycelial_meatallurgic",
+      "industrialforegoing:laser_drill",
+      "industrialforegoing:fluid_laser_base",
+      "industrialforegoing:washing_factory",
+      "industrialforegoing:fermentation_station",
+      "industrialforegoing:fluid_sieving_machine",
+      "industrialforegoing:stasis_chamber",
+      "industrialforegoing:mob_detector",
+      "industrialforegoing:enchantment_sorter",
+      "industrialforegoing:enchantment_applicator",
+      "industrialforegoing:plant_gatherer",
+      "industrialforegoing:sewer",
+      "industrialforegoing:sewage_composter",
+      "industrialforegoing:plant_fertilizer",
+      "industrialforegoing:plant_sower",
+      "industrialforegoing:mob_slaughter_factory",
+      "industrialforegoing:animal_rancher",
+      "industrialforegoing:animal_baby_separator",
+      "industrialforegoing:animal_feeder",
+      "industrialforegoing:mob_crusher",
+      "industrialforegoing:hydroponic_bed",
+      "industrialforegoing:mob_duplicator",
+      "industrialforegoing:wither_builder",
+      "industrialforegoing:resourceful_furnace",
+      "industrialforegoing:sludge_refiner",
+      "industrialforegoing:water_condensator",
+      "industrialforegoing:mechanical_dirt",
+      "industrialforegoing:block_placer",
+      "industrialforegoing:block_breaker",
+      "industrialforegoing:fluid_collector",
+      "industrialforegoing:fluid_placer",
+      "industrialforegoing:dye_mixer",
+      "industrialforegoing:spores_recreator",
+      "industrialforegoing:material_stonework_factory",
+      "industrialforegoing:marine_fisher",
+      "industrialforegoing:potion_brewer",
+      "industrialforegoing:ore_laser_base",
+
+      "industrialforegoing:enchantment_applicator",
+      "industrialforegoing:enchantment_extractor",
+      "industrialforegoing:enchantment_factory",
+      "industrialforegoing:infinity_charger",
+      Item.of(
+        "industrialforegoing:range_addon0",
+        "{TitaniumAugment:{Range:0.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon1",
+        "{TitaniumAugment:{Range:1.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon2",
+        "{TitaniumAugment:{Range:2.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon3",
+        "{TitaniumAugment:{Range:3.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon4",
+        "{TitaniumAugment:{Range:4.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon5",
+        "{TitaniumAugment:{Range:5.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon6",
+        "{TitaniumAugment:{Range:6.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon7",
+        "{TitaniumAugment:{Range:7.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon8",
+        "{TitaniumAugment:{Range:8.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon9",
+        "{TitaniumAugment:{Range:9.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon10",
+        "{TitaniumAugment:{Range:10.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:range_addon11",
+        "{TitaniumAugment:{Range:11.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:speed_addon_1",
+        "{TitaniumAugment:{Speed:2.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:speed_addon_2",
+        "{TitaniumAugment:{Speed:3.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:efficiency_addon_1",
+        "{TitaniumAugment:{Efficiency:0.9f}}"
+      ),
+      Item.of(
+        "industrialforegoing:efficiency_addon_2",
+        "{TitaniumAugment:{Efficiency:0.8f}}"
+      ),
+      Item.of(
+        "industrialforegoing:processing_addon_1",
+        "{TitaniumAugment:{Processing:2.0f}}"
+      ),
+      Item.of(
+        "industrialforegoing:processing_addon_2",
+        "{TitaniumAugment:{Processing:3.0f}}"
+      ),
+      "industrialforegoing:world_transporter_type",
+      "industrialforegoing:machine_frame_simple",
+      "industrialforegoing:machine_frame_advanced",
+      "industrialforegoing:machine_frame_supreme",
+      "industrialforegoing:fertilizer",
+      "industrialforegoing:pink_slime",
+      "industrialforegoing:pink_slime_ingot",
+      "industrialforegoing:straw",
+      "industrialforegoing:meat_feeder",
+      "industrialforegoing:common_black_hole_unit",
+      "industrialforegoing:pity_black_hole_unit",
+      "industrialforegoing:simple_black_hole_unit",
+      "industrialforegoing:advanced_black_hole_unit",
+      "industrialforegoing:supreme_black_hole_unit",
+      "industrialforegoing:common_black_hole_tank",
+      "industrialforegoing:pity_black_hole_tank",
+      "industrialforegoing:simple_black_hole_tank",
+      "industrialforegoing:advanced_black_hole_tank",
+      "industrialforegoing:supreme_black_hole_tank",
+      "industrialforegoing:conveyor_extraction_upgrade",
+      "industrialforegoing:conveyor_insertion_upgrade",
+      "industrialforegoing:conveyor_detection_upgrade",
+      "industrialforegoing:conveyor_bouncing_upgrade",
+      "industrialforegoing:conveyor_dropping_upgrade",
+      "industrialforegoing:conveyor_blinking_upgrade",
+      "industrialforegoing:conveyor_splitting_upgrade",
+      "industrialforegoing:item_transporter_type",
+      "industrialforegoing:fluid_transporter_type",
+    ],
+  });
+
   //projectE
   event.shaped("projecte:collector_mk1", ["SGS", "SNS", "SFS"], {
     S: "minecraft:glowstone",
@@ -489,109 +657,40 @@ onEvent("recipes", (event) => {
   });
   //Kubejs
 
-  //crafts transistors
-  event.shaped("kubejs:transistor", [" S ", " A ", " C "], {
-    A: "create:andesite_alloy",
-    S: "kubejs:silicon_dust",
-    C: "createaddition:copper_wire",
-  });
-  event.shaped("kubejs:transistor_advanced", [" S ", " A ", " C "], {
-    A: "mekanism:alloy_infused",
-    S: "kubejs:silicon_dust",
-    C: "createaddition:copper_wire",
-  });
-  event.shaped("kubejs:transistor_elite", [" S ", " A ", " C "], {
-    A: "mekanism:alloy_reinforced",
-    S: "kubejs:silicon_dust",
-    C: "createaddition:copper_wire",
-  });
-  event.shaped("kubejs:transistor_ultimate", [" S ", " A ", " C "], {
-    A: "mekanism:alloy_atomic",
-    S: "kubejs:silicon_dust",
-    C: "createaddition:copper_wire",
-  });
-
-  event.shaped("kubejs:processor", ["TST", "SSS", "TST"], {
-    T: "kubejs:transistor",
-    S: "kubejs:steel_sheet",
+  event.custom({
+    type: "mekanism:infusion_conversion",
+    input: {
+      ingredient: [
+        { tag: "forge:dusts/silicon" },
+        { item: "kubejs:silicon_dust" },
+      ],
+    },
+    output: { infuse_type: "kubejs:silicon", amount: 20 },
   });
 
   event.custom({
-    type: "extendedcrafting:shaped_table",
-    pattern: [" TTT ", "TSSST", "TSDST", "TSSST", " TTT "],
-    key: {
-      T: {
-        item: "kubejs:transistor_advanced",
-      },
-      S: {
-        item: "kubejs:steel_sheet",
-      },
-      D: {
-        item: "kubejs:silicon_dust",
-      },
-    },
-    result: {
-      item: "kubejs:processor_advanced",
-      count: 1,
-    },
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: "mekanism:basic_control_circuit" } },
+    chemicalInput: { amount: 50, infuse_type: "kubejs:silicon" },
+    output: { item: "kubejs:processor" },
   });
-
   event.custom({
-    type: "extendedcrafting:shaped_table",
-    pattern: [
-      " TTTTT ",
-      "TSSSSST",
-      "TSSDSST",
-      "TSDDDST",
-      "TSSDSST",
-      "TSSSSST",
-      " TTTTT ",
-    ],
-    key: {
-      T: {
-        item: "kubejs:transistor_elite",
-      },
-      S: {
-        item: "kubejs:steel_sheet",
-      },
-      D: {
-        item: "kubejs:silicon_dust",
-      },
-    },
-    result: {
-      item: "kubejs:processor_elite",
-      count: 1,
-    },
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: "mekanism:advanced_control_circuit" } },
+    chemicalInput: { amount: 100, infuse_type: "kubejs:silicon" },
+    output: { item: "kubejs:processor_advanced" },
   });
-
   event.custom({
-    type: "extendedcrafting:shaped_table",
-    pattern: [
-      " TTTTTTT ",
-      "TSSSSSSST",
-      "TSSSDSSST",
-      "TSSDDDSST",
-      "TSDDDDDST",
-      "TSSDDDSST",
-      "TSSSDSSST",
-      "TSSSSSSST",
-      " TTTTTTT ",
-    ],
-    key: {
-      T: {
-        item: "kubejs:transistor_ultimate",
-      },
-      S: {
-        item: "kubejs:steel_sheet",
-      },
-      D: {
-        item: "kubejs:silicon_dust",
-      },
-    },
-    result: {
-      item: "kubejs:processor_ultimate",
-      count: 1,
-    },
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: "mekanism:elite_control_circuit" } },
+    chemicalInput: { amount: 200, infuse_type: "kubejs:silicon" },
+    output: { item: "kubejs:processor_elite" },
+  });
+  event.custom({
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: "mekanism:ultimate_control_circuit" } },
+    chemicalInput: { amount: 400, infuse_type: "kubejs:silicon" },
+    output: { item: "kubejs:processor_ultimate" },
   });
 
   //Vanilla
@@ -685,6 +784,34 @@ onEvent("recipes", (event) => {
     ["minecraft:bucket", Fluid.of("kubejs:magical_primary_energy", 1000)],
     "kubejs:magical_primary_energy_bucket"
   );
+
+  //clockwork + vs
+  event.shaped("vs_clockwork:physics_infuser", ["BRB", "RSR", "BRB"], {
+    R: "kubejs:steel_rod",
+    S: "minecraft:nether_star",
+    B: "create:brass_ingot",
+  });
+  event.shaped("vs_clockwork:propellor_bearing", [" T ", "CAC", " S "], {
+    C: "create:cogwheel",
+    A: "create:andesite_casing",
+    T: "create:turntable",
+    S: "create:shaft",
+  });
+  event.shaped('vs_clockwork:flap_bearing', ["CSC", "CAC", "LLL"], {
+    C: "create:cogwheel",
+    A: "create:andesite_casing",
+    L: "create:andesite_alloy",
+    S: "create:shaft",
+  });
+  event.shaped('vs_clockwork:gravitron', ["H  ", "SET", " SB"], {
+    S: "create:copper_sheet",
+    B: "createaddition:brass_rod",
+    E: "minecraft:ender_pearl",
+    T: 'create:electron_tube',
+    H: 'create:brass_hand',
+  });
+  event.shapeless('vs_clockwork:command_seat', ["create:lime_seat", "create:linked_controller", "create:andesite_casing"])
+
 
   //Items filters
   event.remove({ id: /itemfilters/ });
