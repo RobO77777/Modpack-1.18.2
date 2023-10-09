@@ -42,7 +42,7 @@ onEvent('jei.hide.items', event => {
 		/extendedcrafting/,
 
 		//industrial
-		/industrialforegoing:laser_lens/
+		/industrialforegoing:laser_lens/,
 
 
 	])
@@ -239,6 +239,8 @@ onEvent('jei.hide.items', event => {
 		"industrialforegoing:fluid_transporter_type",
 
 
+
+
 		
 
 		//mowzies mobs
@@ -253,6 +255,9 @@ onEvent('jei.hide.items', event => {
 		'vs_clockwork:solver',
 		'valkyrienskies:ship_assembler',
 		'vs_clockwork:welder',
+		'vs_clockwork:strawberry_frosting_bucket',
+		'vs_clockwork:chocolate_frosting_bucket',
+
 
 		'#witherstormmod:mob_statues',
 		'witherstormmod:tainted_zombie_lying'
@@ -370,4 +375,14 @@ onEvent('jei.information', event => {
 		'makes the structure subject to gravity.'
 	])
 
+})
+
+
+onEvent('jei.hide.fluids', event => {
+
+	event.hide([
+		'vs_clockwork:strawberry_frosting',
+		'vs_clockwork:chocolate_frosting',
+
+	])
 })

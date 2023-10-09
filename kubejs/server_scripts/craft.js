@@ -810,8 +810,16 @@ onEvent("recipes", (event) => {
     T: 'create:electron_tube',
     H: 'create:brass_hand',
   });
+  event.shaped('vs_clockwork:gravitron', ["IFI", "IBI", "III"], {
+    F: 'create:encased_fan',
+    B: 'create:blaze_burner',
+    I: "minecraft:iron_bars",
+  });
+  
   event.shapeless('vs_clockwork:command_seat', ["create:lime_seat", "create:linked_controller", "create:andesite_casing"])
 
+  event.remove({output: 'vs_clockwork:vanilla_frosting'})
+  event.remove({output: 'vs_clockwork:chocolate_frosting'})
 
   //Items filters
   event.remove({ id: /itemfilters/ });
