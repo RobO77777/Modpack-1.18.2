@@ -832,6 +832,10 @@ onEvent("recipes", (event) => {
     M: 'create:mechanical_bearing',
     I: "minecraft:iron_ingot",
   });
+  event.shaped('vs_clockwork:balloon_casing', ["BBB", "BAB", "BBB"], {
+    A: "kubejs:wood_casing",
+    B: 'vs_eureka:balloon',
+  });
 
   event.custom({
     type: "mekanism:metallurgic_infusing",
@@ -839,7 +843,7 @@ onEvent("recipes", (event) => {
     chemicalInput: { amount: 200, infuse_type: "mekanism:carbon" },
     output: { item: 'vs_clockwork:vanilla_frosting_bucket' },
   });
-  
+
   event.custom({
     type: "mekanism:metallurgic_infusing",
     itemInput: { ingredient: { item: 'createaddition:bioethanol_bucket' } },
