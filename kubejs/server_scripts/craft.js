@@ -839,6 +839,14 @@ onEvent("recipes", (event) => {
     chemicalInput: { amount: 200, infuse_type: "mekanism:carbon" },
     output: { item: 'vs_clockwork:vanilla_frosting_bucket' },
   });
+  
+  event.custom({
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: 'createaddition:bioethanol_bucket' } },
+    chemicalInput: { amount: 200, infuse_type: "mekanism:carbon" },
+    output: { item: 'vs_clockwork:vanilla_frosting_bucket' },
+  });
+
 
 
   event.shapeless('vs_clockwork:command_seat', ["create:lime_seat", "create:linked_controller", "create:andesite_casing"])
