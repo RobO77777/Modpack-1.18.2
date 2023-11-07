@@ -1,0 +1,31 @@
+{
+  "armorSetName": "wither",
+  "head": {
+    "itemKey": "immersive_armors:wither_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "immersive_armors:wither_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "immersive_armors:wither_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "immersive_armors:wither_boots",
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:invisibility",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

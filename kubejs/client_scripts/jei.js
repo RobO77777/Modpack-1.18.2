@@ -382,6 +382,9 @@ onEvent('jei.add.items', event => {
 		'tconstruct:gear_red_sand_cast',
 		'tconstruct:gear_sand_cast',
 
+		//vs clockwork
+		'vs_clockwork:vanilla_frosting_bucket',
+
 		//autres
 		'chancecubes:chance_cube',
 		Item.of('apotheosis:potion_charm', '{Damage:0,Potion:"minecraft:night_vision"}'),

@@ -1,0 +1,43 @@
+{
+  "armorSetName": "dark_matter",
+  "head": {
+    "itemKey": "projecte:dm_helmet",
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "projecte:dm_chestplate",
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "projecte:dm_leggings",
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "projecte:dm_boots",
+    "mustBeEmpty": false
+  },
+  "partialBonusRequiredAmount": 1,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:bad_omen",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "irons_spellbooks:true_invisibility",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}
