@@ -86,15 +86,29 @@
       "format" : "int32",
       "description" : "Increasing this value will result in more items being able to converted to fuel"
     },
-    "enginePower" : {
+    "enginePowerAngular" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "Turning power per engine when heated fully"
+    },
+    "enginePowerAngularMin" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "Turning power per engine when minimal heat"
+    },
+    "enginePowerLinear" : {
       "type" : "number",
       "format" : "float",
       "description" : "Movement power per engine when heated fully"
     },
-    "engineTurnPower" : {
+    "enginePowerLinearMin" : {
       "type" : "number",
       "format" : "float",
-      "description" : "Turning power per engine when heated fully"
+      "description" : "Movement power per engine with minimal heat"
+    },
+    "engineRedstoneBehaviorPause" : {
+      "type" : "boolean",
+      "description" : "Pause fuel consumption and power when block is powered"
     },
     "floaterBuoyantFactorPerKg" : {
       "type" : "number",
@@ -130,11 +144,6 @@
       "type" : "number",
       "format" : "double",
       "description" : "The maximum distance from center of mass to one end of the ship considered by the turn speed. At it's default of 16, it ensures that really large ships will turn at the same speed as a ship with a center of mass only 16 blocks away from the farthest point in the ship. That way, large ships do not turn painfully slowly"
-    },
-    "minEnginePower" : {
-      "type" : "number",
-      "format" : "float",
-      "description" : "Movement power per engine with minimal heat"
     },
     "popSideBalloonChance" : {
       "type" : "number",

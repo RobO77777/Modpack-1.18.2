@@ -53,6 +53,22 @@ onEvent('jei.hide.items', event => {
 
 
 	event.hide([
+		//biomesoplenty
+		'biomesoplenty:rose_quartz_shard',
+
+		//clockwork + vs
+		'vs_clockwork:universal_joint',
+		'vs_clockwork:solver',
+		'valkyrienskies:ship_assembler',
+		'vs_clockwork:welder',
+		'vs_clockwork:strawberry_frosting_bucket',
+		'vs_clockwork:chocolate_frosting_bucket',
+		'valkyrienskies:test_sphere',
+
+		//create 
+
+		'create:rose_quartz_block',
+
 
 		//iceandfire
 		'iceandfire:amythest_ore',
@@ -63,21 +79,72 @@ onEvent('jei.hide.items', event => {
 		'iceandfire:copper_nugget',
 		'iceandfire:copper_block',
 
-		//tinker
-		'tconstruct:copper_nugget',
-		'tconstruct:tinkers_bronze_nugget',
-		'tconstruct:tinkers_bronze_ingot',
-		'tconstruct:tinkers_bronze_block',
-		'tconstruct:necrotic_bone',
-		'tconstruct:part_builder',
-		'tconstruct:tinker_station',
-		'tconstruct:crafting_station',
+		//irons spellbooks
 
-		//rftools
-		'rftoolsbase:machine_frame',
-		'rftoolsbase:machine_base',
+		'irons_spellbooks:fire_rune',
+		'irons_spellbooks:ice_rune',
+		'irons_spellbooks:ender_rune',
+		'irons_spellbooks:protection_rune',
+		'irons_spellbooks:blood_rune',
+		'irons_spellbooks:evocation_rune', 
+		'irons_spellbooks:cooldown_rune',
+		'irons_spellbooks:poison_rune',
+
 
 		//industrial
+		Item.of('industrialforegoing:infinity_drill',
+		'{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'), 
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:9223372036854775807L,Selected:"ARTIFACT",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:9223372036854775807L,Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"COMMON",Special:0b}'), 
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"ARTIFACT",Special:0b}'),
+		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Plunger:0,Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
+		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
+		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"ARTIFACT",Special:0b}'), Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:4000000L,Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:16000000L,Selected:"UNCOMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:80000000L,Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:480000000L,Selected:"EPIC",Special:0b}'),
+		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:3360000000L,Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'), 
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'), 
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
+		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
+		'industrialforegoing:iron_gear',
+		'industrialforegoing:gold_gear',
+		'industrialforegoing:diamond_gear',
+		'industrialforegoing:dark_glass',
 		"industrialforegoing:dissolution_chamber",
 		"industrialforegoing:conveyor",
 		"industrialforegoing:black_hole_controller",
@@ -141,6 +208,35 @@ onEvent('jei.hide.items', event => {
 		"industrialforegoing:enchantment_extractor",
 		"industrialforegoing:enchantment_factory",
 		"industrialforegoing:infinity_charger",
+		"industrialforegoing:world_transporter_type",
+		"industrialforegoing:machine_frame_simple",
+		"industrialforegoing:machine_frame_advanced",
+		"industrialforegoing:machine_frame_supreme",
+		"industrialforegoing:fertilizer",
+		"industrialforegoing:pink_slime",
+		"industrialforegoing:pink_slime_ingot",
+		"industrialforegoing:straw",
+		"industrialforegoing:meat_feeder",
+		"industrialforegoing:common_black_hole_unit",
+		"industrialforegoing:pity_black_hole_unit",
+		"industrialforegoing:simple_black_hole_unit",
+		"industrialforegoing:advanced_black_hole_unit",
+		"industrialforegoing:supreme_black_hole_unit",
+		"industrialforegoing:common_black_hole_tank",
+		"industrialforegoing:pity_black_hole_tank",
+		"industrialforegoing:simple_black_hole_tank",
+		"industrialforegoing:advanced_black_hole_tank",
+		"industrialforegoing:supreme_black_hole_tank",
+		"industrialforegoing:conveyor_extraction_upgrade",
+		"industrialforegoing:conveyor_insertion_upgrade",
+		"industrialforegoing:conveyor_detection_upgrade",
+		"industrialforegoing:conveyor_bouncing_upgrade",
+		"industrialforegoing:conveyor_dropping_upgrade",
+		"industrialforegoing:conveyor_blinking_upgrade",
+		"industrialforegoing:conveyor_splitting_upgrade",
+		"industrialforegoing:item_transporter_type",
+		"industrialforegoing:fluid_transporter_type",
+
 		Item.of(
 		  "industrialforegoing:range_addon0",
 		  "{TitaniumAugment:{Range:0.0f}}"
@@ -213,108 +309,64 @@ onEvent('jei.hide.items', event => {
 		  "industrialforegoing:processing_addon_2",
 		  "{TitaniumAugment:{Processing:3.0f}}"
 		),
-		"industrialforegoing:world_transporter_type",
-		"industrialforegoing:machine_frame_simple",
-		"industrialforegoing:machine_frame_advanced",
-		"industrialforegoing:machine_frame_supreme",
-		"industrialforegoing:fertilizer",
-		"industrialforegoing:pink_slime",
-		"industrialforegoing:pink_slime_ingot",
-		"industrialforegoing:straw",
-		"industrialforegoing:meat_feeder",
-		"industrialforegoing:common_black_hole_unit",
-		"industrialforegoing:pity_black_hole_unit",
-		"industrialforegoing:simple_black_hole_unit",
-		"industrialforegoing:advanced_black_hole_unit",
-		"industrialforegoing:supreme_black_hole_unit",
-		"industrialforegoing:common_black_hole_tank",
-		"industrialforegoing:pity_black_hole_tank",
-		"industrialforegoing:simple_black_hole_tank",
-		"industrialforegoing:advanced_black_hole_tank",
-		"industrialforegoing:supreme_black_hole_tank",
-		"industrialforegoing:conveyor_extraction_upgrade",
-		"industrialforegoing:conveyor_insertion_upgrade",
-		"industrialforegoing:conveyor_detection_upgrade",
-		"industrialforegoing:conveyor_bouncing_upgrade",
-		"industrialforegoing:conveyor_dropping_upgrade",
-		"industrialforegoing:conveyor_blinking_upgrade",
-		"industrialforegoing:conveyor_splitting_upgrade",
-		"industrialforegoing:item_transporter_type",
-		"industrialforegoing:fluid_transporter_type",
-
-		//mowzies mobs
-		'mowziesmobs:mob_remover',
 
 		//librairies
 		Item.of('patchouli:guide_book', '{"patchouli:book":"extendedcrafting:guide"}'),
 		'quark:rope',
 
-		//clockwork + vs
-		'vs_clockwork:universal_joint',
-		'vs_clockwork:solver',
-		'valkyrienskies:ship_assembler',
-		'vs_clockwork:welder',
-		'vs_clockwork:strawberry_frosting_bucket',
-		'vs_clockwork:chocolate_frosting_bucket',
+		//meka
+		'mekanismtools:lapis_lazuli_boots',
+   		'mekanismtools:lapis_lazuli_leggings',
+   		'mekanismtools:lapis_lazuli_chestplate',
+   		'mekanismtools:lapis_lazuli_helmet',
+   		'mekanismtools:osmium_boots',
+   		'mekanismtools:osmium_leggings',
+   		'mekanismtools:osmium_chestplate',
+   		'mekanismtools:osmium_helmet',
+   		'mekanismtools:refined_glowstone_leggings',
+   		'mekanismtools:refined_glowstone_boots',
+   		'mekanismtools:refined_glowstone_chestplate',
+   		'mekanismtools:refined_glowstone_helmet',
+
+		//quark
+		'quark:blank_rune',
+
+		//tinker
+		'tconstruct:copper_nugget',
+		'tconstruct:tinkers_bronze_nugget',
+		'tconstruct:tinkers_bronze_ingot',
+		'tconstruct:tinkers_bronze_block',
+		'tconstruct:necrotic_bone',
+		'tconstruct:part_builder',
+		'tconstruct:tinker_station',
+		'tconstruct:crafting_station',
+
+		//mowzies mobs
+		'mowziesmobs:mob_remover',
+
+		//rftools
+		'rftoolsbase:machine_frame',
+		'rftoolsbase:machine_base',
+
+
+		//vanilla
+		'minecraft:iron_boots',
+		'minecraft:iron_leggings',
+		'minecraft:iron_chestplate', 
+		'minecraft:iron_helmet', 
+		'minecraft:chainmail_boots',
+		'minecraft:chainmail_leggings',
+		'minecraft:chainmail_chestplate',
+		'minecraft:chainmail_helmet',
+		'minecraft:diamond_boots',
+		'minecraft:diamond_leggings',
+		'minecraft:diamond_chestplate',
+		'minecraft:diamond_helmet',
 
 		//witherstorm
 		'#witherstormmod:mob_statues',
 		'witherstormmod:tainted_zombie_lying',
 
-		//industrial
-		Item.of('industrialforegoing:infinity_drill',
-		'{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'), 
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:9223372036854775807L,Selected:"ARTIFACT",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:9223372036854775807L,Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"COMMON",Special:0b}'), 
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Plunger:0,Selected:"ARTIFACT",Special:0b}'),
-		Item.of('industrialforegoing:infinity_launcher', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Plunger:0,Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_drill', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
-		Item.of('industrialforegoing:infinity_saw', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
-		Item.of('industrialforegoing:infinity_hammer', '{Beheading:0,CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"ARTIFACT",Special:0b}'), Item.of('industrialforegoing:infinity_trident', '{CanCharge:1b,Channeling:0b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Loyalty:0,Riptide:0,Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:4000000L,Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:16000000L,Selected:"UNCOMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:80000000L,Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:480000000L,Selected:"EPIC",Special:0b}'),
-		Item.of('industrialforegoing:infinity_backpack', '{CanCharge:1b,Energy:3360000000L,Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:4000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"COMMON",Special:0b}'),
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:16000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"UNCOMMON",Special:0b}'), 
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:80000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"RARE",Special:0b}'),
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:480000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"EPIC",Special:0b}'), 
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:3360000000L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"LEGENDARY",Special:0b}'),
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:1000000,FluidName:"biofuel"},Selected:"ARTIFACT",Special:1b}'),
-		Item.of('industrialforegoing:infinity_nuke', '{CanCharge:1b,Energy:9223372036854775807L,Fluid:{Amount:0,FluidName:"biofuel"},Selected:"ARTIFACT",Special:0b}'),
-		'industrialforegoing:iron_gear',
-		'industrialforegoing:gold_gear',
-		'industrialforegoing:diamond_gear',
-		'industrialforegoing:dark_glass',
 
 		//miscelanious
 
@@ -353,6 +405,7 @@ onEvent('jei.add.items', event => {
 		//vanilla
 		'minecraft:chest',
 
+
 		//project E
 		'projecte:white_alchemical_bag',
 
@@ -385,9 +438,13 @@ onEvent('jei.add.items', event => {
 		//vs clockwork
 		'vs_clockwork:vanilla_frosting_bucket',
 
+
 		//autres
 		'chancecubes:chance_cube',
 		Item.of('apotheosis:potion_charm', '{Damage:0,Potion:"minecraft:night_vision"}'),
+		'stacked_dimensions_warden:grimstone_gold_ore',
+		'stacked_dimensions_warden:grimstone_diamond_ore',
+		'stacked_dimensions_warden:grimstone_redstone_ore'
 
 	])
   })
@@ -472,4 +529,5 @@ onEvent('jei.hide.fluids', e => {
 	e.hide('industrialforegoing:meat')
 	e.hide('vs_clockwork:strawberry_frosting')
 	e.hide('vs_clockwork:chocolate_frosting')
+	e.hide('biomesoplenty:blood')
 })

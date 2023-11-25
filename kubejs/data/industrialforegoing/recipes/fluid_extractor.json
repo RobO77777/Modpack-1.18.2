@@ -25,10 +25,10 @@
             "tag": "forge:ingots/iron"
           },
           "G": {
-            "item": "minecraft:light_weighted_pressure_plate"
+            "item": "minecraft:iron_block"
           },
           "C": {
-            "tag": "forge:cobblestone"
+            "item": "mekanism:basic_fluid_tank"
           },
           "M": {
             "tag": "industrialforegoing:machine_frame/pity"

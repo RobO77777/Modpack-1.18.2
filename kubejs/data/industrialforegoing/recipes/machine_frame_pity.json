@@ -22,10 +22,10 @@
         ],
         "key": {
           "W": {
-            "tag": "minecraft:logs"
+            "tag": "forge:ingots/iron"
           },
           "I": {
-            "tag": "forge:ingots/iron"
+            "tag": "forge:plates/iron"
           },
           "R": {
             "item": "create:andesite_casing"

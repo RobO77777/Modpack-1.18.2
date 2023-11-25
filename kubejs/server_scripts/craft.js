@@ -1,4 +1,32 @@
 onEvent("recipes", (event) => {
+  //fonctions
+  
+  function allCrush(input2, output2, count2) {
+    event.recipes.createCrushing(count2 + "x " + output2, [
+      input2,
+    ]);
+    event.custom({
+      type: "mekanism:crushing",
+      input: { ingredient: { item: input2 } },
+      output: { item: output2, count: count2 },
+    });
+    event.custom({
+      "type": "create:milling",
+      "ingredients": [
+        {
+          "item": (input2)
+        }
+      ],
+      "results": [
+        {
+          "item": (output2),
+          "chance": 1,
+          "count": 2
+        }
+      ]
+    })
+  }
+
   //mods
 
   //create
@@ -10,6 +38,7 @@ onEvent("recipes", (event) => {
   event.remove({ id: "create:mixing/andesite_alloy" });
   event.remove({ id: "create:mixing/andesite_alloy_from_zinc" });
   event.remove({ id: "create:crafting/materials/andesite_casing" });
+  event.remove({output: 'create:rose_quartz_block'})
 
   event.recipes
     .createMixing("create:andesite_alloy", [
@@ -42,11 +71,12 @@ onEvent("recipes", (event) => {
     cast_consumed: true,
     fluid: {
       tag: "forge:seared_stone",
-      amount: 500,
+      amount: 2000,
     },
     result: "create:andesite_alloy",
     cooling_time: 16,
   });
+
   event.custom({
     type: "tconstruct:melting",
     conditions: [
@@ -392,6 +422,19 @@ onEvent("recipes", (event) => {
     A: "mekanism:alloy_infused",
   });
 
+  event.remove({output: ['mekanismtools:lapis_lazuli_boots',
+   'mekanismtools:lapis_lazuli_leggings',
+   'mekanismtools:lapis_lazuli_chestplate',
+   'mekanismtools:lapis_lazuli_helmet',
+   'mekanismtools:osmium_boots',
+   'mekanismtools:osmium_leggings',
+   'mekanismtools:osmium_chestplate',
+   'mekanismtools:osmium_helmet',
+   'mekanismtools:refined_glowstone_leggings',
+   'mekanismtools:refined_glowstone_boots',
+   'mekanismtools:refined_glowstone_chestplate',
+   'mekanismtools:refined_glowstone_helmet']})
+
   //bio fuel
 
   event.custom({
@@ -655,6 +698,24 @@ onEvent("recipes", (event) => {
   ids.forEach((id) => {
     event.remove({ id: `projecte:${id}` });
   });
+
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "tag": "forge:stripped_logs"
+      },
+      {
+        "item": "create:andesite_alloy"
+      }
+    ],
+    "results": [
+      {
+        "item": 'kubejs:iron_casing'
+      }
+    ]
+  })
+  
   //Kubejs
 
   event.custom({
@@ -740,6 +801,14 @@ onEvent("recipes", (event) => {
     C: "mekanism:dust_charcoal",
   });
 
+  allCrush("minecraft:magma_block", "minecraft:magma_cream", 2)
+
+  event.remove({output: [Item.of('minecraft:iron_boots', '{Damage:0}'), Item.of('minecraft:iron_leggings', '{Damage:0}'), Item.of('minecraft:iron_chestplate', '{Damage:0}'), Item.of('minecraft:iron_helmet', '{Damage:0}'), Item.of('minecraft:diamond_boots', '{Damage:0}'), Item.of('minecraft:diamond_leggings', '{Damage:0}'), Item.of('minecraft:diamond_chestplate', '{Damage:0}'), Item.of('minecraft:diamond_helmet', '{Damage:0}'), Item.of('minecraft:chainmail_boots', '{Damage:0}'), Item.of('minecraft:chainmail_leggings', '{Damage:0}'), Item.of('minecraft:chainmail_chestplate', '{Damage:0}'), Item.of('minecraft:chainmail_helmet', '{Damage:0}')]})
+  event.remove({output: 'minecraft:netherite_helmet'})
+  event.remove({output: 'minecraft:netherite_chestplate'})
+  event.remove({output: 'minecraft:netherite_leggings'})
+  event.remove({output: 'minecraft:netherite_boots'})
+
   //draconic evo
   event.remove({ id: "draconicevolution:components/draconium_ingot" });
   event.remove({ id: "draconicevolution:draconium_ingot" });
@@ -784,8 +853,103 @@ onEvent("recipes", (event) => {
     ["minecraft:bucket", Fluid.of("kubejs:magical_primary_energy", 1000)],
     "kubejs:magical_primary_energy_bucket"
   );
+  //irons spells
 
+  event.remove({output: [
+    'irons_spellbooks:fire_rune',
+    'irons_spellbooks:ice_rune',
+    'irons_spellbooks:ender_rune',
+    'irons_spellbooks:protection_rune',
+    'irons_spellbooks:blood_rune',
+    'irons_spellbooks:evocation_rune',
+    'irons_spellbooks:cooldown_rune',
+    'irons_spellbooks:poison_rune']})
+
+  event.remove({id:'irons_spellbooks:lightning_rune'})
+  event.remove({id:'irons_spellbooks:holy_rune'})
+  event.remove({id:'irons_spellbooks:arcane_rune'})
+
+  event.custom({
+    "type": "botania:runic_altar",
+    "output": {
+      "item": "irons_spellbooks:arcane_rune",
+      "count": 1
+    },
+    "mana": 5200,
+    "ingredients": [
+      {
+        "item": "botania:mana_diamond"
+      },
+      {
+        "item": "botania:rune_mana"
+      },
+      {
+        "item": "irons_spellbooks:arcane_essence"
+      },
+      {
+        "item": "irons_spellbooks:arcane_essence"
+      }
+    ]
+  })
+  event.custom({
+    "type": "botania:runic_altar",
+    "output": {
+      "item": "irons_spellbooks:holy_rune",
+      "count": 1
+    },
+    "mana": 5200,
+    "ingredients": [
+      {
+        "item": "botania:mana_diamond"
+      },
+      {
+        "item": "botania:rune_mana"
+      },
+      {
+        "item": "irons_spellbooks:divine_pearl"
+      },
+      {
+        "item": "irons_spellbooks:divine_pearl"
+      }
+    ]
+  })
+  event.custom({
+    "type": "botania:runic_altar",
+    "output": {
+      "item": "irons_spellbooks:lightning_rune",
+      "count": 1
+    },
+    "mana": 5200,
+    "ingredients": [
+      {
+        "item": "botania:mana_diamond"
+      },
+      {
+        "item": "botania:rune_air"
+      },
+      {
+        "item": "irons_spellbooks:lightning_bottle"
+      },
+      {
+        "item": "irons_spellbooks:lightning_bottle"
+      }
+    ]
+  })
+  event.custom({
+    "type": "botania:mana_infusion",
+    "input": {
+      "item": "botania:livingrock"
+    },
+    "output": {
+      "item": "irons_spellbooks:blank_rune",
+      "count": 1
+    },
+    "mana": 100,
+  })
+
+    
   //clockwork + vs
+  if( Platform.isLoaded ( 'vs_clockwork' ) ){
   event.shaped("vs_clockwork:physics_infuser", ["BRB", "RSR", "BRB"], {
     R: "kubejs:steel_rod",
     S: "minecraft:nether_star",
@@ -850,13 +1014,11 @@ onEvent("recipes", (event) => {
     chemicalInput: { amount: 200, infuse_type: "mekanism:carbon" },
     output: { item: 'vs_clockwork:vanilla_frosting_bucket' },
   });
-
-
-
   event.shapeless('vs_clockwork:command_seat', ["create:lime_seat", "create:linked_controller", "create:andesite_casing"])
-
   event.remove({output: 'vs_clockwork:vanilla_frosting'})
   event.remove({output: 'vs_clockwork:chocolate_frosting'})
+  }
+
 
   //Items filters
   event.remove({ id: /itemfilters/ });

@@ -6,4 +6,10 @@ onEvent('block.registry', event => {
 	.harvestTool('axe', 1)
 	.displayName('Wood Casing')
 
+	event.create('iron_casing')
+	.material('metal')
+	.hardness(2)
+	.harvestTool('pickaxe', 2)
+	.displayName('Iron Casing')
+
 })
