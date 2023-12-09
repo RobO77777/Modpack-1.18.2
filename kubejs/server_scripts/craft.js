@@ -407,25 +407,11 @@ onEvent("recipes", (event) => {
   });
 
   //mekanism
-
-  event.remove({ output: "mekanismgenerators:wind_generator" });
-
-  event.recipes.createCrushing("mekanism:dust_copper", [
-    "minecraft:copper_ingot",
-  ]);
-
-  event.shaped("mekanismgenerators:wind_generator", [" P ", "OAO", "TCT"], {
-    P: "create:propeller",
-    O: "mekanism:ingot_osmium",
-    T: "mekanism:energy_tablet",
-    C: "mekanism:basic_control_circuit",
-    A: "mekanism:alloy_infused",
-  });
-
   event.remove({output: ['mekanismtools:lapis_lazuli_boots',
    'mekanismtools:lapis_lazuli_leggings',
    'mekanismtools:lapis_lazuli_chestplate',
    'mekanismtools:lapis_lazuli_helmet',
+   "mekanismgenerators:wind_generator",
    'mekanismtools:osmium_boots',
    'mekanismtools:osmium_leggings',
    'mekanismtools:osmium_chestplate',
@@ -435,6 +421,32 @@ onEvent("recipes", (event) => {
    'mekanismtools:refined_glowstone_chestplate',
    'mekanismtools:refined_glowstone_helmet']})
 
+  event.shaped("mekanismgenerators:wind_generator", [" P ", "OAO", "TCT"], {
+    P: "create:propeller",
+    O: "mekanism:ingot_osmium",
+    T: "mekanism:energy_tablet",
+    C: "mekanism:basic_control_circuit",
+    A: "mekanism:alloy_infused",
+  });
+  event.recipes.createCrushing("mekanism:dust_copper", [
+    "minecraft:copper_ingot",
+  ]);
+   event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "kubejs:iron_casing"
+      },
+      {
+        "item": 'mekanism:block_steel'
+      }
+    ],
+    "results": [
+      {
+        "item": 'mekanism:steel_casing'
+      }
+    ]
+  })
   //bio fuel
 
   event.custom({
@@ -486,6 +498,7 @@ onEvent("recipes", (event) => {
 
   event.remove({
     output: [
+      "industrialforegoing:machine_frame_pity",
       "industrialforegoing:dissolution_chamber",
       "industrialforegoing:dark_glass",
       "industrialforegoing:conveyor",
@@ -699,23 +712,8 @@ onEvent("recipes", (event) => {
     event.remove({ id: `projecte:${id}` });
   });
 
-  event.custom({
-    "type": "create:item_application",
-    "ingredients": [
-      {
-        "tag": "forge:stripped_logs"
-      },
-      {
-        "item": "create:andesite_alloy"
-      }
-    ],
-    "results": [
-      {
-        "item": 'kubejs:iron_casing'
-      }
-    ]
-  })
-  
+
+
   //Kubejs
 
   event.custom({
@@ -752,6 +750,27 @@ onEvent("recipes", (event) => {
     itemInput: { ingredient: { item: "mekanism:ultimate_control_circuit" } },
     chemicalInput: { amount: 400, infuse_type: "kubejs:silicon" },
     output: { item: "kubejs:processor_ultimate" },
+  });
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "create:andesite_casing"
+      },
+      {
+        "item": 'minecraft:iron_block'
+      }
+    ],
+    "results": [
+      {
+        "item": 'kubejs:iron_casing'
+      }
+    ]
+  })
+  event.shaped("kubejs:iron_casing", ["ISI", "SCS", "ISI"], {
+    C: "create:andesite_casing",
+    I: "minecraft:iron_ingot",
+    S: "create:iron_sheet",
   });
 
   //Vanilla

@@ -19,7 +19,7 @@
       "item": "create:mechanical_pump"
     },
     "F": {
-      "item": "industrialforegoing:machine_frame_pity"
+      "item": "kubejs:iron_casing"
     },
     "o": {
       "tag": "forge:ender_pearls"

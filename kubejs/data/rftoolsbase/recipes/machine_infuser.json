@@ -16,7 +16,7 @@
       "item": "minecraft:diamond"
     },
     "M": {
-      "item": "industrialforegoing:machine_frame_pity"
+      "item": "kubejs:iron_casing"
     }
   },
   "result": {

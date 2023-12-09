@@ -16,7 +16,7 @@
       "item": "minecraft:redstone_torch"
     },
     "F": {
-      "item": "industrialforegoing:machine_frame_pity"
+      "item": "kubejs:iron_casing"
     },
     "i": {
       "tag": "forge:ingots/iron"

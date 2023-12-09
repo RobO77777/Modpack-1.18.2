@@ -16,7 +16,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 42
 		#Range: 0 ~ 100
-		probability = 42
+		probability = 35
 
 	[Castle.configured_structures]
 
@@ -57,7 +57,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 75
 		#Range: 0 ~ 100
-		probability = 75
+		probability = 55
 
 	["Deep Crypt".configured_structures]
 
@@ -98,7 +98,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 60
 		#Range: 0 ~ 100
-		probability = 60
+		probability = 50
 
 	["Desert Temple".configured_structures]
 
@@ -139,7 +139,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 65
 		#Range: 0 ~ 100
-		probability = 65
+		probability = 50
 
 	["Desert Tomb".configured_structures]
 
@@ -180,7 +180,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 40
 		#Range: 0 ~ 100
-		probability = 40
+		probability = 30
 
 	["Druid Circle".configured_structures]
 
@@ -221,7 +221,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 80
 		#Range: 0 ~ 100
-		probability = 80
+		probability = 70
 
 	["Dungeon Variant".configured_structures]
 
@@ -262,7 +262,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 82
 		#Range: 0 ~ 100
-		probability = 82
+		probability = 70
 
 	["Elders Temple".configured_structures]
 
@@ -303,7 +303,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 68
 		#Range: 0 ~ 100
-		probability = 68
+		probability = 60
 
 	["Fishing Ship".configured_structures]
 
@@ -366,7 +366,7 @@
 				# What dimensions this structure should generate in. Leave empty to allow all dimensions.
 				# Example: ["minecraft:overworld", "minecraft:the_nether"]
 				# Default: ["minecraft:overworld"]
-				dimensions = ["minecraft:overworld"]
+				dimensions = []
 
 ["Hay Storage"]
 
@@ -385,7 +385,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 75
 		#Range: 0 ~ 100
-		probability = 75
+		probability = 65
 
 	["Hay Storage".configured_structures]
 
@@ -426,7 +426,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 70
 		#Range: 0 ~ 100
-		probability = 70
+		probability = 60
 
 	["Ice Pit".configured_structures]
 
@@ -467,7 +467,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 75
 		#Range: 0 ~ 100
-		probability = 75
+		probability = 65
 
 	["Jungle Monument".configured_structures]
 
@@ -549,7 +549,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 80
 		#Range: 0 ~ 100
-		probability = 80
+		probability = 70
 
 	["Miners House".configured_structures]
 
@@ -590,7 +590,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 50
 		#Range: 0 ~ 100
-		probability = 50
+		probability = 45
 
 	["Monster Maze".configured_structures]
 
@@ -631,7 +631,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 75
 		#Range: 0 ~ 100
-		probability = 75
+		probability = 65
 
 	["Mushroom House".configured_structures]
 
@@ -713,7 +713,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 49
 		#Range: 0 ~ 100
-		probability = 49
+		probability = 45
 
 	["Pirate Ship".configured_structures]
 
@@ -754,7 +754,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 45
 		#Range: 0 ~ 100
-		probability = 45
+		probability = 40
 
 	["Ruined Building".configured_structures]
 
@@ -836,7 +836,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 55
 		#Range: 0 ~ 100
-		probability = 55
+		probability = 50
 
 	["Sunken Shrine".configured_structures]
 
@@ -877,7 +877,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 60
 		#Range: 0 ~ 100
-		probability = 60
+		probability = 50
 
 	["Tall Witch Hut".configured_structures]
 
@@ -959,7 +959,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 40
 		#Range: 0 ~ 100
-		probability = 40
+		probability = 30
 
 	["Tree House".configured_structures]
 
@@ -1000,7 +1000,7 @@
 		# Percent chance of generating in an allowed chunk.
 		# Default: 45
 		#Range: 0 ~ 100
-		probability = 45
+		probability = 40
 
 	["Watch Tower".configured_structures]
 

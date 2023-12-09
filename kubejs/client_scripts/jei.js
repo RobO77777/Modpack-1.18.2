@@ -212,6 +212,7 @@ onEvent('jei.hide.items', event => {
 		"industrialforegoing:machine_frame_simple",
 		"industrialforegoing:machine_frame_advanced",
 		"industrialforegoing:machine_frame_supreme",
+		"industrialforegoing:machine_frame_pity",
 		"industrialforegoing:fertilizer",
 		"industrialforegoing:pink_slime",
 		"industrialforegoing:pink_slime_ingot",
