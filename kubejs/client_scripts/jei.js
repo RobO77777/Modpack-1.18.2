@@ -394,7 +394,20 @@ onEvent('jei.hide.items', event => {
 		'minecraft:command_block',
 		'minecraft:repeating_command_block',
 		'minecraft:chain_command_block',
-		'minecraft:debug_stick'
+		'minecraft:debug_stick',
+
+		//swords
+		'minecraft:wooden_sword', 
+		'minecraft:stone_sword',
+		'minecraft:golden_sword', 
+		'minecraft:iron_sword',
+		'minecraft:netherite_sword',
+		'mekanismtools:lapis_lazuli_sword',
+		'mekanismtools:steel_sword',
+		'iceandfire:copper_sword',
+		'iceandfire:silver_sword',
+		'mekanismtools:osmium_sword',
+		'mekanismtools:bronze_sword', 
 	])
 })
 
