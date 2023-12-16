@@ -23,8 +23,8 @@ onEvent('item.registry', event => {
 
     //molten raw ore
 
-    event.create('crushed_cobalt_ore').displayName('Crushed Cobalt Ore')
-    event.create('crushed_elementium_ore').displayName('Crushed Elementium Ore')
+    event.create('crushed_raw_cobalt').displayName('Crushed Cobalt Ore')
+    event.create('crushed_raw_elementium').displayName('Crushed Elementium Ore')
 
     //dust
 

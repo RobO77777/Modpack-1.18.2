@@ -18,6 +18,7 @@ onEvent('jei.hide.items', event => {
 		/tconstruct:tinker_station/,
 		/tconstruct:part_builder/,
 		/tconstruct:modifier_worktable/,
+		/electrum/,
 
 		//vanilla
 		/spawn_egg/,
@@ -45,7 +46,6 @@ onEvent('jei.hide.items', event => {
 		/industrialforegoing:laser_lens/,
 
 		//vanilla
-
 		/bucket/
 
 
@@ -402,12 +402,38 @@ onEvent('jei.hide.items', event => {
 		'minecraft:golden_sword', 
 		'minecraft:iron_sword',
 		'minecraft:netherite_sword',
-		'mekanismtools:lapis_lazuli_sword',
 		'mekanismtools:steel_sword',
 		'iceandfire:copper_sword',
 		'iceandfire:silver_sword',
 		'mekanismtools:osmium_sword',
 		'mekanismtools:bronze_sword', 
+		'botania:manasteel_sword',
+
+		//pick
+
+		'minecraft:wooden_pickaxe',
+		'minecraft:stone_pickaxe',
+		'minecraft:golden_pickaxe',
+		'minecraft:iron_pickaxe',
+		'iceandfire:silver_pickaxe',
+		'iceandfire:copper_pickaxe',
+		'mekanismtools:bronze_pickaxe',
+		'mekanismtools:osmium_pickaxe',
+		'mekanismtools:steel_pickaxe',
+		'botania:manasteel_pick',
+
+		//pick
+
+		'minecraft:wooden_axe',
+		'minecraft:stone_axe',
+		'minecraft:golden_axe',
+		'minecraft:iron_axe',
+		'iceandfire:silver_axe',
+		'iceandfire:copper_axe',
+		'mekanismtools:bronze_axe',
+		'mekanismtools:osmium_axe',
+		'mekanismtools:steel_axe',
+		'botania:manasteel_axe',
 	])
 })
 

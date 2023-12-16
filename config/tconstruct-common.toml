@@ -14,7 +14,7 @@
 	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
 	showAllAnvilVariants = true
 	#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants
-	showAllSmelteryVariants = true
+	showAllSmelteryVariants = false
 
 	#Tweaks to vanilla damage sources to better work with armor
 	[gameplay.damageTweaks]
@@ -39,7 +39,7 @@
 	#Makes wither skeletons drop necrotic bones
 	witherBoneDrop = false
 	#Allows converting wither bones to regular bones
-	witherBoneConversion = true
+	witherBoneConversion = false
 	#Slimeballs not being usable in vanilla recipes that require slimeballs. Config option exists to disable easily in case this fix is redundant to another mod
 	slimeRecipeFix = true
 	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod

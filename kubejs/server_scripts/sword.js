@@ -109,13 +109,9 @@ onEvent("recipes", (event) => {
   //botania
   event.remove({id: 'botania:manasteel_sword'})
   event.remove({id: 'botania:elementium_sword'})
+
   event.smithing(
    'botania:manasteel_sword',  
-   'botania:livingwood_twig', 
-    'botania:manasteel_ingot'  
-  )
-  event.smithing(
-   'botania:elementium_sword',  
    'botania:dreamwood_twig', 
     'botania:elementium_ingot'  
   )
@@ -130,6 +126,11 @@ onEvent("recipes", (event) => {
     'mekanismtools:refined_obsidian_sword',  
     'minecraft:diamond_sword', 
     'mekanism:ingot_refined_obsidian' 
+   )
+   event.smithing(
+    'mekanismtools:lapis_lazuli_sword',  
+    Item.of('tconstruct:sword', '{Damage:0,tic_broken:0b,tic_materials:["tconstruct:iron","tconstruct:iron","tconstruct:iron"]}'), 
+    'minecraft:lapis_lazuli' 
    )
 
    //projecte

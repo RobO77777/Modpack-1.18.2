@@ -1,5 +1,6 @@
 onEvent("recipes", (event) => {
   //fonction remove raw smelt+blast et ajout sandpaper polishing
+
   function removeRawToIngot(mod, item) {
     if (mod === "create") {
       event.remove({id: "create:smelting/" + item + "_ingot_from_raw_ore"});
@@ -102,7 +103,7 @@ onEvent("recipes", (event) => {
       "type": "create:milling",
       "ingredients": [
         {
-          "item": (modRaw + ":crushed_" + item + "_ore")
+          "item": (modRaw + ":crushed_raw_" + item)
         }
       ],
       "results": [
@@ -134,7 +135,7 @@ onEvent("recipes", (event) => {
       "type": "create:crushing",
       "ingredients": [
         {
-          "item": (modRaw + ":crushed_" + item + "_ore")
+          "item": (modRaw + ":crushed_raw_" + item)
         }
       ],
       "results": [
