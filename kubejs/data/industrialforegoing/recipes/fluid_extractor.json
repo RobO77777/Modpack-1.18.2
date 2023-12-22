@@ -31,7 +31,7 @@
             "item": "mekanism:basic_fluid_tank"
           },
           "M": {
-            "tag": "industrialforegoing:machine_frame/pity"
+            "item": "kubejs:iron_casing"
           },
           "P": {
             "item": "minecraft:piston"

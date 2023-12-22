@@ -3,10 +3,6 @@ onEvent('item.tags', event => {
     //TK
     event.add('forge:wires', ['minecraft:string', 'kubejs:steel_wire'])
     event.add('forge:wither_bones', 'iceandfire:witherbone')
-    event.add('forge:gears', ['industrialforegoing:iron_gear', 'industrialforegoing:gold_gear', 'industrialforegoing:diamond_gear'])
-    event.add('forge:gears/iron', 'industrialforegoing:iron_gear')
-    event.add('forge:gears/gold', 'industrialforegoing:gold_gear')
-    event.add('forge:gears/diamond', 'industrialforegoing:diamond_gear')
 
     //kubejs
 
@@ -34,8 +30,4 @@ onEvent('fluid.tags', event => {
     event.add("minecraft:water", "kubejs:magical_primary_energy")
     event.add("minecraft:water", "kubejs:flowing_magical_primary_energy")
     event.add("forge:seared_stone", "tconstruct:seared_stone")
-
-
-
-
 })

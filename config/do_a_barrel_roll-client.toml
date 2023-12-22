@@ -1,6 +1,6 @@
 
 [general]
-	mod_enabled = true
+	mod_enabled = false
 
 	[general.controls]
 		switch_roll_and_yaw = false
