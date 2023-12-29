@@ -199,7 +199,7 @@ onEvent('jei.hide.items', event => {
 		'mekanismtools:steel_pickaxe',
 		'botania:manasteel_pick',
 
-		//pick
+		//axe
 
 		'minecraft:wooden_axe',
 		'minecraft:stone_axe',
@@ -211,6 +211,11 @@ onEvent('jei.hide.items', event => {
 		'mekanismtools:osmium_axe',
 		'mekanismtools:steel_axe',
 		'botania:manasteel_axe',
+
+		//rocks
+		'rocks:pinecone',
+		'rocks:geyser',
+		'rocks:nether_geyser'
 	])
 })
 
@@ -242,6 +247,7 @@ onEvent('jei.add.items', event => {
 		'extendedcrafting:advanced_table',
 		'extendedcrafting:elite_table',
 		'extendedcrafting:ultimate_table',
+		'extendedcrafting:handheld_table',
 
 		//tinker
 		Item.of('tconstruct:crafting_station', '{texture:"minecraft:oak_log"}'),

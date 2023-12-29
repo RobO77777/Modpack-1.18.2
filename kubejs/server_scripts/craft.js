@@ -214,6 +214,10 @@ onEvent("recipes", (event) => {
     "mekanism:ultimate_energy_cube",
     "extendedcrafting:ultimate_table",
   ]);
+  event.shaped('extendedcrafting:handheld_table', ["  C", " S ", "S  "], {
+    S: "minecraft:stick",
+    C: "minecraft:crafting_table",
+  });
 
   //craft 5x5
   event.custom({
@@ -619,6 +623,25 @@ onEvent("recipes", (event) => {
   event.remove({output: 'minecraft:netherite_chestplate'})
   event.remove({output: 'minecraft:netherite_leggings'})
   event.remove({output: 'minecraft:netherite_boots'})
+
+  event.shapeless("minecraft:gravel", [
+    "9x minecraft:flint",
+
+  ]);
+
+  event.custom({
+    "type": "create:sandpaper_polishing",
+    "ingredients": [
+      {
+        "item": 'rocks:cobblestone_splitter'
+      }
+    ],
+    "results": [
+      {
+        "item": 'minecraft:flint'
+      }
+    ]
+  })
 
   //draconic evo
   event.remove({ id: "draconicevolution:components/draconium_ingot" });

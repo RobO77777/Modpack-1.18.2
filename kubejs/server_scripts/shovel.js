@@ -32,7 +32,7 @@ onEvent("recipes", (event) => {
 
   event.smithing(
     'iceandfire:dragonbone_shovel',  
-    'iceandfire:witherbone',
+    Item.of('tconstruct:tool_handle', '{Material:"tconstruct:necrotic_bone"}'),
     'iceandfire:dragonbone'  
   )
 
@@ -54,12 +54,12 @@ onEvent("recipes", (event) => {
 
   event.smithing(
     'iceandfire:myrmex_jungle_shovel',
-    'iceandfire:witherbone',
+    Item.of('tconstruct:tool_handle', '{Material:"tconstruct:necrotic_bone"}'),
     'iceandfire:myrmex_jungle_chitin' 
   )
   event.smithing(
     'iceandfire:myrmex_desert_shovel',
-    'iceandfire:witherbone',
+    Item.of('tconstruct:tool_handle', '{Material:"tconstruct:necrotic_bone"}'),
     'iceandfire:myrmex_desert_chitin' 
   )
   event.smithing(
@@ -83,7 +83,7 @@ onEvent("recipes", (event) => {
   event.smithing(
    'minecraft:wooden_shovel',  
    'minecraft:stick',
-   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood"}')
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#oak"}')
   )
   event.smithing(
    'minecraft:wooden_shovel',  
@@ -116,6 +116,22 @@ onEvent("recipes", (event) => {
     'minecraft:stick',
    Item.of('tconstruct:large_plate', '{Material:"tconstruct:rock"}') 
   )
+  event.smithing(
+    'minecraft:stone_hoe',  
+    'minecraft:stick',
+    Item.of('tconstruct:large_plate', '{Material:"tconstruct:rock#stone"}') 
+   )
+   event.smithing(
+    'minecraft:stone_hoe',  
+    'minecraft:stick',
+    Item.of('tconstruct:large_plate', '{Material:"tconstruct:rock#blackstone"}') 
+   )
+   event.smithing(
+    'minecraft:stone_hoe',  
+    'minecraft:stick',
+    Item.of('tconstruct:large_plate', '{Material:"tconstruct:rock#deepslate"}') 
+   )
+   
   event.smithing(
    'minecraft:golden_shovel',  
    'minecraft:stick',

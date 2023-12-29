@@ -65,12 +65,12 @@ onEvent("recipes", (event) => {
   event.smithing(
     'iceandfire:silver_hoe',
     'minecraft:stick',
-    Item.of('tconstruct:large_plate', '{Material:"tconstruct:silver"}')
+    Item.of('tconstruct:small_blade', '{Material:"tconstruct:silver"}')
   )
   event.smithing(
     'iceandfire:copper_hoe',
     'minecraft:stick',
-    Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}')
+    Item.of('tconstruct:small_blade', '{Material:"tconstruct:copper"}')
   )
 
 
@@ -82,7 +82,7 @@ onEvent("recipes", (event) => {
   event.smithing(
    'minecraft:wooden_hoe',  
    'minecraft:stick',
-   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood"}')
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#oak"}')
   )
   event.smithing(
    'minecraft:wooden_hoe',  
@@ -113,6 +113,21 @@ onEvent("recipes", (event) => {
    'minecraft:stone_hoe',  
    'minecraft:stick',
    Item.of('tconstruct:small_blade', '{Material:"tconstruct:rock"}') 
+  )
+  event.smithing(
+   'minecraft:stone_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:rock#stone"}') 
+  )
+  event.smithing(
+   'minecraft:stone_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:rock#blackstone"}') 
+  )
+  event.smithing(
+   'minecraft:stone_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:rock#deepslate"}') 
   )
   event.smithing(
    'minecraft:golden_hoe',  
