@@ -64,12 +64,12 @@ onEvent("recipes", (event) => {
   )
   event.smithing(
     'iceandfire:silver_hoe',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:silver"}')
   )
   event.smithing(
     'iceandfire:copper_hoe',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}')
   )
 
@@ -77,27 +77,51 @@ onEvent("recipes", (event) => {
   //vanilla
   event.smithing(
    'minecraft:diamond_hoe',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
-    'minecraft:diamond'  
+   'minecraft:stick',    'minecraft:diamond'  
   )
   event.smithing(
    'minecraft:wooden_hoe',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood"}')
   )
   event.smithing(
+   'minecraft:wooden_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#birch"}')
+  )
+  event.smithing(
+   'minecraft:wooden_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#acacia"}')
+  )
+  event.smithing(
+   'minecraft:wooden_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#jungle"}')
+  )
+  event.smithing(
+   'minecraft:wooden_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#dark_oak"}')
+  )
+  event.smithing(
+   'minecraft:wooden_hoe',  
+   'minecraft:stick',
+   Item.of('tconstruct:small_blade', '{Material:"tconstruct:wood#spruce"}')
+  )
+  event.smithing(
    'minecraft:stone_hoe',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:small_blade', '{Material:"tconstruct:rock"}') 
   )
   event.smithing(
    'minecraft:golden_hoe',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:small_blade', '{Material:"tconstruct:gold"}')
   )
   event.smithing(
    'minecraft:iron_hoe',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:small_blade', '{Material:"tconstruct:iron"}') 
   )
 
@@ -112,7 +136,7 @@ onEvent("recipes", (event) => {
   )
   event.smithing(
     'botania:manasteel_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:small_blade', '{Material:"tcintegrations:manasteel"}')
    )
 
@@ -120,7 +144,7 @@ onEvent("recipes", (event) => {
   //mekanism tools
   event.smithing(
     'mekanismtools:refined_glowstone_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     'mekanism:ingot_refined_glowstone'  
    )
    event.smithing(
@@ -130,22 +154,22 @@ onEvent("recipes", (event) => {
    )
    event.smithing(
     'mekanismtools:lapis_lazuli_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     'minecraft:lapis_lazuli' 
    )
    event.smithing(
     'mekanismtools:bronze_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:small_blade', '{Material:"tconstruct:bronze"}') 
    )
    event.smithing(
     'mekanismtools:osmium_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:small_blade', '{Material:"tconstruct:osmium"}') 
    )
    event.smithing(
     'mekanismtools:steel_hoe',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:small_blade', '{Material:"tconstruct:steel"}') 
    )
 

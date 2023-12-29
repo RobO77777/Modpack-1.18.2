@@ -32,7 +32,7 @@ onEvent("recipes", (event) => {
 
   event.smithing(
     'iceandfire:dragonbone_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:necrotic_bone"}'),
+    'iceandfire:witherbone',
     'iceandfire:dragonbone'  
   )
 
@@ -54,22 +54,22 @@ onEvent("recipes", (event) => {
 
   event.smithing(
     'iceandfire:myrmex_jungle_shovel',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:necrotic_bone"}'),
+    'iceandfire:witherbone',
     'iceandfire:myrmex_jungle_chitin' 
   )
   event.smithing(
     'iceandfire:myrmex_desert_shovel',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:necrotic_bone"}'),
+    'iceandfire:witherbone',
     'iceandfire:myrmex_desert_chitin' 
   )
   event.smithing(
     'iceandfire:silver_shovel',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:silver"}')
   )
   event.smithing(
     'iceandfire:copper_shovel',
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:copper"}')
   )
 
@@ -77,27 +77,53 @@ onEvent("recipes", (event) => {
   //vanilla
   event.smithing(
    'minecraft:diamond_shovel',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
     'minecraft:diamond'  
   )
   event.smithing(
    'minecraft:wooden_shovel',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood"}')
   )
   event.smithing(
+   'minecraft:wooden_shovel',  
+   'minecraft:stick',
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#birch"}')
+  )
+  event.smithing(
+   'minecraft:wooden_shovel',  
+   'minecraft:stick',
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#acacia"}')
+  )
+  event.smithing(
+   'minecraft:wooden_shovel',  
+   'minecraft:stick',
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#jungle"}')
+  )
+  event.smithing(
+   'minecraft:wooden_shovel',  
+   'minecraft:stick',
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#dark_oak"}')
+  )
+  event.smithing(
+   'minecraft:wooden_shovel',  
+   'minecraft:stick',
+   Item.of('tconstruct:large_plate', '{Material:"tconstruct:wood#spruce"}')
+  )
+
+  event.smithing(
    'minecraft:stone_shovel',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
    Item.of('tconstruct:large_plate', '{Material:"tconstruct:rock"}') 
   )
   event.smithing(
    'minecraft:golden_shovel',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:large_plate', '{Material:"tconstruct:gold"}')
   )
   event.smithing(
    'minecraft:iron_shovel',  
-   Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+   'minecraft:stick',
    Item.of('tconstruct:large_plate', '{Material:"tconstruct:iron"}') 
   )
 
@@ -112,7 +138,7 @@ onEvent("recipes", (event) => {
   )
   event.smithing(
     'botania:manasteel_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tcintegrations:manasteel"}')
    )
 
@@ -120,7 +146,7 @@ onEvent("recipes", (event) => {
   //mekanism tools
   event.smithing(
     'mekanismtools:refined_glowstone_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     'mekanism:ingot_refined_glowstone'  
    )
    event.smithing(
@@ -130,22 +156,22 @@ onEvent("recipes", (event) => {
    )
    event.smithing(
     'mekanismtools:lapis_lazuli_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     'minecraft:lapis_lazuli' 
    )
    event.smithing(
     'mekanismtools:bronze_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:bronze"}') 
    )
    event.smithing(
     'mekanismtools:osmium_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:osmium"}') 
    )
    event.smithing(
     'mekanismtools:steel_shovel',  
-    Item.of('tconstruct:tough_handle', '{Material:"tconstruct:wood"}'),
+    'minecraft:stick',
     Item.of('tconstruct:large_plate', '{Material:"tconstruct:steel"}') 
    )
 
