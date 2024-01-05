@@ -1,0 +1,217 @@
+{
+	id: "148ADAC9FCD09958"
+	group: ""
+	order_index: 2
+	filename: "metal_age"
+	title: "The smeltery"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 1.5d
+			y: -5.5d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/ftbquests/smeltery.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/ftbquests/faucet.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ftbquests:textures/item/book.png"
+			hover: ["Move fluids"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ftbquests:textures/item/book.png"
+			hover: ["Melting"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"41709324AB7226A7"
+				"1DC5D7D05F17BA41"
+				"1576CE30C0D66816"
+			]
+			id: "51911243FD379003"
+			tasks: [{
+				id: "671D0622D0836989"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["51911243FD379003"]
+			id: "4CFC3379680C47A8"
+			tasks: [{
+				id: "2BC19AEE1D59A725"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "3C844D82718410C6"
+			tasks: [{
+				id: "1409C8E4946ACDD9"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "3882BA6FD15244A8"
+			tasks: [{
+				id: "2D3EA28688613A09"
+				type: "item"
+				item: "tconstruct:seared_drain"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "1CC0B43714030F1A"
+			tasks: [{
+				id: "7FDD396F99D16B8F"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "04CA96BC7760F72B"
+			tasks: [{
+				id: "713633DCE17075B5"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			id: "1DC5D7D05F17BA41"
+			tasks: [{
+				id: "727D3867FFC5813F"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			id: "41709324AB7226A7"
+			tasks: [{
+				id: "336874E00C0D0037"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			id: "1576CE30C0D66816"
+			tasks: [{
+				id: "33483950187527E4"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "669CBBE07955FBD0"
+			tasks: [{
+				id: "129983C01E8883C2"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "3027BC043BFEC8A8"
+			tasks: [{
+				id: "26C592999956F1DC"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.5d
+			dependencies: ["4CFC3379680C47A8"]
+			id: "14EFEFCA9373C82B"
+			tasks: [{
+				id: "249A38FA37A9FD48"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			icon: "botania:cosmetic_questgiver_mark"
+			x: 0.0d
+			y: -9.0d
+			hide_dependency_lines: true
+			dependencies: [
+				"3C844D82718410C6"
+				"3027BC043BFEC8A8"
+				"3882BA6FD15244A8"
+				"669CBBE07955FBD0"
+				"04CA96BC7760F72B"
+				"14EFEFCA9373C82B"
+				"1CC0B43714030F1A"
+			]
+			id: "21DA2892414380C7"
+			tasks: [{
+				id: "4FC73EA64E662251"
+				type: "checkmark"
+				title: "Smeltery"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

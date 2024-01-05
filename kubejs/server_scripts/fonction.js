@@ -1,6 +1,6 @@
 onEvent("recipes", (event) => {
-  //fonction remove raw smelt+blast et ajout sandpaper polishing
 
+  //fonction remove raw smelt+blast
   function removeRawToIngot(mod, item) {
     if (mod === "create") {
       event.remove({id: "create:smelting/" + item + "_ingot_from_raw_ore"});
@@ -14,8 +14,14 @@ onEvent("recipes", (event) => {
       event.remove({id: "mekanism:processing/" + item + "/ingot/from_raw_smelting"});
       event.remove({id: "mekanism:processing/" + item + "/ingot/from_raw_blasting"});
     }
+    else if (mod === "tconstruct") {
+      event.remove({id: "tconstruct:common/materials/" + item + "_ingot_smelting"});
+    }
+    else if (mod === "mythicbotany") {
+      event.remove({id: "mythicbotany:smelting/" + item + "_ingot_from_raw_ore"});
+      event.remove({id :"mythicbotany:blasting/" + item + "_ingot_from_raw_ore"});
+    }
   }
-
   removeRawToIngot("minecraft", "copper");
   removeRawToIngot("minecraft", "iron");
   removeRawToIngot("minecraft", "gold");
@@ -24,6 +30,8 @@ onEvent("recipes", (event) => {
   removeRawToIngot("mekanism", "tin");
   removeRawToIngot("mekanism", "lead");
   removeRawToIngot("mekanism", "uranium");
+  removeRawToIngot("tconstruct", "cobalt");
+  removeRawToIngot("mythicbotany", "elementium");
   
   //dupli sand paper
   function sandPaperDupli(modRaw, modDust, item) {
@@ -53,6 +61,7 @@ onEvent("recipes", (event) => {
   sandPaperDupli("tconstruct", "kubejs", "cobalt")
   sandPaperDupli("kubejs", "kubejs", "silver")
 
+  //fonction Ingot -> Dust
   function sandPaperIngot(modIngot, modDust, item) {
     if (modIngot == "mekanism") {
       event.custom({
@@ -93,12 +102,17 @@ onEvent("recipes", (event) => {
   sandPaperIngot("mekanism", "mekanism", "uranium")
   sandPaperIngot("mekanism", "mekanism", "tin")
   sandPaperIngot("mekanism", "mekanism", "osmium")
+  sandPaperIngot("mekanism", "mekanism", "bronze")
+  sandPaperIngot("mekanism", "mekanism", "steel")
+  sandPaperIngot("mekanism", "mekanism", "refined_obsidian")
   sandPaperIngot("create", "kubejs", "zinc")
   sandPaperIngot("botania", "kubejs", "elementium")
   sandPaperIngot("tconstruct", "kubejs", "cobalt")
   sandPaperIngot("iceandfire", "kubejs", "silver")
+  sandPaperIngot("kubejs", "kubejs", "silicon")
 
-  function millingDupli(modRaw, modDust, item) {
+  // Dupli crushed raw x1.5
+  function millingDupliCrushedRaw(modRaw, modDust, item) {
     event.custom({
       "type": "create:milling",
       "ingredients": [
@@ -118,19 +132,20 @@ onEvent("recipes", (event) => {
       ]
     })
   }
-  millingDupli("create", "mekanism", "iron")
-  millingDupli("create", "mekanism", "gold")
-  millingDupli("create", "mekanism", "copper")
-  millingDupli("create", "mekanism", "lead")
-  millingDupli("create", "mekanism", "uranium")
-  millingDupli("create", "mekanism", "tin")
-  millingDupli("create", "mekanism", "osmium")
-  millingDupli("create", "kubejs", "zinc")
-  millingDupli("create", "kubejs", "silver")
-  millingDupli("kubejs", "kubejs", "cobalt")
-  millingDupli("kubejs", "kubejs", "elementium")
+  millingDupliCrushedRaw("create", "mekanism", "iron")
+  millingDupliCrushedRaw("create", "mekanism", "gold")
+  millingDupliCrushedRaw("create", "mekanism", "copper")
+  millingDupliCrushedRaw("create", "mekanism", "lead")
+  millingDupliCrushedRaw("create", "mekanism", "uranium")
+  millingDupliCrushedRaw("create", "mekanism", "tin")
+  millingDupliCrushedRaw("create", "mekanism", "osmium")
+  millingDupliCrushedRaw("create", "kubejs", "zinc")
+  millingDupliCrushedRaw("create", "kubejs", "silver")
+  millingDupliCrushedRaw("kubejs", "kubejs", "cobalt")
+  millingDupliCrushedRaw("kubejs", "kubejs", "elementium")
 
-  function crushingDupli(modRaw, modDust, item) {
+  // Dupli crushed raw x2.5
+  function crushingDupliCrushedRaw(modRaw, modDust, item) {
     event.custom({
       "type": "create:crushing",
       "ingredients": [
@@ -150,16 +165,44 @@ onEvent("recipes", (event) => {
       ]
     })
   }
-  crushingDupli("create", "mekanism", "iron")
-  crushingDupli("create", "mekanism", "gold")
-  crushingDupli("create", "mekanism", "copper")
-  crushingDupli("create", "mekanism", "lead")
-  crushingDupli("create", "mekanism", "uranium")
-  crushingDupli("create", "mekanism", "tin")
-  crushingDupli("create", "mekanism", "osmium")
-  crushingDupli("create", "kubejs", "zinc")
-  crushingDupli("create", "kubejs", "silver")
-  crushingDupli("kubejs", "kubejs", "cobalt")
-  crushingDupli("kubejs", "kubejs", "elementium")
+  crushingDupliCrushedRaw("create", "mekanism", "iron")
+  crushingDupliCrushedRaw("create", "mekanism", "gold")
+  crushingDupliCrushedRaw("create", "mekanism", "copper")
+  crushingDupliCrushedRaw("create", "mekanism", "lead")
+  crushingDupliCrushedRaw("create", "mekanism", "uranium")
+  crushingDupliCrushedRaw("create", "mekanism", "tin")
+  crushingDupliCrushedRaw("create", "mekanism", "osmium")
+  crushingDupliCrushedRaw("create", "kubejs", "zinc")
+  crushingDupliCrushedRaw("create", "kubejs", "silver")
+  crushingDupliCrushedRaw("kubejs", "kubejs", "cobalt")
+  crushingDupliCrushedRaw("kubejs", "kubejs", "elementium")
 
+  //dupli milling raw -> crushed raw
+  function millingDupliOre(modRaw, modCrushedRaw, item) {
+    event.custom({
+      "type": "create:milling",
+      "ingredients": [
+        {
+          "item": (modRaw + ":raw_" + item)
+        }
+      ],
+      "results": [
+        {
+          "item": (modCrushedRaw + ":crushed_raw_" + item),
+          "chance": 1
+        }
+      ]
+    })
+  }
+  millingDupliOre("minecraft", "create", "iron")
+  millingDupliOre("minecraft", "create", "gold")
+  millingDupliOre("minecraft", "create", "copper")
+  millingDupliOre("create", "create", "zinc")
+  millingDupliOre("mekanism", "create", "osmium")
+  millingDupliOre("mekanism", "create", "tin")
+  millingDupliOre("mekanism", "create", "lead")
+  millingDupliOre("mekanism", "create", "uranium")
+  millingDupliOre("kubejs", "create", "silver")
+  millingDupliOre("tconstruct", "kubejs", "cobalt")
+  millingDupliOre("mythicbotany", "kubejs", "elementium")
 });

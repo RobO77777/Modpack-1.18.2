@@ -1,0 +1,311 @@
+{
+	id: "31D2B1088F9223A8"
+	group: ""
+	order_index: 0
+	filename: "first_tools"
+	title: "First tools"
+	icon: {
+		id: "minecraft:diamond_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 1.5d
+			id: "15B6110138826018"
+			tasks: [{
+				id: "1AA48AF570CF2F6C"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["15B6110138826018"]
+			id: "3C939E37636A3C66"
+			tasks: [{
+				id: "59F41C8D74659572"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["15B6110138826018"]
+			id: "242EBF082A1263A4"
+			tasks: [{
+				id: "09A7D93FFE2B3F84"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["0D2729D821D48E50"]
+			id: "7B7C2B84778C25E1"
+			tasks: [{
+				id: "61E940028D7836F5"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			dependencies: ["3C939E37636A3C66"]
+			id: "21FFCCE83EC5C86D"
+			tasks: [{
+				id: "2BE1FCA8E9B5129E"
+				type: "item"
+				title: "Any #forge:hoes"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:hoes"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.5d
+			dependencies: ["3C939E37636A3C66"]
+			id: "0AAE44506DFCD7D9"
+			tasks: [{
+				id: "114D04011ED6DD92"
+				type: "item"
+				title: "Any #forge:shovels"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:shovels"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			dependencies: ["7B7C2B84778C25E1"]
+			id: "53B4F6F6C663FBCF"
+			tasks: [{
+				id: "19E0B78C7D034281"
+				type: "item"
+				title: "Any #tconstruct:parts"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:parts"
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			dependencies: [
+				"242EBF082A1263A4"
+				"53B4F6F6C663FBCF"
+			]
+			id: "2C2B39605F1FC923"
+			tasks: [{
+				id: "6EE4FAFA0CA1FF33"
+				type: "item"
+				title: "Any #tconstruct:modifiable/multipart"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:modifiable/multipart"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["15B6110138826018"]
+			id: "0D2729D821D48E50"
+			tasks: [{
+				id: "28776AA751E1AC1D"
+				type: "item"
+				item: "tconstruct:pattern"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			dependencies: ["2C2B39605F1FC923"]
+			id: "2A4D8F572E28A1D3"
+			tasks: [{
+				id: "78CE698C1E636536"
+				type: "item"
+				item: {
+					id: "tconstruct:sword"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.6f
+							"tconstruct:mining_speed": 1.0f
+							"tconstruct:attack_damage": 3.0f
+							"tconstruct:harvest_tier": "minecraft:wood"
+							"tconstruct:durability": 66.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+							{
+								name: "tconstruct:silky_shears"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["2C2B39605F1FC923"]
+			id: "6A29579FBFF41C8E"
+			tasks: [{
+				id: "1DA574D1DDDFD9C5"
+				type: "item"
+				item: {
+					id: "tconstruct:hand_axe"
+					Count: 1b
+					tag: {
+						tic_stats: {
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:mining_speed": 2.0f
+							"tconstruct:attack_damage": 6.0f
+							"tconstruct:harvest_tier": "minecraft:wood"
+							"tconstruct:durability": 60.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+							{
+								name: "tconstruct:stripping"
+								level: 1s
+							}
+							{
+								name: "tconstruct:axe_scrape"
+								level: 1s
+							}
+							{
+								name: "tconstruct:axe_wax_off"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			dependencies: ["2C2B39605F1FC923"]
+			id: "68DE7344D74F7D5F"
+			tasks: [{
+				id: "69E045AAB14AF8AB"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe"
+					Count: 1b
+					tag: {
+						tic_stats: {
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:mining_speed": 2.0f
+							"tconstruct:attack_damage": 0.0f
+							"tconstruct:harvest_tier": "minecraft:wood"
+							"tconstruct:durability": 60.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing"
+								level: 1s
+							}
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+						]
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

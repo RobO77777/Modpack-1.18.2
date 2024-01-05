@@ -1,0 +1,12 @@
+{
+	id: "50C218F8E1A89CB5"
+	group: ""
+	order_index: 4
+	filename: "ore_processing"
+	title: "Ore Processing"
+	icon: "mekanism:enrichment_chamber"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

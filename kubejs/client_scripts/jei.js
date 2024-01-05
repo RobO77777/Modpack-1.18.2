@@ -117,6 +117,9 @@ onEvent('jei.hide.items', event => {
 		'tconstruct:part_builder',
 		'tconstruct:tinker_station',
 		'tconstruct:crafting_station',
+		'tcintegrations:bronze_nugget',
+		'tcintegrations:bronze_block',
+		'tcintegrations:bronze_ingot',
 
 		//mowzies mobs
 		'mowziesmobs:mob_remover',

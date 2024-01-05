@@ -517,7 +517,7 @@ onEvent("recipes", (event) => {
     input: {
       ingredient: [
         { tag: "forge:dusts/silicon" },
-        { item: "kubejs:silicon_dust" },
+        { item: "kubejs:dust_silicon" },
       ],
     },
     output: { infuse_type: "kubejs:silicon", amount: 20 },
@@ -679,6 +679,11 @@ onEvent("recipes", (event) => {
     C: "minecraft:clay_ball",
     N: "projecte:nova_catalyst",
     F: "minecraft:flint",
+  });
+
+  event.shaped('tconstruct:smeltery_controller', [" C ", "CSC", " C "], {
+    C: "minecraft:copper_ingot",
+    S: '#tconstruct:seared_blocks',
   });
 
   //botania

@@ -1,7 +1,7 @@
 {
 	id: "0000000000000371"
 	group: "20D0AD2C6A00BA0E"
-	order_index: 2
+	order_index: 0
 	filename: "botania"
 	title: "Botania"
 	icon: "botania:natura_pylon"
@@ -1881,19 +1881,12 @@
 			description: ["You need those to perform rituals."]
 			dependencies: ["1F196D2F8EC9C7D3"]
 			id: "0A092542A77AFA9D"
-			tasks: [
-				{
-					id: "7CA8324CF35CA549"
-					type: "item"
-					item: "mythicbotany:master_rune_holder"
-				}
-				{
-					id: "0609329FCC3206AC"
-					type: "item"
-					item: "mythicbotany:rune_holder"
-					count: 20L
-				}
-			]
+			tasks: [{
+				id: "0609329FCC3206AC"
+				type: "item"
+				item: "mythicbotany:rune_holder"
+				count: 20L
+			}]
 			rewards: [{
 				id: "0C4E1699DE229801"
 				type: "item"

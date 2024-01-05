@@ -27,10 +27,10 @@ onEvent('item.tags', event => {
 
     event.add('forge:plates', 'kubejs:silicon_sheet')
     event.add('forge:ingots', 'kubejs:silicon_ingot')
-    event.add('forge:dusts', 'kubejs:silicon_dust')
+    event.add('forge:dusts', 'kubejs:dust_silicon')
     event.add('forge:plates/silicon', 'kubejs:silicon_sheet')
     event.add('forge:ingots/silicon', 'kubejs:silicon_ingot')
-    event.add('forge:dusts/silicon', 'kubejs:silicon_dust')
+    event.add('forge:dusts/silicon', 'kubejs:dust_silicon')
 
     //copper
 
@@ -113,6 +113,22 @@ onEvent('recipes', event => {
 	event.smelting('create:zinc_ingot', 'kubejs:dust_zinc')
 	event.blasting('create:zinc_ingot', 'kubejs:dust_zinc')
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"tag":"forge:ores/zinc"}},"output":{"item":"kubejs:dust_zinc","count":2}})
+
+	//refined glowstone
+
+	event.custom({
+        "type": "create:sandpaper_polishing",
+        "ingredients": [
+          {
+            "item": ("mekanism:ingot_refined_glowstone")
+          }
+        ],
+        "results": [
+          {
+            "item": ("minecraft:glowstone_dust")
+          }
+        ]
+      })
 
 	//silver
 
@@ -514,8 +530,8 @@ onEvent('recipes', event => {
 //----------------alliages----------------
 	//silicon
 
-	event.smelting('kubejs:silicon_ingot', 'kubejs:silicon_dust')
-	event.custom({"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"tag":"forge:gems/quartz"}},"chemicalInput":{"amount":50,"tag":"mekanism:carbon"},"output":{"item":"kubejs:silicon_dust"}})
+	event.smelting('kubejs:silicon_ingot', 'kubejs:dust_silicon')
+	event.custom({"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"tag":"forge:gems/quartz"}},"chemicalInput":{"amount":50,"tag":"mekanism:carbon"},"output":{"item":"kubejs:dust_silicon"}})
 	event.recipes.createPressing('kubejs:silicon_sheet', 'kubejs:silicon_ingot')
 	event.custom(
 		{
@@ -640,6 +656,8 @@ onEvent('recipes', event => {
 	event.recipes.createPressing('kubejs:steel_sheet', '#forge:ingots/steel')
 
 	//bronze
+
+	event.remove({output: ['tcintegrations:bronze_nugget', 'tcintegrations:bronze_block', 'tcintegrations:bronze_ingot']})
 
    //draconium
 		//draco ingot -> draco fluid

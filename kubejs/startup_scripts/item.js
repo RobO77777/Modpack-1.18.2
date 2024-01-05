@@ -1,7 +1,7 @@
 // Listen to item registry event
 onEvent('item.registry', event => {
 
-    event.create('silicon_dust').displayName('Silicon Dust')
+
     event.create('silicon_ingot').displayName('Silicon Ingot')
     event.create('silicon_sheet').displayName('Silicon sheet')
 
@@ -28,6 +28,7 @@ onEvent('item.registry', event => {
 
     //dust
 
+    event.create('dust_silicon').displayName('Silicon Dust')
     event.create('dust_zinc').displayName('Zinc Dust')
     event.create('dust_silver').displayName('Silver Dust')
     event.create('dust_elementium').displayName('Elementium Dust')

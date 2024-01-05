@@ -1,7 +1,7 @@
 {
 	id: "0000000000000859"
 	group: "3517914DD1CDB9FC"
-	order_index: 4
+	order_index: 0
 	filename: "mekanism"
 	title: "Mekanism"
 	icon: "mekanism:quantum_entangloporter"
@@ -2222,7 +2222,6 @@
 				"To make a Steel Casing, you need to get, first, a Supreme Machine Frame."
 				"Later, you can automate this casing with a combiner."
 			]
-			dependencies: ["00000000000007B9"]
 			size: 1.5d
 			id: "7D0BC26B33BBB358"
 			tasks: [{
