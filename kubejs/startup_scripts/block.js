@@ -4,3 +4,6 @@ onEvent('block.registry', event => {
 onEvent('block.registry', event => {
 	event.create('iron_casing').material('metal').hardness(2).harvestTool('pickaxe', 6).displayName('Iron Casing').requiresTool(True)
 })
+onEvent('block.registry', event => {
+	event.create('moissanite').material('stone').hardness(2).harvestTool('pickaxe', 6).displayName('Moissanite').requiresTool(True)
+})

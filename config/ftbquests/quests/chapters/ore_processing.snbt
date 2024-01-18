@@ -1,7 +1,7 @@
 {
 	id: "50C218F8E1A89CB5"
 	group: ""
-	order_index: 4
+	order_index: 2
 	filename: "ore_processing"
 	title: "Ore Processing"
 	icon: "mekanism:enrichment_chamber"

@@ -410,6 +410,14 @@ onEvent("recipes", (event) => {
     },
   });
 
+  //Dyson
+
+  event.shaped('dyson:satellitesolarpanel', ["PSP", "SCS", "PSP"], {
+    S: "kubejs:silicon_carbide_plate",
+    P: "mekanismgenerators:solar_panel",
+    C: "mekanism:teleportation_core"
+  });
+  
   //mekanism
   event.remove({output: ['mekanismtools:lapis_lazuli_boots',
    'mekanismtools:lapis_lazuli_leggings',
@@ -425,13 +433,6 @@ onEvent("recipes", (event) => {
    'mekanismtools:refined_glowstone_chestplate',
    'mekanismtools:refined_glowstone_helmet']})
 
-  event.shaped("mekanismgenerators:wind_generator", [" P ", "OAO", "TCT"], {
-    P: "create:propeller",
-    O: "mekanism:ingot_osmium",
-    T: "mekanism:energy_tablet",
-    C: "mekanism:basic_control_circuit",
-    A: "mekanism:alloy_infused",
-  });
   event.recipes.createCrushing("mekanism:dust_copper", [
     "minecraft:copper_ingot",
   ]);
@@ -569,6 +570,18 @@ onEvent("recipes", (event) => {
     S: "create:iron_sheet",
   });
 
+  event.custom({
+    type: "mekanism:metallurgic_infusing",
+    itemInput: { ingredient: { item: "minecraft:coal" } },
+    chemicalInput: { amount: 400, infuse_type: "kubejs:silicon" },
+    output: { item: "kubejs:silicon_carbide" },
+  });
+
+  event.custom({"type":"mekanism:compressing",
+  "itemInput":{"ingredient":{"item":"kubejs:silicon_carbide"}},
+  "chemicalInput":{"amount":1,"gas":"mekanism:osmium"},
+  "output":{"item":"kubejs:silicon_carbide_plate"}})
+  
   //Vanilla
 
   event.shapeless("4x minecraft:cobblestone", [
@@ -576,7 +589,7 @@ onEvent("recipes", (event) => {
     "#forge:dusts/glowstone",
   ]);
   event.smelting("mekanism:dust_charcoal", "#minecraft:planks");
-  event.remove({ id: "create:milling/granite" });
+  event.remove({id: "create:milling/granite"});
   event.custom({
     type: "create:crushing",
     ingredients: [

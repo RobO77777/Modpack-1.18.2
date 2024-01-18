@@ -278,7 +278,7 @@ onEvent("recipes", (event) => {
   event.recipes.createMixing("projecte:dark_matter", [
     "minecraft:glowstone_dust",
     "minecraft:coal",
-    Fluid.of("kubejs:magical_primary_energy", 5500),
+    Fluid.of("kubejs:magical_primary_energy", 1000),
   ]);
 
   event.custom({

@@ -16,7 +16,7 @@
       "item": "create:cogwheel"
     },
     "P": {
-      "item": "create:propeller"
+      "item": "beyond_earth:engine_fan"
     }
   },
   "result": {

@@ -9,6 +9,10 @@ onEvent('item.registry', event => {
     event.create('steel_wire').displayName('Steel wire')
     event.create('steel_rod').displayName('Steel rod')
 
+    event.create('silicon_carbide').displayName('Silicon Carbide')
+    event.create('silicon_carbide_plate').displayName('Silicon Carbide Plate')
+
+
     
     event.create('cement').displayName('Cement')
 

@@ -1,0 +1,24 @@
+{
+	id: "360E8D22C568AA6C"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome!"
+	icon: "create:brass_hand"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: 0.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "minecraft:textures/environment/sun.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [ ]
+	quest_links: [ ]
+}

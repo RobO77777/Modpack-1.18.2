@@ -65,6 +65,7 @@ onEvent('jei.hide.items', event => {
 		//create 
 
 		'create:rose_quartz_block',
+		'create:propeller',
 
 
 		//iceandfire
@@ -218,7 +219,19 @@ onEvent('jei.hide.items', event => {
 		//rocks
 		'rocks:pinecone',
 		'rocks:geyser',
-		'rocks:nether_geyser'
+		'rocks:nether_geyser',
+
+		//beyond earth
+		'beyond_earth:steel_block',
+		'beyond_earth:steel_nugget',
+		'beyond_earth:steel_ingot',
+		'beyond_earth:iron_plate',
+		'beyond_earth:solar_panel',
+
+		//custom machinery 
+		'custommachinery:machine_creator_item',
+		'custommachinery:box_creator_item',
+		Item.of('custommachinery:structure_creator', '{custommachinery:{}}')
 	])
 })
 

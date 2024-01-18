@@ -1,9 +1,9 @@
 {
 	id: "7B871DE57CE1B4A2"
 	group: ""
-	order_index: 1
+	order_index: 3
 	filename: "mineral_processing"
-	title: "Mineral processing"
+	title: "Ore processing"
 	icon: "minecraft:furnace"
 	subtitle: ["Different types of mineral processing"]
 	default_quest_shape: ""
@@ -28,19 +28,7 @@
 			height: 1.0d
 			rotation: 0.0d
 			image: "ftbquests:textures/item/book.png"
-			hover: ["x1"]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
-			x: 0.0d
-			y: -6.0d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "ftbquests:textures/item/book.png"
-			hover: ["x1.5"]
+			hover: ["x2.6"]
 			click: ""
 			dev: false
 			corner: false
@@ -74,7 +62,7 @@
 		{
 			title: "Sand Paper"
 			x: -5.0d
-			y: -1.5d
+			y: -0.5d
 			dependencies: ["29AF8D5D346CE123"]
 			id: "796F115F47F84E18"
 			tasks: [{
@@ -93,7 +81,7 @@
 		{
 			icon: "minecraft:furnace"
 			x: 0.0d
-			y: 0.5d
+			y: 1.0d
 			size: 2.0d
 			optional: true
 			id: "29AF8D5D346CE123"
@@ -107,7 +95,7 @@
 			title: "Dust"
 			x: -5.0d
 			y: -4.5d
-			dependencies: ["796F115F47F84E18"]
+			dependencies: ["120E9B1005F44EB9"]
 			id: "10FBC2D662A11145"
 			tasks: [
 				{
@@ -171,7 +159,7 @@
 			title: "Molten ore"
 			x: -2.5d
 			y: -4.5d
-			dependencies: ["7F6B5F6606C53039"]
+			dependencies: ["483777E785696E58"]
 			id: "3A6A6014F911175F"
 			tasks: [
 				{
@@ -188,89 +176,6 @@
 					id: "59677CBDA1FCE4C4"
 					type: "item"
 					item: "tconstruct:molten_iron_bucket"
-				}
-			]
-		}
-		{
-			title: "Crushed raw"
-			x: 0.0d
-			y: -2.5d
-			dependencies: ["61B0727C1F160874"]
-			id: "444D0D265B471FA5"
-			tasks: [{
-				id: "1F9943AECEF4C340"
-				type: "item"
-				title: "Any #create:crushed_raw_materials"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "create:crushed_raw_materials"
-					}
-				}
-			}]
-		}
-		{
-			title: "Dust"
-			x: 0.0d
-			y: -4.5d
-			dependencies: ["444D0D265B471FA5"]
-			id: "1B6726933987A8B5"
-			tasks: [
-				{
-					id: "71E23EFBFBA2DDA4"
-					type: "item"
-					item: "mekanism:dust_iron"
-				}
-				{
-					id: "44C55E0A8D70C054"
-					type: "item"
-					item: "mekanism:dust_gold"
-				}
-				{
-					id: "5162DA800D463074"
-					type: "item"
-					item: "mekanism:dust_copper"
-				}
-				{
-					id: "4CFD3292588B4FC2"
-					type: "item"
-					item: "mekanism:dust_osmium"
-				}
-				{
-					id: "1F4D0BD8866EB041"
-					type: "item"
-					item: "mekanism:dust_tin"
-				}
-				{
-					id: "267D454D5B82922B"
-					type: "item"
-					item: "mekanism:dust_lead"
-				}
-				{
-					id: "35816734189D2388"
-					type: "item"
-					item: "mekanism:dust_uranium"
-				}
-				{
-					id: "2504FD7B3E3AE48F"
-					type: "item"
-					item: "kubejs:dust_zinc"
-				}
-				{
-					id: "399B3127B6912C31"
-					type: "item"
-					item: "kubejs:dust_silver"
-				}
-				{
-					id: "1E1EE9B6FA0047B5"
-					type: "item"
-					item: "kubejs:dust_elementium"
-				}
-				{
-					id: "6355925BB9559EA3"
-					type: "item"
-					item: "kubejs:dust_cobalt"
 				}
 			]
 		}
@@ -500,7 +405,7 @@
 		{
 			icon: "tconstruct:smeltery_controller"
 			x: -2.5d
-			y: -1.5d
+			y: -0.5d
 			dependencies: [
 				"21DA2892414380C7"
 				"29AF8D5D346CE123"
@@ -513,21 +418,9 @@
 			}]
 		}
 		{
-			icon: "create:millstone"
-			x: 0.0d
-			y: -1.5d
-			dependencies: ["29AF8D5D346CE123"]
-			id: "61B0727C1F160874"
-			tasks: [{
-				id: "1274F6DAF7DFB042"
-				type: "checkmark"
-				title: "Millstone"
-			}]
-		}
-		{
 			icon: "create:crushing_wheel"
 			x: 2.5d
-			y: -1.5d
+			y: -0.5d
 			dependencies: ["29AF8D5D346CE123"]
 			id: "53D2BA1E7AF068E1"
 			tasks: [{
@@ -539,13 +432,49 @@
 		{
 			icon: "mekanism:enrichment_chamber"
 			x: 5.0d
-			y: -1.5d
+			y: -0.5d
 			dependencies: ["29AF8D5D346CE123"]
 			id: "195D786D73F20545"
 			tasks: [{
 				id: "7FD1C5401C0E3068"
 				type: "checkmark"
 				title: "Enrichment Chamber"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["7F6B5F6606C53039"]
+			id: "483777E785696E58"
+			tasks: [{
+				id: "5BF64495710AC090"
+				type: "item"
+				title: "Any #forge:ores"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["796F115F47F84E18"]
+			id: "120E9B1005F44EB9"
+			tasks: [{
+				id: "6669BC6FAE993B75"
+				type: "item"
+				title: "Any #forge:raw_materials"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
 			}]
 		}
 	]

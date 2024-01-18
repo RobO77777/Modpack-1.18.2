@@ -85,6 +85,25 @@ onEvent('recipes', event => {
 	//iron
 
 	//gold
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "minecraft:gold_ingot"
+		  }
+		},
+		"result": {
+		  "item": "create:golden_sheet",
+		  "count": 1
+		}
+	  })
 
 	//copper
 	event.remove({id: 'iceandfire:copper_ore'})
@@ -98,6 +117,25 @@ onEvent('recipes', event => {
 	event.remove({id: 'minecraft:copper_ingot_from_blasting_deepslate_copper_ore'})
 	event.remove({id: 'minecraft:copper_ingot_from_smelting_copper_ore'})
 	event.remove({id: 'minecraft:copper_ingot_from_blasting_copper_ore'})
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "minecraft:copper_ingot"
+		  }
+		},
+		"result": {
+		  "item": "create:copper_sheet",
+		  "count": 1
+		}
+	  })
 
 	//uranium
 	
@@ -113,9 +151,28 @@ onEvent('recipes', event => {
 	event.smelting('create:zinc_ingot', 'kubejs:dust_zinc')
 	event.blasting('create:zinc_ingot', 'kubejs:dust_zinc')
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"tag":"forge:ores/zinc"}},"output":{"item":"kubejs:dust_zinc","count":2}})
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "create:zinc_ingot"
+		  }
+		},
+		"result": {
+		  "item": "createaddition:zinc_sheet",
+		  "count": 1
+		}
+	  })
+
 
 	//refined glowstone
-
 	event.custom({
         "type": "create:sandpaper_polishing",
         "ingredients": [
@@ -528,11 +585,54 @@ onEvent('recipes', event => {
 
 
 //----------------alliages----------------
+
+
+	//brass
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "create:brass_ingot"
+		  }
+		},
+		"result": {
+		  "item": "create:brass_sheet",
+		  "count": 1
+		}
+	  })
+
 	//silicon
 
 	event.smelting('kubejs:silicon_ingot', 'kubejs:dust_silicon')
 	event.custom({"type":"mekanism:metallurgic_infusing","itemInput":{"ingredient":{"tag":"forge:gems/quartz"}},"chemicalInput":{"amount":50,"tag":"mekanism:carbon"},"output":{"item":"kubejs:dust_silicon"}})
 	event.recipes.createPressing('kubejs:silicon_sheet', 'kubejs:silicon_ingot')
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "kubejs:silicon_ingot"
+		  }
+		},
+		"result": {
+		  "item": "kubejs:silicon_sheet",
+		  "count": 1
+		}
+	  })
+
 	event.custom(
 		{
 			"type": "tconstruct:melting",
@@ -652,8 +752,26 @@ onEvent('recipes', event => {
 	  })
 
 	//steel
-
 	event.recipes.createPressing('kubejs:steel_sheet', '#forge:ingots/steel')
+	event.custom({
+		"group": "beyond_earth",
+		"type": "minecraft:crafting_shaped",
+		"pattern": [
+		  "01"
+		],
+		"key": {
+		  "0": {
+			"item": "beyond_earth:hammer"
+		  },
+		  "1": {
+			"item": "mekanism:ingot_steel"
+		  }
+		},
+		"result": {
+		  "item": "kubejs:steel_sheet",
+		  "count": 1
+		}
+	  })
 
 	//bronze
 

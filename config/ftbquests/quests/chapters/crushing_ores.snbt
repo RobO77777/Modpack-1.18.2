@@ -1,23 +1,13 @@
 {
 	id: "4A775DB4B329602A"
 	group: ""
-	order_index: 3
+	order_index: 5
 	filename: "crushing_ores"
 	title: "Ore Crushing"
 	icon: "create:crushing_wheel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
-		{
-			x: -1.0d
-			y: -1.5d
-			id: "7CE8467410A16325"
-			tasks: [{
-				id: "3E5F0D681C54E65C"
-				type: "item"
-				item: "create:millstone"
-			}]
-		}
 		{
 			x: 1.0d
 			y: -1.5d
@@ -26,17 +16,6 @@
 				id: "0F4FB235C8483604"
 				type: "item"
 				item: "create:crushing_wheel"
-			}]
-		}
-		{
-			icon: "botania:cosmetic_questgiver_mark"
-			x: -1.0d
-			y: -3.0d
-			id: "21B56C7D373FBD0B"
-			tasks: [{
-				id: "7682B82233B42105"
-				type: "checkmark"
-				title: "Milling"
 			}]
 		}
 		{

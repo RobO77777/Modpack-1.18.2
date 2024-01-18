@@ -1,0 +1,52 @@
+{
+    "name": "Energy Receptor",
+    "appearance": {
+      "idle": {
+        "block": "kubejs:machine/energy_receptor"
+      },
+      "running": {
+        "lightlevel": 15
+      }
+    },
+    "components": [
+      {
+        "capacity": 10000000,
+        "maxOutput": 50000000,
+        "type": "custommachinery:energy",
+        "config": {
+          "default": "output"
+        }
+      }
+    ],
+    "gui": [
+      {
+        "texture": "custommachinery:textures/gui/base_background.png",
+        "x": 0,
+        "y": 0,
+        "type": "custommachinery:texture"
+      },
+      {
+        "x": 47,
+        "y": 80,
+        "type": "custommachinery:player_inventory"
+      },
+      {
+        "x": 47,
+        "y": 30,
+        "type": "custommachinery:energy"
+      },
+      {
+        "text": "Energy Receptor",
+        "x": 7,
+        "y": 5,
+        "type": "custommachinery:text"
+      },
+      {
+        "type": "custommachinery:texture",
+        "x": 175,
+        "y": 37,
+        "texture": "minecraft:textures/environment/sun.png"
+    }
+    ],
+    "shape": [-3, -1, -3, 3, 4, 3]
+  }

@@ -1,0 +1,77 @@
+{
+    "name": "Railgun",
+    "appearance": {
+      "idle": {
+        "block": "kubejs:machine/railgun"
+      },
+      "running": {
+        "lightlevel": 15
+      },
+      "sound": "mekanism:sounds/tile/logistical_sorter"
+    },
+    "components": [
+      {
+        "capacity": 10000000,
+        "maxInput": 1000000,
+        "type": "custommachinery:energy"
+      },
+      {
+        "mode": "input",
+        "id": "input1",
+        "type": "custommachinery:item"
+      }
+    ],
+    "gui": [
+      {
+        "texture": "custommachinery:textures/gui/base_background.png",
+        "x": 0,
+        "y": 0,
+        "type": "custommachinery:texture"
+      },
+      {
+        "x": 47,
+        "y": 80,
+        "type": "custommachinery:player_inventory"
+      },
+      {
+        "x": 47,
+        "y": 30,
+        "type": "custommachinery:energy"
+      },
+      {
+        "id": "input1",
+        "x": 116,
+        "y": 45,
+        "type": "custommachinery:slot"
+      },
+      {
+        "x": 149,
+        "y": 45,
+        "type": "custommachinery:progress"
+      },
+      {
+        "x": 236,
+        "y": 5,
+        "type": "custommachinery:status"
+      },
+      {
+        "text": "Railgun",
+        "x": 7,
+        "y": 5,
+        "type": "custommachinery:text"
+      },
+      {
+        "type": "custommachinery:texture",
+        "x": 175,
+        "y": 37,
+        "texture": "minecraft:textures/environment/sun.png"
+    },
+    {
+      "text": "Send to orbit",
+      "x": 95,
+      "y": 30,
+      "type": "custommachinery:text"
+    }
+    ],
+    "shape": [-2, -2, 0, 2, 6, 19]
+  }

@@ -111,39 +111,6 @@ onEvent("recipes", (event) => {
   sandPaperIngot("iceandfire", "kubejs", "silver")
   sandPaperIngot("kubejs", "kubejs", "silicon")
 
-  // Dupli crushed raw x1.5
-  function millingDupliCrushedRaw(modRaw, modDust, item) {
-    event.custom({
-      "type": "create:milling",
-      "ingredients": [
-        {
-          "item": (modRaw + ":crushed_raw_" + item)
-        }
-      ],
-      "results": [
-        {
-          "item": (modDust + ":dust_" + item),
-          "chance": 1
-        },
-        {
-          "item": (modDust + ":dust_" + item),
-          "chance": 0.5
-        }
-      ]
-    })
-  }
-  millingDupliCrushedRaw("create", "mekanism", "iron")
-  millingDupliCrushedRaw("create", "mekanism", "gold")
-  millingDupliCrushedRaw("create", "mekanism", "copper")
-  millingDupliCrushedRaw("create", "mekanism", "lead")
-  millingDupliCrushedRaw("create", "mekanism", "uranium")
-  millingDupliCrushedRaw("create", "mekanism", "tin")
-  millingDupliCrushedRaw("create", "mekanism", "osmium")
-  millingDupliCrushedRaw("create", "kubejs", "zinc")
-  millingDupliCrushedRaw("create", "kubejs", "silver")
-  millingDupliCrushedRaw("kubejs", "kubejs", "cobalt")
-  millingDupliCrushedRaw("kubejs", "kubejs", "elementium")
-
   // Dupli crushed raw x2.5
   function crushingDupliCrushedRaw(modRaw, modDust, item) {
     event.custom({
@@ -177,32 +144,4 @@ onEvent("recipes", (event) => {
   crushingDupliCrushedRaw("kubejs", "kubejs", "cobalt")
   crushingDupliCrushedRaw("kubejs", "kubejs", "elementium")
 
-  //dupli milling raw -> crushed raw
-  function millingDupliOre(modRaw, modCrushedRaw, item) {
-    event.custom({
-      "type": "create:milling",
-      "ingredients": [
-        {
-          "item": (modRaw + ":raw_" + item)
-        }
-      ],
-      "results": [
-        {
-          "item": (modCrushedRaw + ":crushed_raw_" + item),
-          "chance": 1
-        }
-      ]
-    })
-  }
-  millingDupliOre("minecraft", "create", "iron")
-  millingDupliOre("minecraft", "create", "gold")
-  millingDupliOre("minecraft", "create", "copper")
-  millingDupliOre("create", "create", "zinc")
-  millingDupliOre("mekanism", "create", "osmium")
-  millingDupliOre("mekanism", "create", "tin")
-  millingDupliOre("mekanism", "create", "lead")
-  millingDupliOre("mekanism", "create", "uranium")
-  millingDupliOre("kubejs", "create", "silver")
-  millingDupliOre("tconstruct", "kubejs", "cobalt")
-  millingDupliOre("mythicbotany", "kubejs", "elementium")
 });
